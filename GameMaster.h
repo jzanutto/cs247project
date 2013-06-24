@@ -5,19 +5,23 @@
 #include "Deck.h"
 
 class GameMaster {
-private:
-	static void init();
-	GameMaster();
-	static GameMaster instance;
-	static const int PLAYER_COUNT = 4;
-	static Player _players[PLAYER_COUNT];
-
 public:
-	~GameMaster() {}
-	static GameMaster getInstance();
-	static void registerPlayer(Player p, int playerNum);
+	GameMaster();
+	GameMaster(int seed);
+	~GameMaster();
+	void registerPlayer(char playerType, int playerNum);
+	Deck deck() const;
+	void deal();
+	int currentPlayerNumber() const;
+	Player* getPlayer(const int playerNumber) const;
 
-
+private:
+	static const int PLAYER_COUNT = 4;
+	Player* _players[PLAYER_COUNT];
+	Deck _deck;
+	int _startingPlayerNumber;
+	int _currentPlayerNumber;
+	static const Card SEVEN_OF_SPADES;
 };
 
 #endif

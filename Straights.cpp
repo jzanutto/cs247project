@@ -1,33 +1,52 @@
 #include <iostream>
 #include <sstream>
+#include <vector>
 #include "Command.h"
-#include "Deck.h"
+#include "GameMaster.h"
 
 using namespace std;
 
-int main(int argc, char* argv[]) {
+void printPlayerHand(Player *p) {
+	cout << "Your hand: ";
+	vector<Card> cards = p->hand();
+	for(int i = 0; i < cards.size(); i++) {
+		cout << cards[i];
+		if(i < cards.size() - 1) {
+			cout << " ";
+		}
+	}
 
+	cout << endl;
+}
 
-	Command c;
-	stringstream str;
-	Deck d;
+int main(int argc, char* argv[]) {	
+	GameMaster game;
 	if (argc > 1) {
+		stringstream str;
 		str << argv[1];
 		int seed;
 		str >> seed;
-		d = Deck(seed);
+		game = GameMaster(seed);
 	} else {
-		d = Deck();
+		game = GameMaster();
 	}
 	
+	game.deal();
+
+	cout << "A new round begins. It's player " 
+		 << game.currentPlayerNumber()
+		 << "'s turn to play."
+		 << endl;
+
+	Command c;
+
 	while(true) {
 		cin >> c;
 		switch (c.type) {
 			case QUIT:
 				goto quit;
 			case DECK:
-				d.shuffle();
-				cout << d;
+				cout << game.deck();
 				break;
 			default:
 				break;

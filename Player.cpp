@@ -1,31 +1,41 @@
 #include <vector>
 #include <iostream>
+#include <algorithm>
 #include "Player.h"
 
 using namespace std;
 
-Player::Player(vector<Card> newHand) {
-	_hand = newHand;
-	_score = 0;
-
-}
+Player::Player() {}
 
 vector<Card> Player::hand() const {
 	return _hand;
 }
 
-void Player::incScore(int points) {
-	_score = points;
+vector<Card> Player::discardPile() const {
+	return _discardPile;
 }
 
-int Player::getScore() const {
-	return _score;
+void Player::returnCards() {
+	_discardPile.clear();
+	_hand.clear();
+}
+
+void Player::giveCard(Card card) {
+	_hand.push_back(card);
+}
+
+void Player::discardCard(Card card) {
+	vector<Card>::iterator cardLoc = find(_hand.begin(), _hand.end(), card);
+
+	_hand.erase(cardLoc);
+	_discardPile.push_back(card);
 }
 
 ostream &operator<<(ostream &out, const Player& p) {
-	for (vector<Card>::iterator it = p.hand().begin(); it != p.hand().end(); it++) {
-		out << *it;
-		if (it < p.hand().end()) {
+	vector<Card> playerHand = p.hand();
+	for (int i = 0; i < playerHand.size(); i++) {
+		out << playerHand[i];
+		if (i < playerHand.size() - 1) {
 			out << " ";
 		}
 	}

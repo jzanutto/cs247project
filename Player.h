@@ -6,16 +6,19 @@
 
 class Player {
 public:
-	Player(std::vector<Card> newHand);
+	Player();
+	virtual ~Player() {}
 	std::vector<Card> hand() const;				// getter for player hand
-	virtual Card playCard() = 0;
-	~Player() {}
-	void incScore(int points);				// increases the player's score by the number of points passed
-	int getScore() const;
-
+	std::vector<Card> discardPile() const;
+	virtual void takeTurn() = 0;
+	void returnCards();
+	void giveCard(Card card);
+protected:
+	Card playCard(Card card);
+	void discardCard(Card card);
 private:
 	std::vector<Card> _hand;
-	int _score;
+	std::vector<Card> _discardPile;
 };
 
 std::ostream &operator<<(std::ostream &out, const Player& p);

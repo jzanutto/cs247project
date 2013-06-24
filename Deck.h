@@ -10,8 +10,6 @@ public:
 	Deck(int seed);
 	void shuffle();
 	std::vector<Card> cards() const;	// public getter for the deck
-	Card pop();							// flips the top card on the deck, deals it out and puts it on the bottom
-
 private:
 	void init();						// for constructor delegation purposes
 	void initialShuffle(int seed);
