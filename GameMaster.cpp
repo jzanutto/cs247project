@@ -1,10 +1,9 @@
 #include "GameMaster.h"
 #include "HumanPlayer.h"
 #include <vector>
+#include <iostream>
 
 using namespace std;
-
-const Card GameMaster::SEVEN_OF_SPADES = Card(SPADE, SEVEN);
 
 GameMaster::GameMaster() {}
 
@@ -22,7 +21,7 @@ GameMaster::~GameMaster() {
 void GameMaster::registerPlayer(char playerType, int playerNum) {
 	if (playerNum <= PLAYER_COUNT) {
 		Player *newPlayer = new HumanPlayer();
-		_players[playerNum-1] = newPlayer;
+		_players[playerNum] = newPlayer;
 	}
 }
 
@@ -31,6 +30,7 @@ Deck GameMaster::deck() const {
 }
 
 void GameMaster::deal() {
+	Card sevenOfSpades = Card(SPADE, SEVEN);
 	_deck.shuffle();
 	vector<Card> deckCards = _deck.cards();
 
@@ -40,14 +40,15 @@ void GameMaster::deal() {
 		
 		do {
 			Card c = deckCards[j];
+			//cout << c << endl;
 			p->giveCard(c);
 
-			if(c == SEVEN_OF_SPADES) {
+			if(c == sevenOfSpades) {
 				_startingPlayerNumber = i;
 			}
 
 			j++;
-		} while(j % deckCards.size()/PLAYER_COUNT != 0);
+		} while(j % (deckCards.size()/PLAYER_COUNT) != 0);
 	}
 	_currentPlayerNumber = _startingPlayerNumber;
 }
@@ -57,5 +58,5 @@ int GameMaster::currentPlayerNumber() const {
 }
 
 Player* GameMaster::getPlayer(int playerNumber) const {
-	return _players[--playerNumber];
+	return _players[playerNumber];
 }

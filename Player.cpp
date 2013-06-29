@@ -15,6 +15,18 @@ vector<Card> Player::discardPile() const {
 	return _discardPile;
 }
 
+void Player::printHand() const {
+	cout << "Your hand: ";
+	for(int i = 0; i < _hand.size(); i++) {
+		cout << _hand[i];
+		if(i < _hand.size() - 1) {
+			cout << " ";
+		}
+	}
+
+	cout << endl;
+}
+
 void Player::returnCards() {
 	_discardPile.clear();
 	_hand.clear();

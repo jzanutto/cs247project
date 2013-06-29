@@ -6,47 +6,40 @@
 
 using namespace std;
 
-void printPlayerHand(Player *p) {
-	cout << "Your hand: ";
-	vector<Card> cards = p->hand();
-	for(int i = 0; i < cards.size(); i++) {
-		cout << cards[i];
-		if(i < cards.size() - 1) {
-			cout << " ";
-		}
-	}
-
-	cout << endl;
-}
-
 int main(int argc, char* argv[]) {	
-	GameMaster game;
+	GameMaster *game;
 	if (argc > 1) {
 		stringstream str;
 		str << argv[1];
 		int seed;
 		str >> seed;
-		game = GameMaster(seed);
+		game = new GameMaster(seed);
 	} else {
-		game = GameMaster();
+		game = new GameMaster();
 	}
 	
-	game.deal();
+	for(int i = 0; i < 4; i++) {
+		game->registerPlayer('h', i);
+	}
 
-	cout << "A new round begins. It's player " 
-		 << game.currentPlayerNumber()
-		 << "'s turn to play."
-		 << endl;
+	game->deal();
 
 	Command c;
 
 	while(true) {
+		cout << "A new round begins. It's player " 
+		 << (game->currentPlayerNumber() + 1)
+		 << "'s turn to play."
+		 << endl;
+		Player *currentPlayer = game->getPlayer(game->currentPlayerNumber());
+		currentPlayer->printHand();
+
 		cin >> c;
 		switch (c.type) {
 			case QUIT:
 				goto quit;
 			case DECK:
-				cout << game.deck();
+				cout << game->deck();
 				break;
 			default:
 				break;
@@ -54,5 +47,6 @@ int main(int argc, char* argv[]) {
 	}
 
 quit:
+	delete game;
 	return 0;
 }

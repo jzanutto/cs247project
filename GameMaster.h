@@ -21,7 +21,6 @@ private:
 	Deck _deck;
 	int _startingPlayerNumber;
 	int _currentPlayerNumber;
-	static const Card SEVEN_OF_SPADES;
 };
 
 #endif
