@@ -1,6 +1,7 @@
 #include "GameMaster.h"
 #include "HumanPlayer.h"
-#include <vector>
+#include <iostream>
+#include <algorithm>
 #include <iostream>
 
 using namespace std;
@@ -27,6 +28,10 @@ void GameMaster::registerPlayer(char playerType, int playerNum) {
 
 Deck GameMaster::deck() const {
 	return _deck;
+}
+
+Table GameMaster::table() const {
+	return _table;
 }
 
 void GameMaster::deal() {
@@ -59,4 +64,33 @@ int GameMaster::currentPlayerNumber() const {
 
 Player* GameMaster::getPlayer(int playerNumber) const {
 	return _players[playerNumber];
+}
+
+void GameMaster::printLegalMoves() const {
+	vector<Card> cards = legalMoves();
+	cout << "Legal plays: ";
+
+	for(int i= 0; i < cards.size(); i++) {
+		cout << cards[i];
+		if(i != cards.size() - 1) {
+			cout << " ";
+		}
+	}
+
+	cout << endl;
+}
+
+vector<Card> GameMaster::legalMoves() const {
+	vector<Card> allPossibleMoves = _table.getPossibleMoves();
+	vector<Card> playerHand = _players[_currentPlayerNumber]->hand();
+	vector<Card> validMoves = vector<Card>();
+
+	for(int i = 0; i < playerHand.size(); i++) {
+		Card card = playerHand[i];
+		if(find(allPossibleMoves.begin(), allPossibleMoves.end(), card) != allPossibleMoves.end()) {
+			validMoves.push_back(card);
+		}
+	}
+
+	return validMoves;
 }

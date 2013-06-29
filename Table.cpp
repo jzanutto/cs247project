@@ -4,8 +4,6 @@
 using namespace std;
 
 namespace {
-	void addSortedToDeque(deque<Card>& cards, Card& c);
-
 	void addSortedToDeque(deque<Card>& cards, Card& c) {
 		Card front = cards.front();
 		Card back = cards.back();
@@ -18,11 +16,41 @@ namespace {
 			assert(false);
 		}
 	}
+
+	void addMovesForSuit(vector<Card> &moves, const deque<Card> &playedCards, const Suit &suit) {
+		if (playedCards.empty()) {
+			moves.push_back(Card(suit, SEVEN));
+		} else {
+			Card front = playedCards.front();
+			
+			if(front.getRank() != ACE) {
+				moves.push_back(Card(suit, (Rank)(front.getRank() - 1)));
+			} 
+
+			Card back = playedCards.back();
+
+			if(back.getRank() != KING) {
+				moves.push_back(Card(suit, (Rank)(back.getRank() + 1)));
+			}
+		}
+	}
+
+	void printCardsWithoutSuit(ostream &out, const deque<Card> &cards) {
+		for(int i = 0; i < cards.size(); i++) {
+			out << cards[i].getRank();
+			if(i != cards.size() - 1) {
+				out << " ";
+			}
+		}
+
+		out << endl;
+	}
 }
 
 Table::Table() {}
 
 Table::~Table() {}
+
 
 vector<Card> Table::getPossibleMoves() const {
 	vector<Card> possibleMoves = vector<Card>();
@@ -30,21 +58,10 @@ vector<Card> Table::getPossibleMoves() const {
 	if(_spades.empty()) {
 		possibleMoves.push_back(Card(SPADE, SEVEN));
 	} else {
-		if(_clubs.empty()) {
-			possibleMoves.push_back(Card(CLUB, SEVEN));
-		} else {
-			Card front = _clubs.front();
-
-			if(front.getRank() != ACE) {
-				possibleMoves.push_back(Card(CLUB, (Rank)(front.getRank() - 1)));
-			} 
-
-			Card back = _clubs.back();
-
-			if(back.getRank() != KING) {
-				possibleMoves.push_back(Card(CLUB, (Rank)(back.getRank() + 1)));
-			}
-		}
+		addMovesForSuit(possibleMoves, _clubs, CLUB);
+		addMovesForSuit(possibleMoves, _diamonds, DIAMOND);
+		addMovesForSuit(possibleMoves, _hearts, HEART);
+		addMovesForSuit(possibleMoves, _spades, SPADE);
 	}
 
 	return possibleMoves;
@@ -84,4 +101,22 @@ void Table::placeCard(Card card) {
 		default:
 			break;
 	}
+}
+
+ostream& operator<<(ostream &out, const Table &table) {
+	out << "Cards on the table: " << endl;
+
+	out << "Clubs: ";
+	printCardsWithoutSuit(out, table.clubs());
+
+	out << "Diamonds: ";	
+	printCardsWithoutSuit(out, table.diamonds());
+
+	out << "Hearts: ";	
+	printCardsWithoutSuit(out, table.hearts());
+
+	out << "Spades: ";	
+	printCardsWithoutSuit(out, table.spades());
+
+	return out;
 }

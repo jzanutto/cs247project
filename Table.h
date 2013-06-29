@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <deque>
+#include <iostream>
 #include "Card.h"
 
 class Table {
@@ -21,5 +22,7 @@ class Table {
 		std::deque<Card> _hearts;
 		std::deque<Card> _spades;
 };
+
+std::ostream& operator<<(std::ostream &out, const Table &table);
 
 #endif

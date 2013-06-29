@@ -36,21 +36,22 @@ void Player::giveCard(Card card) {
 	_hand.push_back(card);
 }
 
-void Player::discardCard(Card card) {
-	vector<Card>::iterator cardLoc = find(_hand.begin(), _hand.end(), card);
+Card Player::playCard(Card card) {
+	findAndRemoveCardFromHand(card);
+	return card;
+}
 
-	_hand.erase(cardLoc);
+void Player::discardCard(Card card) {
+	findAndRemoveCardFromHand(card);
 	_discardPile.push_back(card);
 }
 
-ostream &operator<<(ostream &out, const Player& p) {
-	vector<Card> playerHand = p.hand();
-	for (int i = 0; i < playerHand.size(); i++) {
-		out << playerHand[i];
-		if (i < playerHand.size() - 1) {
-			out << " ";
-		}
+void Player::findAndRemoveCardFromHand(Card card) {
+	vector<Card>::iterator cardLoc = find(_hand.begin(), _hand.end(), card);
+	
+	if(cardLoc == _hand.end()) {
+		throw "Illegal play";
+	} else {
+		_hand.erase(cardLoc);
 	}
-	out << endl;
-	return out;
 }

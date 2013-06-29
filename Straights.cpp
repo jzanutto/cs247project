@@ -32,8 +32,10 @@ int main(int argc, char* argv[]) {
 		 << "'s turn to play."
 		 << endl;
 		Player *currentPlayer = game->getPlayer(game->currentPlayerNumber());
+		cout << game->table();
 		currentPlayer->printHand();
-
+		game->printLegalMoves();
+		cout << ">";
 		cin >> c;
 		switch (c.type) {
 			case QUIT:

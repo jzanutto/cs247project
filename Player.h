@@ -20,8 +20,7 @@ protected:
 private:
 	std::vector<Card> _hand;
 	std::vector<Card> _discardPile;
+	void findAndRemoveCardFromHand(Card card);
 };
-
-std::ostream &operator<<(std::ostream &out, const Player& p);
 
 #endif
