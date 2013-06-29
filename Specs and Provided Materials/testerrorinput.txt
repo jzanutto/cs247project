@@ -1,0 +1,19 @@
+h
+c
+c
+c
+play 6D
+discard 6D
+discard 2H
+play 9H
+play 10H
+play 9S
+play 2S
+play QS
+play 8C
+discard AC
+discard AH
+play KH
+play JD
+play KD
+quit
