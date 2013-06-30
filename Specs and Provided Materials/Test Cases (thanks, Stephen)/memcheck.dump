@@ -1,0 +1,5766 @@
+Is player 1 a human(h) or a computer(c)?
+>Is player 2 a human(h) or a computer(c)?
+>Is player 3 a human(h) or a computer(c)?
+>Is player 4 a human(h) or a computer(c)?
+>A new round begins. It's player 3's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 3D 8H AC 6S 9S 8C 3C 7S 7D AS JH 10H JS
+Legal plays: 7S
+>Player 3 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 4D KS 6H 3S 5S AH 9H 10D 10S QH 4C 5D 2H
+Legal plays: 
+>Player 4 discards AH.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 10C 2C 9C 7C KH 2D 8D KD 4H 6C JD 5C QD
+Legal plays: 7C
+>Player 1 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: QS 5H 2S QC AD 8S KC JC 7H 6D 3H 9D 4S
+Legal plays: 8S 7H
+>Player 2 plays 8S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 
+Spades: 7 8
+Your hand: 3D 8H AC 6S 9S 8C 3C 7D AS JH 10H JS
+Legal plays: 6S 9S 8C 7D
+>Player 3 plays 9S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 
+Spades: 7 8 9
+Your hand: 4D KS 6H 3S 5S 9H 10D 10S QH 4C 5D 2H
+Legal plays: 10S
+>Player 4 plays 10S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 
+Spades: 7 8 9 10
+Your hand: 10C 2C 9C KH 2D 8D KD 4H 6C JD 5C QD
+Legal plays: 6C
+>Player 1 plays 6C.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 
+Spades: 7 8 9 10
+Your hand: QS 5H 2S QC AD KC JC 7H 6D 3H 9D 4S
+Legal plays: 7H
+>Player 2 plays 7H.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: 3D 8H AC 6S 8C 3C 7D AS JH 10H JS
+Legal plays: 8H 6S 8C 7D JS
+>Player 3 plays JS.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: 4D KS 6H 3S 5S 9H 10D QH 4C 5D 2H
+Legal plays: 6H
+>Player 4 plays 6H.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 6 7
+Spades: 7 8 9 10 J
+Your hand: 10C 2C 9C KH 2D 8D KD 4H JD 5C QD
+Legal plays: 5C
+>Player 1 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 
+Hearts: 6 7
+Spades: 7 8 9 10 J
+Your hand: QS 5H 2S QC AD KC JC 6D 3H 9D 4S
+Legal plays: QS 5H
+>Player 2 plays QS.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 
+Hearts: 6 7
+Spades: 7 8 9 10 J Q
+Your hand: 3D 8H AC 6S 8C 3C 7D AS JH 10H
+Legal plays: 8H 6S 8C 7D
+>Player 3 plays 8H.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q
+Your hand: 4D KS 3S 5S 9H 10D QH 4C 5D 2H
+Legal plays: KS 9H 4C
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 10C 2C 9C KH 2D 8D KD 4H JD QD
+Legal plays: 
+>Player 1 discards 2C.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 5H 2S QC AD KC JC 6D 3H 9D 4S
+Legal plays: 5H
+>Player 2 plays 5H.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 
+Hearts: 5 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 3D AC 6S 8C 3C 7D AS JH 10H
+Legal plays: 6S 8C 7D
+>Player 3 plays 8C.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 
+Hearts: 5 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 4D 3S 5S 9H 10D QH 4C 5D 2H
+Legal plays: 9H 4C
+>Player 4 plays 9H.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 
+Hearts: 5 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 10C 9C KH 2D 8D KD 4H JD QD
+Legal plays: 9C 4H
+>Player 1 plays 9C.
+Cards on the table: 
+Clubs: 5 6 7 8 9
+Diamonds: 
+Hearts: 5 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 2S QC AD KC JC 6D 3H 9D 4S
+Legal plays: 
+>Player 2 discards AD.
+Cards on the table: 
+Clubs: 5 6 7 8 9
+Diamonds: 
+Hearts: 5 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 3D AC 6S 3C 7D AS JH 10H
+Legal plays: 6S 7D 10H
+>Player 3 plays 10H.
+Cards on the table: 
+Clubs: 5 6 7 8 9
+Diamonds: 
+Hearts: 5 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 4D 3S 5S 10D QH 4C 5D 2H
+Legal plays: 4C
+>Player 4 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9
+Diamonds: 
+Hearts: 5 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 10C KH 2D 8D KD 4H JD QD
+Legal plays: 10C 4H
+>Player 1 plays 10C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10
+Diamonds: 
+Hearts: 5 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 2S QC KC JC 6D 3H 9D 4S
+Legal plays: JC
+>Player 2 plays JC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 
+Hearts: 5 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 3D AC 6S 3C 7D AS JH
+Legal plays: 6S 3C 7D JH
+>Player 3 plays JH.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: 4D 3S 5S 10D QH 5D 2H
+Legal plays: QH
+>Player 4 plays QH.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 7 8 9 10 J Q K
+Your hand: KH 2D 8D KD 4H JD QD
+Legal plays: KH 4H
+>Player 1 plays KH.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2S QC KC 6D 3H 9D 4S
+Legal plays: QC
+>Player 2 plays QC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 3D AC 6S 3C 7D AS
+Legal plays: 6S 3C 7D
+>Player 3 plays 7D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q
+Diamonds: 7
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 4D 3S 5S 10D 5D 2H
+Legal plays: 
+>Player 4 discards 2H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q
+Diamonds: 7
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2D 8D KD 4H JD QD
+Legal plays: 8D 4H
+>Player 1 plays 8D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2S KC 6D 3H 9D 4S
+Legal plays: KC 6D 9D
+>Player 2 plays KC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 3D AC 6S 3C AS
+Legal plays: 6S 3C
+>Player 3 plays 6S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4D 3S 5S 10D 5D
+Legal plays: 5S
+>Player 4 plays 5S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D KD 4H JD QD
+Legal plays: 4H
+>Player 1 plays 4H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2S 6D 3H 9D 4S
+Legal plays: 6D 3H 9D 4S
+>Player 2 plays 9D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3D AC 3C AS
+Legal plays: 3C
+>Player 3 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4D 3S 10D 5D
+Legal plays: 10D
+>Player 4 plays 10D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D KD JD QD
+Legal plays: JD
+>Player 1 plays JD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2S 6D 3H 4S
+Legal plays: 6D 3H 4S
+>Player 2 plays 6D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3D AC AS
+Legal plays: 
+>Player 3 discards AC.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4D 3S 5D
+Legal plays: 5D
+>Player 4 plays 5D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D KD QD
+Legal plays: QD
+>Player 1 plays QD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2S 3H 4S
+Legal plays: 3H 4S
+>Player 2 plays 4S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3D AS
+Legal plays: 
+>Player 3 discards AS.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 4D 3S
+Legal plays: 4D 3S
+>Player 4 plays 4D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2D KD
+Legal plays: KD
+>Player 1 plays KD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2S 3H
+Legal plays: 3H
+>Player 2 plays 3H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3D
+Legal plays: 3D
+>Player 3 plays 3D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3S
+Legal plays: 3S
+>Player 4 plays 3S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 2D
+>Player 1 plays 2D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2S
+Legal plays: 2S
+>Player 2 plays 2S.
+Player 1's discards: 2C
+Player 1's score: 0 + 2 = 2
+Player 2's discards: AD
+Player 2's score: 0 + 1 = 1
+Player 3's discards: AC AS
+Player 3's score: 0 + 2 = 2
+Player 4's discards: AH 2H
+Player 4's score: 0 + 3 = 3
+A new round begins. It's player 1's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 4C JC 3H 7H AC 4H QH 10C 5C 7S AH 6D QS
+Legal plays: 7S
+>Player 1 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 3S 3D 8H 4D 6C JS 2D AD 6H 7D 9S 8C 6S
+Legal plays: 7D 6S
+>Player 2 plays 7D.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 
+Spades: 7
+Your hand: QD 5H KC 9D JH QC 2C 10H 4S 8D KD 9H JD
+Legal plays: 8D
+>Player 3 plays 8D.
+Cards on the table: 
+Clubs: 
+Diamonds: 7 8
+Hearts: 
+Spades: 7
+Your hand: AS KS 3C 10S KH 2H 2S 8S 5S 9C 7C 5D 10D
+Legal plays: 8S 7C
+>Player 4 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 7 8
+Hearts: 
+Spades: 7 8
+Your hand: 4C JC 3H 7H AC 4H QH 10C 5C AH 6D QS
+Legal plays: 7H 6D
+>Player 1 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 7 8
+Hearts: 7
+Spades: 7 8
+Your hand: 3S 3D 8H 4D 6C JS 2D AD 6H 9S 8C 6S
+Legal plays: 8H 6H 9S 6S
+>Player 2 plays 9S.
+Cards on the table: 
+Clubs: 
+Diamonds: 7 8
+Hearts: 7
+Spades: 7 8 9
+Your hand: QD 5H KC 9D JH QC 2C 10H 4S KD 9H JD
+Legal plays: 9D
+>Player 3 plays 9D.
+Cards on the table: 
+Clubs: 
+Diamonds: 7 8 9
+Hearts: 7
+Spades: 7 8 9
+Your hand: AS KS 3C 10S KH 2H 2S 5S 9C 7C 5D 10D
+Legal plays: 10S 7C 10D
+>Player 4 plays 10S.
+Cards on the table: 
+Clubs: 
+Diamonds: 7 8 9
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: 4C JC 3H AC 4H QH 10C 5C AH 6D QS
+Legal plays: 6D
+>Player 1 plays 6D.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: 3S 3D 8H 4D 6C JS 2D AD 6H 8C 6S
+Legal plays: 8H JS 6H 6S
+>Player 2 plays JS.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: QD 5H KC JH QC 2C 10H 4S KD 9H JD
+Legal plays: 
+>Player 3 discards 2C.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: AS KS 3C KH 2H 2S 5S 9C 7C 5D 10D
+Legal plays: 7C 5D 10D
+>Player 4 plays 10D.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: 4C JC 3H AC 4H QH 10C 5C AH QS
+Legal plays: QS
+>Player 1 plays QS.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10
+Hearts: 7
+Spades: 7 8 9 10 J Q
+Your hand: 3S 3D 8H 4D 6C 2D AD 6H 8C 6S
+Legal plays: 8H 6H 6S
+>Player 2 plays 8H.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10
+Hearts: 7 8
+Spades: 7 8 9 10 J Q
+Your hand: QD 5H KC JH QC 10H 4S KD 9H JD
+Legal plays: 9H JD
+>Player 3 plays JD.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10 J
+Hearts: 7 8
+Spades: 7 8 9 10 J Q
+Your hand: AS KS 3C KH 2H 2S 5S 9C 7C 5D
+Legal plays: KS 7C 5D
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10 J
+Hearts: 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 4C JC 3H AC 4H QH 10C 5C AH
+Legal plays: 
+>Player 1 discards AC.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10 J
+Hearts: 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 3S 3D 4D 6C 2D AD 6H 8C 6S
+Legal plays: 6H 6S
+>Player 2 plays 6H.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10 J
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: QD 5H KC JH QC 10H 4S KD 9H
+Legal plays: QD 5H 9H
+>Player 3 plays QD.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: AS 3C KH 2H 2S 5S 9C 7C 5D
+Legal plays: 7C 5D
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 4C JC 3H 4H QH 10C 5C AH
+Legal plays: 
+>Player 1 discards AH.
+Cards on the table: 
+Clubs: 7
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 3S 3D 4D 6C 2D AD 8C 6S
+Legal plays: 6C 8C 6S
+>Player 2 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 5H KC JH QC 10H 4S KD 9H
+Legal plays: 5H KD 9H
+>Player 3 plays KD.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: AS 3C KH 2H 2S 5S 9C 5D
+Legal plays: 9C 5D
+>Player 4 plays 9C.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 4C JC 3H 4H QH 10C 5C
+Legal plays: 10C
+>Player 1 plays 10C.
+Cards on the table: 
+Clubs: 7 8 9 10
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 3S 3D 4D 6C 2D AD 6S
+Legal plays: 6C 6S
+>Player 2 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 5H KC JH QC 10H 4S 9H
+Legal plays: 5H 9H
+>Player 3 plays 9H.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: AS 3C KH 2H 2S 5S 5D
+Legal plays: 5D
+>Player 4 plays 5D.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 4C JC 3H 4H QH 5C
+Legal plays: JC 5C
+>Player 1 plays JC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 3S 3D 4D 2D AD 6S
+Legal plays: 4D 6S
+>Player 2 plays 6S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 5H KC JH QC 10H 4S
+Legal plays: 5H QC 10H
+>Player 3 plays QC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: AS 3C KH 2H 2S 5S
+Legal plays: 5S
+>Player 4 plays 5S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4C 3H 4H QH 5C
+Legal plays: 5C
+>Player 1 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3S 3D 4D 2D AD
+Legal plays: 4D
+>Player 2 plays 4D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5H KC JH 10H 4S
+Legal plays: 5H KC 10H 4S
+>Player 3 plays KC.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AS 3C KH 2H 2S
+Legal plays: 
+>Player 4 discards AS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4C 3H 4H QH
+Legal plays: 4C
+>Player 1 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3S 3D 2D AD
+Legal plays: 3D
+>Player 2 plays 3D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5H JH 10H 4S
+Legal plays: 5H 10H 4S
+>Player 3 plays 10H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3C KH 2H 2S
+Legal plays: 3C
+>Player 4 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3H 4H QH
+Legal plays: 
+>Player 1 discards 3H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3S 2D AD
+Legal plays: 2D
+>Player 2 plays 2D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5H JH 4S
+Legal plays: 5H JH 4S
+>Player 3 plays JH.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10 J
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: KH 2H 2S
+Legal plays: 
+>Player 4 discards 2H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10 J
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4H QH
+Legal plays: QH
+>Player 1 plays QH.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10 J Q
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3S AD
+Legal plays: AD
+>Player 2 plays AD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: A 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10 J Q
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5H 4S
+Legal plays: 5H 4S
+>Player 3 plays 5H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: A 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: KH 2S
+Legal plays: KH
+>Player 4 plays KH.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: A 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4H
+Legal plays: 4H
+>Player 1 plays 4H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: A 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3S
+Legal plays: 
+>Player 2 discards 3S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: A 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4S
+Legal plays: 4S
+>Player 3 plays 4S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: A 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2S
+Legal plays: 
+>Player 4 discards 2S.
+Player 1's discards: AC AH 3H
+Player 1's score: 2 + 5 = 7
+Player 2's discards: 3S
+Player 2's score: 1 + 3 = 4
+Player 3's discards: 2C
+Player 3's score: 2 + 2 = 4
+Player 4's discards: AS 2H 2S
+Player 4's score: 3 + 5 = 8
+A new round begins. It's player 4's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: JD KH 7C KD 8H 8C AD 7S AS QC QH 3D 6D
+Legal plays: 7S
+>Player 4 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 4D 7H 2S AC 5C 10D 9D KC QD AH JC 6C 4C
+Legal plays: 7H
+>Player 1 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: JS QS 4H 2C KS 10C 3H 5S 5H 8S 9S 7D 3S
+Legal plays: 8S 7D
+>Player 2 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 8D 9C 2D 10S 6S 5D 3C 2H 10H 9H JH 6H 4S
+Legal plays: 6S 6H
+>Player 3 plays 6S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 6 7 8
+Your hand: JD KH 7C KD 8H 8C AD AS QC QH 3D 6D
+Legal plays: 7C 8H
+>Player 4 plays 8H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 6 7 8
+Your hand: 4D 2S AC 5C 10D 9D KC QD AH JC 6C 4C
+Legal plays: 
+>Player 1 discards AC.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 6 7 8
+Your hand: JS QS 4H 2C KS 10C 3H 5S 5H 9S 7D 3S
+Legal plays: 5S 9S 7D
+>Player 2 plays 9S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 6 7 8 9
+Your hand: 8D 9C 2D 10S 5D 3C 2H 10H 9H JH 6H 4S
+Legal plays: 10S 9H 6H
+>Player 3 plays 10S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 6 7 8 9 10
+Your hand: JD KH 7C KD 8C AD AS QC QH 3D 6D
+Legal plays: 7C
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8
+Spades: 6 7 8 9 10
+Your hand: 4D 2S 5C 10D 9D KC QD AH JC 6C 4C
+Legal plays: 6C
+>Player 1 plays 6C.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8
+Spades: 6 7 8 9 10
+Your hand: JS QS 4H 2C KS 10C 3H 5S 5H 7D 3S
+Legal plays: JS 5S 7D
+>Player 2 plays JS.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8
+Spades: 6 7 8 9 10 J
+Your hand: 8D 9C 2D 5D 3C 2H 10H 9H JH 6H 4S
+Legal plays: 9H 6H
+>Player 3 plays 9H.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J
+Your hand: JD KH KD 8C AD AS QC QH 3D 6D
+Legal plays: 8C
+>Player 4 plays 8C.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J
+Your hand: 4D 2S 5C 10D 9D KC QD AH JC 4C
+Legal plays: 5C
+>Player 1 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J
+Your hand: QS 4H 2C KS 10C 3H 5S 5H 7D 3S
+Legal plays: QS 5S 7D
+>Player 2 plays QS.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J Q
+Your hand: 8D 9C 2D 5D 3C 2H 10H JH 6H 4S
+Legal plays: 9C 10H 6H
+>Player 3 plays 10H.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 6 7 8 9 10 J Q
+Your hand: JD KH KD AD AS QC QH 3D 6D
+Legal plays: 
+>Player 4 discards AD.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 6 7 8 9 10 J Q
+Your hand: 4D 2S 10D 9D KC QD AH JC 4C
+Legal plays: 4C
+>Player 1 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 6 7 8 9 10 J Q
+Your hand: 4H 2C KS 10C 3H 5S 5H 7D 3S
+Legal plays: KS 5S 7D
+>Player 2 plays KS.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 6 7 8 9 10 J Q K
+Your hand: 8D 9C 2D 5D 3C 2H JH 6H 4S
+Legal plays: 9C 3C JH 6H
+>Player 3 plays JH.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9 10 J
+Spades: 6 7 8 9 10 J Q K
+Your hand: JD KH KD AS QC QH 3D 6D
+Legal plays: QH
+>Player 4 plays QH.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4D 2S 10D 9D KC QD AH JC
+Legal plays: 
+>Player 1 discards AH.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 
+Hearts: 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4H 2C 10C 3H 5S 5H 7D 3S
+Legal plays: 5S 7D
+>Player 2 plays 7D.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 7
+Hearts: 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: 8D 9C 2D 5D 3C 2H 6H 4S
+Legal plays: 8D 9C 3C 6H
+>Player 3 plays 9C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9
+Diamonds: 7
+Hearts: 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: JD KH KD AS QC 3D 6D
+Legal plays: KH 6D
+>Player 4 plays KH.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9
+Diamonds: 7
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4D 2S 10D 9D KC QD JC
+Legal plays: 
+>Player 1 discards 2S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9
+Diamonds: 7
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4H 2C 10C 3H 5S 5H 3S
+Legal plays: 10C 5S
+>Player 2 plays 10C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10
+Diamonds: 7
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 8D 2D 5D 3C 2H 6H 4S
+Legal plays: 8D 3C 6H
+>Player 3 plays 8D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10
+Diamonds: 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: JD KD AS QC 3D 6D
+Legal plays: 6D
+>Player 4 plays 6D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10
+Diamonds: 6 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4D 10D 9D KC QD JC
+Legal plays: 9D JC
+>Player 1 plays JC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 6 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4H 2C 3H 5S 5H 3S
+Legal plays: 5S
+>Player 2 plays 5S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 6 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D 5D 3C 2H 6H 4S
+Legal plays: 5D 3C 6H 4S
+>Player 3 plays 6H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 6 7 8
+Hearts: 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: JD KD AS QC 3D
+Legal plays: QC
+>Player 4 plays QC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q
+Diamonds: 6 7 8
+Hearts: 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4D 10D 9D KC QD
+Legal plays: 9D KC
+>Player 1 plays KC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8
+Hearts: 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4H 2C 3H 5H 3S
+Legal plays: 5H
+>Player 2 plays 5H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D 5D 3C 2H 4S
+Legal plays: 5D 3C 4S
+>Player 3 plays 5D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: JD KD AS 3D
+Legal plays: 
+>Player 4 discards AS.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4D 10D 9D QD
+Legal plays: 4D 9D
+>Player 1 plays 9D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4H 2C 3H 3S
+Legal plays: 4H
+>Player 2 plays 4H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D 3C 2H 4S
+Legal plays: 3C 4S
+>Player 3 plays 4S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: JD KD 3D
+Legal plays: 
+>Player 4 discards 3D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 4D 10D QD
+Legal plays: 4D 10D
+>Player 1 plays 10D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2C 3H 3S
+Legal plays: 3H 3S
+>Player 2 plays 3H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 3C 2H
+Legal plays: 3C 2H
+>Player 3 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: JD KD
+Legal plays: JD
+>Player 4 plays JD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 4D QD
+Legal plays: 4D QD
+>Player 1 plays QD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2C 3S
+Legal plays: 2C 3S
+>Player 2 plays 3S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 2H
+Legal plays: 2H
+>Player 3 plays 2H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KD
+Legal plays: KD
+>Player 4 plays KD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 4D
+Legal plays: 4D
+>Player 1 plays 4D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C
+Legal plays: 2C
+>Player 2 plays 2C.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 
+>Player 3 discards 2D.
+Player 1's discards: AC AH 2S
+Player 1's score: 7 + 4 = 11
+Player 2's discards: 
+Player 2's score: 4 + 0 = 4
+Player 3's discards: 2D
+Player 3's score: 4 + 2 = 6
+Player 4's discards: AD AS 3D
+Player 4's score: 8 + 5 = 13
+A new round begins. It's player 4's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 7H KD 6H 7S 8D 10C KS 5H 8H QC 3D QD QH
+Legal plays: 7S
+>Player 4 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: AC AD JD 5S 10S 7D 8C 10H 4D JH 3H 9S 2S
+Legal plays: 7D
+>Player 1 plays 7D.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 
+Spades: 7
+Your hand: 5C KH 4H 4S JC 3S AH 8S 5D KC 2D 9D 2C
+Legal plays: 8S
+>Player 2 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 
+Spades: 7 8
+Your hand: 6D 7C JS AS 4C 10D 6S QS 6C 3C 2H 9C 9H
+Legal plays: 6D 7C 6S
+>Player 3 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 
+Spades: 7 8
+Your hand: 7H KD 6H 8D 10C KS 5H 8H QC 3D QD QH
+Legal plays: 7H 8D
+>Player 4 plays 8D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7 8
+Hearts: 
+Spades: 7 8
+Your hand: AC AD JD 5S 10S 8C 10H 4D JH 3H 9S 2S
+Legal plays: 8C 9S
+>Player 1 plays 9S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7 8
+Hearts: 
+Spades: 7 8 9
+Your hand: 5C KH 4H 4S JC 3S AH 5D KC 2D 9D 2C
+Legal plays: 9D
+>Player 2 plays 9D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7 8 9
+Hearts: 
+Spades: 7 8 9
+Your hand: 6D JS AS 4C 10D 6S QS 6C 3C 2H 9C 9H
+Legal plays: 6D 10D 6S 6C
+>Player 3 plays 10D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7 8 9 10
+Hearts: 
+Spades: 7 8 9
+Your hand: 7H KD 6H 10C KS 5H 8H QC 3D QD QH
+Legal plays: 7H
+>Player 4 plays 7H.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7 8 9 10
+Hearts: 7
+Spades: 7 8 9
+Your hand: AC AD JD 5S 10S 8C 10H 4D JH 3H 2S
+Legal plays: JD 10S 8C
+>Player 1 plays JD.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7 8 9 10 J
+Hearts: 7
+Spades: 7 8 9
+Your hand: 5C KH 4H 4S JC 3S AH 5D KC 2D 2C
+Legal plays: 
+>Player 2 discards AH.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7 8 9 10 J
+Hearts: 7
+Spades: 7 8 9
+Your hand: 6D JS AS 4C 6S QS 6C 3C 2H 9C 9H
+Legal plays: 6D 6S 6C
+>Player 3 plays 6D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 6 7 8 9 10 J
+Hearts: 7
+Spades: 7 8 9
+Your hand: KD 6H 10C KS 5H 8H QC 3D QD QH
+Legal plays: 6H 8H QD
+>Player 4 plays QD.
+Cards on the table: 
+Clubs: 7
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 7
+Spades: 7 8 9
+Your hand: AC AD 5S 10S 8C 10H 4D JH 3H 2S
+Legal plays: 10S 8C
+>Player 1 plays 10S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: 5C KH 4H 4S JC 3S 5D KC 2D 2C
+Legal plays: 5D
+>Player 2 plays 5D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: JS AS 4C 6S QS 6C 3C 2H 9C 9H
+Legal plays: JS 6S 6C
+>Player 3 plays JS.
+Cards on the table: 
+Clubs: 7
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: KD 6H 10C KS 5H 8H QC 3D QH
+Legal plays: KD 6H 8H
+>Player 4 plays KD.
+Cards on the table: 
+Clubs: 7
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: AC AD 5S 8C 10H 4D JH 3H 2S
+Legal plays: 8C 4D
+>Player 1 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: 5C KH 4H 4S JC 3S KC 2D 2C
+Legal plays: 
+>Player 2 discards 2D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: AS 4C 6S QS 6C 3C 2H 9C 9H
+Legal plays: 6S QS 6C 9C
+>Player 3 plays QS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q
+Your hand: 6H 10C KS 5H 8H QC 3D QH
+Legal plays: 6H KS 8H
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: AC AD 5S 10H 4D JH 3H 2S
+Legal plays: 4D
+>Player 1 plays 4D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: 5C KH 4H 4S JC 3S KC 2C
+Legal plays: 
+>Player 2 discards 2C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: AS 4C 6S 6C 3C 2H 9C 9H
+Legal plays: 6S 6C 9C
+>Player 3 plays 9C.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: 6H 10C 5H 8H QC 3D QH
+Legal plays: 6H 10C 8H 3D
+>Player 4 plays 10C.
+Cards on the table: 
+Clubs: 7 8 9 10
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: AC AD 5S 10H JH 3H 2S
+Legal plays: 
+>Player 1 discards AC.
+Cards on the table: 
+Clubs: 7 8 9 10
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: 5C KH 4H 4S JC 3S KC
+Legal plays: JC
+>Player 2 plays JC.
+Cards on the table: 
+Clubs: 7 8 9 10 J
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: AS 4C 6S 6C 3C 2H 9H
+Legal plays: 6S 6C
+>Player 3 plays 6S.
+Cards on the table: 
+Clubs: 7 8 9 10 J
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 6 7 8 9 10 J Q K
+Your hand: 6H 5H 8H QC 3D QH
+Legal plays: 6H 8H QC 3D
+>Player 4 plays QC.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 6 7 8 9 10 J Q K
+Your hand: AD 5S 10H JH 3H 2S
+Legal plays: 5S
+>Player 1 plays 5S.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5C KH 4H 4S 3S KC
+Legal plays: 4S KC
+>Player 2 plays KC.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AS 4C 6C 3C 2H 9H
+Legal plays: 6C
+>Player 3 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 6H 5H 8H 3D QH
+Legal plays: 6H 8H 3D
+>Player 4 plays 8H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7 8
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AD 10H JH 3H 2S
+Legal plays: 
+>Player 1 discards AD.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7 8
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5C KH 4H 4S 3S
+Legal plays: 5C 4S
+>Player 2 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7 8
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AS 4C 3C 2H 9H
+Legal plays: 4C 9H
+>Player 3 plays 9H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 6H 5H 3D QH
+Legal plays: 6H 3D
+>Player 4 plays 6H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 10H JH 3H 2S
+Legal plays: 10H
+>Player 1 plays 10H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: KH 4H 4S 3S
+Legal plays: 4S
+>Player 2 plays 4S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AS 4C 3C 2H
+Legal plays: 4C
+>Player 3 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 5H 3D QH
+Legal plays: 5H 3D
+>Player 4 plays 5H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: JH 3H 2S
+Legal plays: JH
+>Player 1 plays JH.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: KH 4H 3S
+Legal plays: 4H 3S
+>Player 2 plays 4H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AS 3C 2H
+Legal plays: 3C
+>Player 3 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3D QH
+Legal plays: 3D QH
+>Player 4 plays QH.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3H 2S
+Legal plays: 3H
+>Player 1 plays 3H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: KH 3S
+Legal plays: KH 3S
+>Player 2 plays KH.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AS 2H
+Legal plays: 2H
+>Player 3 plays 2H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3D
+Legal plays: 3D
+>Player 4 plays 3D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2S
+Legal plays: 
+>Player 1 discards 2S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3S
+Legal plays: 3S
+>Player 2 plays 3S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AS
+Legal plays: 
+>Player 3 discards AS.
+Player 1's discards: AC AD 2S
+Player 1's score: 11 + 4 = 15
+Player 2's discards: AH 2D 2C
+Player 2's score: 4 + 5 = 9
+Player 3's discards: AS
+Player 3's score: 6 + 1 = 7
+Player 4's discards: 
+Player 4's score: 13 + 0 = 13
+A new round begins. It's player 3's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 6H 7S AD 6C 2D 10S AH KH KD 7H 9D 4D 2S
+Legal plays: 7S
+>Player 3 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 5H QH 3S 4S JD 8C 8D 6D 10C 7C 3D 2C KS
+Legal plays: 7C
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 3H JS 2H JH 7D KC 9S QS 9C 8H 5C 4H 9H
+Legal plays: 7D
+>Player 1 plays 7D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 
+Spades: 7
+Your hand: JC AC 5S 10H 3C 10D 5D 8S QC 6S QD 4C AS
+Legal plays: 8S 6S
+>Player 2 plays 8S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 
+Spades: 7 8
+Your hand: 6H AD 6C 2D 10S AH KH KD 7H 9D 4D 2S
+Legal plays: 6C 7H
+>Player 3 plays 7H.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 7
+Spades: 7 8
+Your hand: 5H QH 3S 4S JD 8C 8D 6D 10C 3D 2C KS
+Legal plays: 8C 8D 6D
+>Player 4 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7
+Spades: 7 8
+Your hand: 3H JS 2H JH KC 9S QS 9C 8H 5C 4H 9H
+Legal plays: 9S 9C 8H
+>Player 1 plays 9S.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9
+Your hand: JC AC 5S 10H 3C 10D 5D QC 6S QD 4C AS
+Legal plays: 6S
+>Player 2 plays 6S.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7
+Spades: 6 7 8 9
+Your hand: 6H AD 6C 2D 10S AH KH KD 9D 4D 2S
+Legal plays: 6H 6C 10S
+>Player 3 plays 10S.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7
+Spades: 6 7 8 9 10
+Your hand: 5H QH 3S 4S JD 8D 6D 10C 3D 2C KS
+Legal plays: 8D 6D
+>Player 4 plays 8D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7
+Spades: 6 7 8 9 10
+Your hand: 3H JS 2H JH KC QS 9C 8H 5C 4H 9H
+Legal plays: JS 9C 8H
+>Player 1 plays JS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7
+Spades: 6 7 8 9 10 J
+Your hand: JC AC 5S 10H 3C 10D 5D QC QD 4C AS
+Legal plays: 5S
+>Player 2 plays 5S.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7
+Spades: 5 6 7 8 9 10 J
+Your hand: 6H AD 6C 2D AH KH KD 9D 4D 2S
+Legal plays: 6H 6C 9D
+>Player 3 plays 9D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9
+Hearts: 7
+Spades: 5 6 7 8 9 10 J
+Your hand: 5H QH 3S 4S JD 6D 10C 3D 2C KS
+Legal plays: 4S 6D
+>Player 4 plays 6D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9
+Hearts: 7
+Spades: 5 6 7 8 9 10 J
+Your hand: 3H 2H JH KC QS 9C 8H 5C 4H 9H
+Legal plays: QS 9C 8H
+>Player 1 plays QS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9
+Hearts: 7
+Spades: 5 6 7 8 9 10 J Q
+Your hand: JC AC 10H 3C 10D 5D QC QD 4C AS
+Legal plays: 10D 5D
+>Player 2 plays 10D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9 10
+Hearts: 7
+Spades: 5 6 7 8 9 10 J Q
+Your hand: 6H AD 6C 2D AH KH KD 4D 2S
+Legal plays: 6H 6C
+>Player 3 plays 6H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9 10
+Hearts: 6 7
+Spades: 5 6 7 8 9 10 J Q
+Your hand: 5H QH 3S 4S JD 10C 3D 2C KS
+Legal plays: 5H 4S JD KS
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9 10
+Hearts: 6 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H JH KC 9C 8H 5C 4H 9H
+Legal plays: 9C 8H
+>Player 1 plays 9C.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 6 7 8 9 10
+Hearts: 6 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: JC AC 10H 3C 5D QC QD 4C AS
+Legal plays: 5D
+>Player 2 plays 5D.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 5 6 7 8 9 10
+Hearts: 6 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AD 6C 2D AH KH KD 4D 2S
+Legal plays: 6C 4D
+>Player 3 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 5 6 7 8 9 10
+Hearts: 6 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5H QH 3S 4S JD 10C 3D 2C
+Legal plays: 5H 4S JD 10C
+>Player 4 plays JD.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 5 6 7 8 9 10 J
+Hearts: 6 7
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H JH KC 8H 5C 4H 9H
+Legal plays: 8H 5C
+>Player 1 plays 8H.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 5 6 7 8 9 10 J
+Hearts: 6 7 8
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: JC AC 10H 3C QC QD 4C AS
+Legal plays: QD
+>Player 2 plays QD.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 6 7 8
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AD 2D AH KH KD 4D 2S
+Legal plays: KD 4D
+>Player 3 plays KD.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5H QH 3S 4S 10C 3D 2C
+Legal plays: 5H 4S 10C
+>Player 4 plays 10C.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H JH KC 5C 4H 9H
+Legal plays: 5C 9H
+>Player 1 plays 9H.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: JC AC 10H 3C QC 4C AS
+Legal plays: JC 10H
+>Player 2 plays JC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AD 2D AH KH 4D 2S
+Legal plays: 4D
+>Player 3 plays 4D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 5H QH 3S 4S 3D 2C
+Legal plays: 5H 4S 3D
+>Player 4 plays 5H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H JH KC 5C 4H
+Legal plays: 5C 4H
+>Player 1 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AC 10H 3C QC 4C AS
+Legal plays: 10H QC 4C
+>Player 2 plays QC.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AD 2D AH KH 2S
+Legal plays: 
+>Player 3 discards AD.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: QH 3S 4S 3D 2C
+Legal plays: 4S 3D
+>Player 4 plays 4S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H JH KC 4H
+Legal plays: KC 4H
+>Player 1 plays KC.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AC 10H 3C 4C AS
+Legal plays: 10H 4C
+>Player 2 plays 10H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2D AH KH 2S
+Legal plays: 
+>Player 3 discards AH.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: QH 3S 3D 2C
+Legal plays: 3S 3D
+>Player 4 plays 3S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H JH 4H
+Legal plays: JH 4H
+>Player 1 plays JH.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AC 3C 4C AS
+Legal plays: 4C
+>Player 2 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D KH 2S
+Legal plays: 2S
+>Player 3 plays 2S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: QH 3D 2C
+Legal plays: QH 3D
+>Player 4 plays QH.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H 4H
+Legal plays: 4H
+>Player 1 plays 4H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AC 3C AS
+Legal plays: 3C AS
+>Player 2 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D KH
+Legal plays: KH
+>Player 3 plays KH.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3D 2C
+Legal plays: 3D 2C
+>Player 4 plays 3D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3H 2H
+Legal plays: 3H
+>Player 1 plays 3H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AC AS
+Legal plays: AS
+>Player 2 plays AS.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: A 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 2D
+>Player 3 plays 2D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: A 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C
+Legal plays: 2C
+>Player 4 plays 2C.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: A 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2H
+Legal plays: 2H
+>Player 1 plays 2H.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: A 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AC
+Legal plays: AC
+>Player 2 plays AC.
+Player 1's discards: 
+Player 1's score: 15 + 0 = 15
+Player 2's discards: 
+Player 2's score: 9 + 0 = 9
+Player 3's discards: AD AH
+Player 3's score: 7 + 2 = 9
+Player 4's discards: 
+Player 4's score: 13 + 0 = 13
+A new round begins. It's player 4's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 8C KD 3D 10H 10D 6H 2S 7S AD 3C 5S 4H 4D
+Legal plays: 7S
+>Player 4 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: QH 9C 2D 10C 9H QC 8S JD JS QD 3H 9S 10S
+Legal plays: 8S
+>Player 1 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7 8
+Your hand: 5D QS KS 7H 8H 2H 3S AH 5H 4C 4S KC JH
+Legal plays: 7H
+>Player 2 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 2C JC 6C 9D 7C AS AC 5C 7D 6D 6S KH 8D
+Legal plays: 7C 7D 6S
+>Player 3 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 8C KD 3D 10H 10D 6H 2S AD 3C 5S 4H 4D
+Legal plays: 8C 6H
+>Player 4 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: QH 9C 2D 10C 9H QC JD JS QD 3H 9S 10S
+Legal plays: 9C 9S
+>Player 1 plays 9C.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 5D QS KS 8H 2H 3S AH 5H 4C 4S KC JH
+Legal plays: 8H
+>Player 2 plays 8H.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8
+Your hand: 2C JC 6C 9D AS AC 5C 7D 6D 6S KH 8D
+Legal plays: 6C 7D 6S
+>Player 3 plays 7D.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 7
+Hearts: 7 8
+Spades: 7 8
+Your hand: KD 3D 10H 10D 6H 2S AD 3C 5S 4H 4D
+Legal plays: 6H
+>Player 4 plays 6H.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 7
+Hearts: 6 7 8
+Spades: 7 8
+Your hand: QH 2D 10C 9H QC JD JS QD 3H 9S 10S
+Legal plays: 10C 9H 9S
+>Player 1 plays 10C.
+Cards on the table: 
+Clubs: 7 8 9 10
+Diamonds: 7
+Hearts: 6 7 8
+Spades: 7 8
+Your hand: 5D QS KS 2H 3S AH 5H 4C 4S KC JH
+Legal plays: 5H
+>Player 2 plays 5H.
+Cards on the table: 
+Clubs: 7 8 9 10
+Diamonds: 7
+Hearts: 5 6 7 8
+Spades: 7 8
+Your hand: 2C JC 6C 9D AS AC 5C 6D 6S KH 8D
+Legal plays: JC 6C 6D 6S 8D
+>Player 3 plays JC.
+Cards on the table: 
+Clubs: 7 8 9 10 J
+Diamonds: 7
+Hearts: 5 6 7 8
+Spades: 7 8
+Your hand: KD 3D 10H 10D 2S AD 3C 5S 4H 4D
+Legal plays: 4H
+>Player 4 plays 4H.
+Cards on the table: 
+Clubs: 7 8 9 10 J
+Diamonds: 7
+Hearts: 4 5 6 7 8
+Spades: 7 8
+Your hand: QH 2D 9H QC JD JS QD 3H 9S 10S
+Legal plays: 9H QC 3H 9S
+>Player 1 plays QC.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q
+Diamonds: 7
+Hearts: 4 5 6 7 8
+Spades: 7 8
+Your hand: 5D QS KS 2H 3S AH 4C 4S KC JH
+Legal plays: KC
+>Player 2 plays KC.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 4 5 6 7 8
+Spades: 7 8
+Your hand: 2C 6C 9D AS AC 5C 6D 6S KH 8D
+Legal plays: 6C 6D 6S 8D
+>Player 3 plays 8D.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 4 5 6 7 8
+Spades: 7 8
+Your hand: KD 3D 10H 10D 2S AD 3C 5S 4D
+Legal plays: 
+>Player 4 discards AD.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 4 5 6 7 8
+Spades: 7 8
+Your hand: QH 2D 9H JD JS QD 3H 9S 10S
+Legal plays: 9H 3H 9S
+>Player 1 plays 9H.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 4 5 6 7 8 9
+Spades: 7 8
+Your hand: 5D QS KS 2H 3S AH 4C 4S JH
+Legal plays: 
+>Player 2 discards AH.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 4 5 6 7 8 9
+Spades: 7 8
+Your hand: 2C 6C 9D AS AC 5C 6D 6S KH
+Legal plays: 6C 9D 6D 6S
+>Player 3 plays 9D.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9
+Spades: 7 8
+Your hand: KD 3D 10H 10D 2S 3C 5S 4D
+Legal plays: 10H 10D
+>Player 4 plays 10H.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9 10
+Spades: 7 8
+Your hand: QH 2D JD JS QD 3H 9S 10S
+Legal plays: 3H 9S
+>Player 1 plays 9S.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9 10
+Spades: 7 8 9
+Your hand: 5D QS KS 2H 3S 4C 4S JH
+Legal plays: JH
+>Player 2 plays JH.
+Cards on the table: 
+Clubs: 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9 10 J
+Spades: 7 8 9
+Your hand: 2C 6C AS AC 5C 6D 6S KH
+Legal plays: 6C 6D 6S
+>Player 3 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9 10 J
+Spades: 7 8 9
+Your hand: KD 3D 10D 2S 3C 5S 4D
+Legal plays: 10D
+>Player 4 plays 10D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J
+Spades: 7 8 9
+Your hand: QH 2D JD JS QD 3H 10S
+Legal plays: QH JD 3H 10S
+>Player 1 plays QH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q
+Spades: 7 8 9
+Your hand: 5D QS KS 2H 3S 4C 4S
+Legal plays: 
+>Player 2 discards 2H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q
+Spades: 7 8 9
+Your hand: 2C AS AC 5C 6D 6S KH
+Legal plays: 5C 6D 6S KH
+>Player 3 plays KH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: KD 3D 2S 3C 5S 4D
+Legal plays: 
+>Player 4 discards 2S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: 2D JD JS QD 3H 10S
+Legal plays: JD 3H 10S
+>Player 1 plays JD.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: 5D QS KS 3S 4C 4S
+Legal plays: 
+>Player 2 discards 3S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: 2C AS AC 5C 6D 6S
+Legal plays: 5C 6D 6S
+>Player 3 plays 6D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: KD 3D 3C 5S 4D
+Legal plays: 
+>Player 4 discards 3D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: 2D JS QD 3H 10S
+Legal plays: QD 3H 10S
+>Player 1 plays QD.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: 5D QS KS 4C 4S
+Legal plays: 5D
+>Player 2 plays 5D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 7 8 9
+Your hand: 2C AS AC 5C 6S
+Legal plays: 5C 6S
+>Player 3 plays 6S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9
+Your hand: KD 3C 5S 4D
+Legal plays: KD 5S 4D
+>Player 4 plays KD.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9
+Your hand: 2D JS 3H 10S
+Legal plays: 3H 10S
+>Player 1 plays 10S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: QS KS 4C 4S
+Legal plays: 
+>Player 2 discards 4C.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: 2C AS AC 5C
+Legal plays: 5C
+>Player 3 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: 3C 5S 4D
+Legal plays: 5S 4D
+>Player 4 plays 5S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10
+Your hand: 2D JS 3H
+Legal plays: JS 3H
+>Player 1 plays JS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J
+Your hand: QS KS 4S
+Legal plays: QS 4S
+>Player 2 plays QS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q
+Your hand: 2C AS AC
+Legal plays: 
+>Player 3 discards AS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q
+Your hand: 3C 4D
+Legal plays: 4D
+>Player 4 plays 4D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q
+Your hand: 2D 3H
+Legal plays: 3H
+>Player 1 plays 3H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q
+Your hand: KS 4S
+Legal plays: KS 4S
+>Player 2 plays KS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2C AC
+Legal plays: 
+>Player 3 discards AC.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3C
+Legal plays: 
+>Player 4 discards 3C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 
+>Player 1 discards 2D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4S
+Legal plays: 4S
+>Player 2 plays 4S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2C
+Legal plays: 
+>Player 3 discards 2C.
+Player 1's discards: 2D
+Player 1's score: 15 + 2 = 17
+Player 2's discards: AH 2H 3S 4C
+Player 2's score: 9 + 10 = 19
+Player 3's discards: AS AC 2C
+Player 3's score: 9 + 4 = 13
+Player 4's discards: AD 2S 3D 3C
+Player 4's score: 13 + 9 = 22
+A new round begins. It's player 2's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 10S 8C AD 7S JS 7D QH 7C QC 4D 10C 10H QS
+Legal plays: 7S
+>Player 2 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: QD 6H KS 7H 5D JH 3D 5S 6D 2H JC AC 3H
+Legal plays: 7H
+>Player 3 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: KD KC 3S 8D 2C 8H 5H 4H 10D 6S 9C 2S 9S
+Legal plays: 8H 6S
+>Player 4 plays 8H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 7
+Your hand: 4S 9H AH KH 2D AS 6C 8S 9D 3C 4C 5C JD
+Legal plays: 9H 8S
+>Player 1 plays 9H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7
+Your hand: 10S 8C AD JS 7D QH 7C QC 4D 10C 10H QS
+Legal plays: 7D 7C 10H
+>Player 2 plays 10H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 7
+Your hand: QD 6H KS 5D JH 3D 5S 6D 2H JC AC 3H
+Legal plays: 6H JH
+>Player 3 plays JH.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9 10 J
+Spades: 7
+Your hand: KD KC 3S 8D 2C 5H 4H 10D 6S 9C 2S 9S
+Legal plays: 6S
+>Player 4 plays 6S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9 10 J
+Spades: 6 7
+Your hand: 4S AH KH 2D AS 6C 8S 9D 3C 4C 5C JD
+Legal plays: 8S
+>Player 1 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9 10 J
+Spades: 6 7 8
+Your hand: 10S 8C AD JS 7D QH 7C QC 4D 10C QS
+Legal plays: 7D QH 7C
+>Player 2 plays QH.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9 10 J Q
+Spades: 6 7 8
+Your hand: QD 6H KS 5D 3D 5S 6D 2H JC AC 3H
+Legal plays: 6H 5S
+>Player 3 plays 6H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 6 7 8 9 10 J Q
+Spades: 6 7 8
+Your hand: KD KC 3S 8D 2C 5H 4H 10D 9C 2S 9S
+Legal plays: 5H 9S
+>Player 4 plays 9S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 6 7 8 9 10 J Q
+Spades: 6 7 8 9
+Your hand: 4S AH KH 2D AS 6C 9D 3C 4C 5C JD
+Legal plays: KH
+>Player 1 plays KH.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9
+Your hand: 10S 8C AD JS 7D 7C QC 4D 10C QS
+Legal plays: 10S 7D 7C
+>Player 2 plays 10S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: QD KS 5D 3D 5S 6D 2H JC AC 3H
+Legal plays: 5S
+>Player 3 plays 5S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10
+Your hand: KD KC 3S 8D 2C 5H 4H 10D 9C 2S
+Legal plays: 5H
+>Player 4 plays 5H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10
+Your hand: 4S AH 2D AS 6C 9D 3C 4C 5C JD
+Legal plays: 4S
+>Player 1 plays 4S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10
+Your hand: 8C AD JS 7D 7C QC 4D 10C QS
+Legal plays: JS 7D 7C
+>Player 2 plays JS.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J
+Your hand: QD KS 5D 3D 6D 2H JC AC 3H
+Legal plays: 
+>Player 3 discards AC.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J
+Your hand: KD KC 3S 8D 2C 4H 10D 9C 2S
+Legal plays: 3S 4H
+>Player 4 plays 4H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J
+Your hand: AH 2D AS 6C 9D 3C 4C 5C JD
+Legal plays: 
+>Player 1 discards AH.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J
+Your hand: 8C AD 7D 7C QC 4D 10C QS
+Legal plays: 7D 7C QS
+>Player 2 plays QS.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q
+Your hand: QD KS 5D 3D 6D 2H JC 3H
+Legal plays: KS 3H
+>Player 3 plays KS.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: KD KC 3S 8D 2C 10D 9C 2S
+Legal plays: 3S
+>Player 4 plays 3S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D AS 6C 9D 3C 4C 5C JD
+Legal plays: 
+>Player 1 discards AS.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 8C AD 7D 7C QC 4D 10C
+Legal plays: 7D 7C
+>Player 2 plays 7D.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: QD 5D 3D 6D 2H JC 3H
+Legal plays: 6D 3H
+>Player 3 plays 6D.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KD KC 8D 2C 10D 9C 2S
+Legal plays: 8D 2S
+>Player 4 plays 8D.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 6C 9D 3C 4C 5C JD
+Legal plays: 9D
+>Player 1 plays 9D.
+Cards on the table: 
+Clubs: 
+Diamonds: 6 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 8C AD 7C QC 4D 10C
+Legal plays: 7C
+>Player 2 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 6 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: QD 5D 3D 2H JC 3H
+Legal plays: 5D 3H
+>Player 3 plays 5D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 5 6 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KD KC 2C 10D 9C 2S
+Legal plays: 10D 2S
+>Player 4 plays 10D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 5 6 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 6C 3C 4C 5C JD
+Legal plays: 6C JD
+>Player 1 plays JD.
+Cards on the table: 
+Clubs: 7
+Diamonds: 5 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 8C AD QC 4D 10C
+Legal plays: 8C 4D
+>Player 2 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: QD 3D 2H JC 3H
+Legal plays: QD 3H
+>Player 3 plays QD.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KD KC 2C 9C 2S
+Legal plays: KD 9C 2S
+>Player 4 plays KD.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 6C 3C 4C 5C
+Legal plays: 6C
+>Player 1 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD QC 4D 10C
+Legal plays: 4D
+>Player 2 plays 4D.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3D 2H JC 3H
+Legal plays: 3D 3H
+>Player 3 plays 3D.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KC 2C 9C 2S
+Legal plays: 9C 2S
+>Player 4 plays 9C.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 3C 4C 5C
+Legal plays: 2D 5C
+>Player 1 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD QC 10C
+Legal plays: 10C
+>Player 2 plays 10C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2H JC 3H
+Legal plays: JC 3H
+>Player 3 plays JC.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KC 2C 2S
+Legal plays: 2S
+>Player 4 plays 2S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 3C 4C
+Legal plays: 2D 4C
+>Player 1 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD QC
+Legal plays: QC
+>Player 2 plays QC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2H 3H
+Legal plays: 3H
+>Player 3 plays 3H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: KC 2C
+Legal plays: KC
+>Player 4 plays KC.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 3C
+Legal plays: 2D 3C
+>Player 1 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD
+Legal plays: 
+>Player 2 discards AD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2H
+Legal plays: 2H
+>Player 3 plays 2H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C
+Legal plays: 2C
+>Player 4 plays 2C.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 2D
+>Player 1 plays 2D.
+Player 1's discards: AH AS
+Player 1's score: 17 + 2 = 19
+Player 2's discards: AD
+Player 2's score: 19 + 1 = 20
+Player 3's discards: AC
+Player 3's score: 13 + 1 = 14
+Player 4's discards: 
+Player 4's score: 22 + 0 = 22
+A new round begins. It's player 4's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 2C 6C 10D 4C 7C 7H 5S 8H 5D 6D 7S 6S 10S
+Legal plays: 7S
+>Player 4 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: KD JD 3H 2H AH KC AD AC 8S QS QH JC 4H
+Legal plays: 8S
+>Player 1 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7 8
+Your hand: JH JS 6H 8C AS QC 4D 4S 10C 2S 5H 8D 3S
+Legal plays: 
+>Player 2 discards AS.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7 8
+Your hand: KH 3D 9D 7D 9H 5C KS 3C QD 9C 10H 9S 2D
+Legal plays: 7D 9S
+>Player 3 plays 9S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7 8 9
+Your hand: 2C 6C 10D 4C 7C 7H 5S 8H 5D 6D 6S 10S
+Legal plays: 7C 7H 6S 10S
+>Player 4 plays 10S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7 8 9 10
+Your hand: KD JD 3H 2H AH KC AD AC QS QH JC 4H
+Legal plays: 
+>Player 1 discards AH.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7 8 9 10
+Your hand: JH JS 6H 8C QC 4D 4S 10C 2S 5H 8D 3S
+Legal plays: JS
+>Player 2 plays JS.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7 8 9 10 J
+Your hand: KH 3D 9D 7D 9H 5C KS 3C QD 9C 10H 2D
+Legal plays: 7D
+>Player 3 plays 7D.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 
+Spades: 7 8 9 10 J
+Your hand: 2C 6C 10D 4C 7C 7H 5S 8H 5D 6D 6S
+Legal plays: 7C 7H 6D 6S
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 
+Spades: 7 8 9 10 J
+Your hand: KD JD 3H 2H KC AD AC QS QH JC 4H
+Legal plays: QS
+>Player 1 plays QS.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 
+Spades: 7 8 9 10 J Q
+Your hand: JH 6H 8C QC 4D 4S 10C 2S 5H 8D 3S
+Legal plays: 8C 8D
+>Player 2 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 
+Spades: 7 8 9 10 J Q
+Your hand: KH 3D 9D 9H 5C KS 3C QD 9C 10H 2D
+Legal plays: KS 9C
+>Player 3 plays KS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 
+Spades: 7 8 9 10 J Q K
+Your hand: 2C 6C 10D 4C 7H 5S 8H 5D 6D 6S
+Legal plays: 6C 7H 6D 6S
+>Player 4 plays 7H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: KD JD 3H 2H KC AD AC QH JC 4H
+Legal plays: 
+>Player 1 discards AD.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: JH 6H QC 4D 4S 10C 2S 5H 8D 3S
+Legal plays: 6H 8D
+>Player 2 plays 8D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: KH 3D 9D 9H 5C 3C QD 9C 10H 2D
+Legal plays: 9D 9C
+>Player 3 plays 9D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: 2C 6C 10D 4C 5S 8H 5D 6D 6S
+Legal plays: 6C 10D 8H 6D 6S
+>Player 4 plays 10D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: KD JD 3H 2H KC AC QH JC 4H
+Legal plays: JD
+>Player 1 plays JD.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10 J
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: JH 6H QC 4D 4S 10C 2S 5H 3S
+Legal plays: 6H
+>Player 2 plays 6H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10 J
+Hearts: 6 7
+Spades: 7 8 9 10 J Q K
+Your hand: KH 3D 9H 5C 3C QD 9C 10H 2D
+Legal plays: QD 9C
+>Player 3 plays QD.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10 J Q
+Hearts: 6 7
+Spades: 7 8 9 10 J Q K
+Your hand: 2C 6C 4C 5S 8H 5D 6D 6S
+Legal plays: 6C 8H 6D 6S
+>Player 4 plays 8H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10 J Q
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: KD 3H 2H KC AC QH JC 4H
+Legal plays: KD
+>Player 1 plays KD.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10 J Q K
+Hearts: 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: JH QC 4D 4S 10C 2S 5H 3S
+Legal plays: 5H
+>Player 2 plays 5H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10 J Q K
+Hearts: 5 6 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: KH 3D 9H 5C 3C 9C 10H 2D
+Legal plays: 9H 9C
+>Player 3 plays 9H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 2C 6C 4C 5S 5D 6D 6S
+Legal plays: 6C 6D 6S
+>Player 4 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 3H 2H KC AC QH JC 4H
+Legal plays: 4H
+>Player 1 plays 4H.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: JH QC 4D 4S 10C 2S 3S
+Legal plays: 
+>Player 2 discards 2S.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: KH 3D 5C 3C 9C 10H 2D
+Legal plays: 5C 9C 10H
+>Player 3 plays 10H.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 2C 4C 5S 5D 6D 6S
+Legal plays: 6D 6S
+>Player 4 plays 6D.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 3H 2H KC AC QH JC
+Legal plays: 3H
+>Player 1 plays 3H.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: JH QC 4D 4S 10C 3S
+Legal plays: JH
+>Player 2 plays JH.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: KH 3D 5C 3C 9C 2D
+Legal plays: 5C 9C
+>Player 3 plays 9C.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: 2C 4C 5S 5D 6S
+Legal plays: 5D 6S
+>Player 4 plays 6S.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2H KC AC QH JC
+Legal plays: 2H QH
+>Player 1 plays QH.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: QC 4D 4S 10C 3S
+Legal plays: 10C
+>Player 2 plays 10C.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: KH 3D 5C 3C 2D
+Legal plays: KH 5C
+>Player 3 plays KH.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2C 4C 5S 5D
+Legal plays: 5S 5D
+>Player 4 plays 5S.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2H KC AC JC
+Legal plays: 2H JC
+>Player 1 plays JC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: QC 4D 4S 3S
+Legal plays: QC 4S
+>Player 2 plays QC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3D 5C 3C 2D
+Legal plays: 5C
+>Player 3 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2C 4C 5D
+Legal plays: 4C 5D
+>Player 4 plays 5D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2H KC AC
+Legal plays: 2H KC
+>Player 1 plays KC.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4D 4S 3S
+Legal plays: 4D 4S
+>Player 2 plays 4D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3D 3C 2D
+Legal plays: 3D
+>Player 3 plays 3D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2C 4C
+Legal plays: 4C
+>Player 4 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2H AC
+Legal plays: 2H
+>Player 1 plays 2H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4S 3S
+Legal plays: 4S
+>Player 2 plays 4S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3C 2D
+Legal plays: 3C 2D
+>Player 3 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2C
+Legal plays: 2C
+>Player 4 plays 2C.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AC
+Legal plays: AC
+>Player 1 plays AC.
+Cards on the table: 
+Clubs: A 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3S
+Legal plays: 3S
+>Player 2 plays 3S.
+Cards on the table: 
+Clubs: A 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 2D
+>Player 3 plays 2D.
+Player 1's discards: AH AD
+Player 1's score: 19 + 2 = 21
+Player 2's discards: AS 2S
+Player 2's score: 20 + 3 = 23
+Player 3's discards: 
+Player 3's score: 14 + 0 = 14
+Player 4's discards: 
+Player 4's score: 22 + 0 = 22
+A new round begins. It's player 3's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 8C 2H 7S 10D 8H 2D 9D 8S 9S 10S 3D 3C 3S
+Legal plays: 7S
+>Player 3 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 5C 6C KS 5H QD AC JC 10C 4D QC 7H JD AD
+Legal plays: 7H
+>Player 4 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: QH 5S 2S 5D 3H 7C 4C 9C KH QS 6S 7D 10H
+Legal plays: 7C 6S 7D
+>Player 1 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: JS 6D AS AH KD KC 9H 4H JH 2C 8D 4S 6H
+Legal plays: 6H
+>Player 2 plays 6H.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 6 7
+Spades: 7
+Your hand: 8C 2H 10D 8H 2D 9D 8S 9S 10S 3D 3C 3S
+Legal plays: 8C 8H 8S
+>Player 3 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 
+Hearts: 6 7
+Spades: 7
+Your hand: 5C 6C KS 5H QD AC JC 10C 4D QC JD AD
+Legal plays: 6C 5H
+>Player 4 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 
+Hearts: 6 7
+Spades: 7
+Your hand: QH 5S 2S 5D 3H 4C 9C KH QS 6S 7D 10H
+Legal plays: 9C 6S 7D
+>Player 1 plays 9C.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 
+Hearts: 6 7
+Spades: 7
+Your hand: JS 6D AS AH KD KC 9H 4H JH 2C 8D 4S
+Legal plays: 
+>Player 2 discards AS.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 
+Hearts: 6 7
+Spades: 7
+Your hand: 2H 10D 8H 2D 9D 8S 9S 10S 3D 3C 3S
+Legal plays: 8H 8S
+>Player 3 plays 8H.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 
+Hearts: 6 7 8
+Spades: 7
+Your hand: 5C KS 5H QD AC JC 10C 4D QC JD AD
+Legal plays: 5C 5H 10C
+>Player 4 plays 10C.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 
+Hearts: 6 7 8
+Spades: 7
+Your hand: QH 5S 2S 5D 3H 4C KH QS 6S 7D 10H
+Legal plays: 6S 7D
+>Player 1 plays 7D.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 7
+Hearts: 6 7 8
+Spades: 7
+Your hand: JS 6D AH KD KC 9H 4H JH 2C 8D 4S
+Legal plays: 6D 9H 8D
+>Player 2 plays 9H.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 7
+Hearts: 6 7 8 9
+Spades: 7
+Your hand: 2H 10D 2D 9D 8S 9S 10S 3D 3C 3S
+Legal plays: 8S
+>Player 3 plays 8S.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 7
+Hearts: 6 7 8 9
+Spades: 7 8
+Your hand: 5C KS 5H QD AC JC 4D QC JD AD
+Legal plays: 5C 5H JC
+>Player 4 plays JC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 7
+Hearts: 6 7 8 9
+Spades: 7 8
+Your hand: QH 5S 2S 5D 3H 4C KH QS 6S 10H
+Legal plays: 6S 10H
+>Player 1 plays 10H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 7
+Hearts: 6 7 8 9 10
+Spades: 7 8
+Your hand: JS 6D AH KD KC 4H JH 2C 8D 4S
+Legal plays: 6D JH 8D
+>Player 2 plays JH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 7
+Hearts: 6 7 8 9 10 J
+Spades: 7 8
+Your hand: 2H 10D 2D 9D 9S 10S 3D 3C 3S
+Legal plays: 9S
+>Player 3 plays 9S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 7
+Hearts: 6 7 8 9 10 J
+Spades: 7 8 9
+Your hand: 5C KS 5H QD AC 4D QC JD AD
+Legal plays: 5C 5H QC
+>Player 4 plays QC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 7
+Hearts: 6 7 8 9 10 J
+Spades: 7 8 9
+Your hand: QH 5S 2S 5D 3H 4C KH QS 6S
+Legal plays: QH 6S
+>Player 1 plays QH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q
+Spades: 7 8 9
+Your hand: JS 6D AH KD KC 4H 2C 8D 4S
+Legal plays: 6D KC 8D
+>Player 2 plays KC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q
+Spades: 7 8 9
+Your hand: 2H 10D 2D 9D 10S 3D 3C 3S
+Legal plays: 10S
+>Player 3 plays 10S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q
+Spades: 7 8 9 10
+Your hand: 5C KS 5H QD AC 4D JD AD
+Legal plays: 5C 5H
+>Player 4 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q
+Spades: 7 8 9 10
+Your hand: 5S 2S 5D 3H 4C KH QS 6S
+Legal plays: 4C KH 6S
+>Player 1 plays KH.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10
+Your hand: JS 6D AH KD 4H 2C 8D 4S
+Legal plays: JS 6D 8D
+>Player 2 plays JS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J
+Your hand: 2H 10D 2D 9D 3D 3C 3S
+Legal plays: 
+>Player 3 discards 2H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J
+Your hand: KS 5H QD AC 4D JD AD
+Legal plays: 5H
+>Player 4 plays 5H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J
+Your hand: 5S 2S 5D 3H 4C QS 6S
+Legal plays: 4C QS 6S
+>Player 1 plays QS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q
+Your hand: 6D AH KD 4H 2C 8D 4S
+Legal plays: 6D 4H 8D
+>Player 2 plays 8D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q
+Your hand: 10D 2D 9D 3D 3C 3S
+Legal plays: 9D
+>Player 3 plays 9D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q
+Your hand: KS QD AC 4D JD AD
+Legal plays: KS
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 5S 2S 5D 3H 4C 6S
+Legal plays: 4C 6S
+>Player 1 plays 6S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 6D AH KD 4H 2C 4S
+Legal plays: 6D 4H
+>Player 2 plays 6D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10D 2D 3D 3C 3S
+Legal plays: 10D
+>Player 3 plays 10D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: QD AC 4D JD AD
+Legal plays: JD
+>Player 4 plays JD.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 5S 2S 5D 3H 4C
+Legal plays: 5S 5D 4C
+>Player 1 plays 5S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AH KD 4H 2C 4S
+Legal plays: 4H 4S
+>Player 2 plays 4H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D 3D 3C 3S
+Legal plays: 
+>Player 3 discards 2D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: QD AC 4D AD
+Legal plays: QD
+>Player 4 plays QD.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2S 5D 3H 4C
+Legal plays: 5D 3H 4C
+>Player 1 plays 5D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AH KD 2C 4S
+Legal plays: KD 4S
+>Player 2 plays KD.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3D 3C 3S
+Legal plays: 
+>Player 3 discards 3D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AC 4D AD
+Legal plays: 4D
+>Player 4 plays 4D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2S 3H 4C
+Legal plays: 3H 4C
+>Player 1 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: AH 2C 4S
+Legal plays: 4S
+>Player 2 plays 4S.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3C 3S
+Legal plays: 3C 3S
+>Player 3 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AC AD
+Legal plays: 
+>Player 4 discards AC.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2S 3H
+Legal plays: 3H
+>Player 1 plays 3H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AH 2C
+Legal plays: 2C
+>Player 2 plays 2C.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3S
+Legal plays: 3S
+>Player 3 plays 3S.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD
+Legal plays: 
+>Player 4 discards AD.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2S
+Legal plays: 2S
+>Player 1 plays 2S.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AH
+Legal plays: 
+>Player 2 discards AH.
+Player 1's discards: 
+Player 1's score: 21 + 0 = 21
+Player 2's discards: AS AH
+Player 2's score: 23 + 2 = 25
+Player 3's discards: 2H 2D 3D
+Player 3's score: 14 + 7 = 21
+Player 4's discards: AC AD
+Player 4's score: 22 + 2 = 24
+A new round begins. It's player 4's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 3H 8C KD KS QD JC AS AH 2S 6S 7C AD 7S
+Legal plays: 7S
+>Player 4 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 10C 3D 9H AC 8H 4C 5D 5H 9D 2H JS 3S 2C
+Legal plays: 
+>Player 1 discards AC.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: KH 5C KC 6D 6H 2D 7H 4S 6C 7D 8D 3C JH
+Legal plays: 7H 7D
+>Player 2 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: JD 10D 8S 4H 9C 4D 10S 5S QS QH QC 10H 9S
+Legal plays: 8S
+>Player 3 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 3H 8C KD KS QD JC AS AH 2S 6S 7C AD
+Legal plays: 6S 7C
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 10C 3D 9H 8H 4C 5D 5H 9D 2H JS 3S 2C
+Legal plays: 8H
+>Player 1 plays 8H.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8
+Your hand: KH 5C KC 6D 6H 2D 4S 6C 7D 8D 3C JH
+Legal plays: 6H 6C 7D
+>Player 2 plays 7D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 7 8
+Spades: 7 8
+Your hand: JD 10D 4H 9C 4D 10S 5S QS QH QC 10H 9S
+Legal plays: 9S
+>Player 3 plays 9S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 7 8
+Spades: 7 8 9
+Your hand: 3H 8C KD KS QD JC AS AH 2S 6S AD
+Legal plays: 8C 6S
+>Player 4 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7 8
+Spades: 7 8 9
+Your hand: 10C 3D 9H 4C 5D 5H 9D 2H JS 3S 2C
+Legal plays: 9H
+>Player 1 plays 9H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7
+Hearts: 7 8 9
+Spades: 7 8 9
+Your hand: KH 5C KC 6D 6H 2D 4S 6C 8D 3C JH
+Legal plays: 6D 6H 6C 8D
+>Player 2 plays 8D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7 8 9
+Spades: 7 8 9
+Your hand: JD 10D 4H 9C 4D 10S 5S QS QH QC 10H
+Legal plays: 9C 10S 10H
+>Player 3 plays 10S.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7 8 9
+Spades: 7 8 9 10
+Your hand: 3H KD KS QD JC AS AH 2S 6S AD
+Legal plays: 6S
+>Player 4 plays 6S.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7 8 9
+Spades: 6 7 8 9 10
+Your hand: 10C 3D 4C 5D 5H 9D 2H JS 3S 2C
+Legal plays: 9D JS
+>Player 1 plays JS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 7 8
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J
+Your hand: KH 5C KC 6D 6H 2D 4S 6C 3C JH
+Legal plays: 6D 6H 6C
+>Player 2 plays 6D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J
+Your hand: JD 10D 4H 9C 4D 5S QS QH QC 10H
+Legal plays: 9C 5S QS 10H
+>Player 3 plays QS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J Q
+Your hand: 3H KD KS QD JC AS AH 2S AD
+Legal plays: KS
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10C 3D 4C 5D 5H 9D 2H 3S 2C
+Legal plays: 5D 9D
+>Player 1 plays 9D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: KH 5C KC 6H 2D 4S 6C 3C JH
+Legal plays: 6H 6C
+>Player 2 plays 6H.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: JD 10D 4H 9C 4D 5S QH QC 10H
+Legal plays: 10D 9C 5S 10H
+>Player 3 plays 10D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9 10
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 3H KD QD JC AS AH 2S AD
+Legal plays: 
+>Player 4 discards AS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 6 7 8 9 10
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10C 3D 4C 5D 5H 2H 3S 2C
+Legal plays: 5D 5H
+>Player 1 plays 5D.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 5 6 7 8 9 10
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: KH 5C KC 2D 4S 6C 3C JH
+Legal plays: 6C
+>Player 2 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 5 6 7 8 9 10
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: JD 4H 9C 4D 5S QH QC 10H
+Legal plays: JD 9C 4D 5S 10H
+>Player 3 plays JD.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 5 6 7 8 9 10 J
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 3H KD QD JC AH 2S AD
+Legal plays: QD
+>Player 4 plays QD.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10C 3D 4C 5H 2H 3S 2C
+Legal plays: 5H
+>Player 1 plays 5H.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 5 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: KH 5C KC 2D 4S 3C JH
+Legal plays: 5C
+>Player 2 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 5 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4H 9C 4D 5S QH QC 10H
+Legal plays: 4H 9C 4D 5S 10H
+>Player 3 plays 10H.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q
+Hearts: 5 6 7 8 9 10
+Spades: 6 7 8 9 10 J Q K
+Your hand: 3H KD JC AH 2S AD
+Legal plays: KD
+>Player 4 plays KD.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10C 3D 4C 2H 3S 2C
+Legal plays: 4C
+>Player 1 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10
+Spades: 6 7 8 9 10 J Q K
+Your hand: KH KC 2D 4S 3C JH
+Legal plays: 3C JH
+>Player 2 plays JH.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4H 9C 4D 5S QH QC
+Legal plays: 4H 9C 4D 5S QH
+>Player 3 plays QH.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: 3H JC AH 2S AD
+Legal plays: 
+>Player 4 discards AH.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10C 3D 2H 3S 2C
+Legal plays: 
+>Player 1 discards 2H.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 6 7 8 9 10 J Q K
+Your hand: KH KC 2D 4S 3C
+Legal plays: KH 3C
+>Player 2 plays KH.
+Cards on the table: 
+Clubs: 4 5 6 7 8
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4H 9C 4D 5S QC
+Legal plays: 4H 9C 4D 5S
+>Player 3 plays 9C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 3H JC 2S AD
+Legal plays: 
+>Player 4 discards AD.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10C 3D 3S 2C
+Legal plays: 10C
+>Player 1 plays 10C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: KC 2D 4S 3C
+Legal plays: 3C
+>Player 2 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 4H 4D 5S QC
+Legal plays: 4H 4D 5S
+>Player 3 plays 5S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3H JC 2S
+Legal plays: JC
+>Player 4 plays JC.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3D 3S 2C
+Legal plays: 2C
+>Player 1 plays 2C.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: KC 2D 4S
+Legal plays: 4S
+>Player 2 plays 4S.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 4H 4D QC
+Legal plays: 4H 4D QC
+>Player 3 plays QC.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3H 2S
+Legal plays: 
+>Player 4 discards 2S.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3D 3S
+Legal plays: 3S
+>Player 1 plays 3S.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KC 2D
+Legal plays: KC
+>Player 2 plays KC.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 4H 4D
+Legal plays: 4H 4D
+>Player 3 plays 4H.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3H
+Legal plays: 3H
+>Player 4 plays 3H.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3D
+Legal plays: 
+>Player 1 discards 3D.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 
+>Player 2 discards 2D.
+Cards on the table: 
+Clubs: 2 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 4D
+Legal plays: 4D
+>Player 3 plays 4D.
+Player 1's discards: AC 2H 3D
+Player 1's score: 21 + 6 = 27
+Player 2's discards: 2D
+Player 2's score: 25 + 2 = 27
+Player 3's discards: 
+Player 3's score: 21 + 0 = 21
+Player 4's discards: AS AH AD 2S
+Player 4's score: 24 + 5 = 29
+A new round begins. It's player 4's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 2C QD 2D 8H 4S 7S KS JS 4D 6H 4H AS QC
+Legal plays: 7S
+>Player 4 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 9S KH 10C 2H QS 10D JH 3D 3H JD 7H 4C 7D
+Legal plays: 7H 7D
+>Player 1 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: 6C 2S 3C 5D 7C AD QH 9D KC 8C 5S 9C 5C
+Legal plays: 7C
+>Player 2 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: 6D 8D 8S 3S 9H 6S 10S 10H JC KD AC AH 5H
+Legal plays: 8S 6S
+>Player 3 plays 8S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 2C QD 2D 8H 4S KS JS 4D 6H 4H AS QC
+Legal plays: 8H 6H
+>Player 4 plays 8H.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8
+Your hand: 9S KH 10C 2H QS 10D JH 3D 3H JD 4C 7D
+Legal plays: 9S 7D
+>Player 1 plays 9S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9
+Your hand: 6C 2S 3C 5D AD QH 9D KC 8C 5S 9C 5C
+Legal plays: 6C 8C
+>Player 2 plays 8C.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9
+Your hand: 6D 8D 3S 9H 6S 10S 10H JC KD AC AH 5H
+Legal plays: 9H 6S 10S
+>Player 3 plays 10S.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9 10
+Your hand: 2C QD 2D 4S KS JS 4D 6H 4H AS QC
+Legal plays: JS 6H
+>Player 4 plays JS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9 10 J
+Your hand: KH 10C 2H QS 10D JH 3D 3H JD 4C 7D
+Legal plays: QS 7D
+>Player 1 plays QS.
+Cards on the table: 
+Clubs: 7 8
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9 10 J Q
+Your hand: 6C 2S 3C 5D AD QH 9D KC 5S 9C 5C
+Legal plays: 6C 9C
+>Player 2 plays 9C.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9 10 J Q
+Your hand: 6D 8D 3S 9H 6S 10H JC KD AC AH 5H
+Legal plays: 9H 6S
+>Player 3 plays 9H.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q
+Your hand: 2C QD 2D 4S KS 4D 6H 4H AS QC
+Legal plays: KS 6H
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 7 8 9
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: KH 10C 2H 10D JH 3D 3H JD 4C 7D
+Legal plays: 10C 7D
+>Player 1 plays 10C.
+Cards on the table: 
+Clubs: 7 8 9 10
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 6C 2S 3C 5D AD QH 9D KC 5S 5C
+Legal plays: 6C
+>Player 2 plays 6C.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 6D 8D 3S 6S 10H JC KD AC AH 5H
+Legal plays: 6S 10H JC
+>Player 3 plays JC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 2C QD 2D 4S 4D 6H 4H AS QC
+Legal plays: 6H QC
+>Player 4 plays QC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: KH 2H 10D JH 3D 3H JD 4C 7D
+Legal plays: 7D
+>Player 1 plays 7D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 7
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 2S 3C 5D AD QH 9D KC 5S 5C
+Legal plays: KC 5C
+>Player 2 plays KC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 6D 8D 3S 6S 10H KD AC AH 5H
+Legal plays: 6D 8D 6S 10H
+>Player 3 plays 10H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 2C QD 2D 4S 4D 6H 4H AS
+Legal plays: 6H
+>Player 4 plays 6H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: KH 2H 10D JH 3D 3H JD 4C
+Legal plays: JH
+>Player 1 plays JH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: 2S 3C 5D AD QH 9D 5S 5C
+Legal plays: QH 5C
+>Player 2 plays QH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7
+Hearts: 6 7 8 9 10 J Q
+Spades: 7 8 9 10 J Q K
+Your hand: 6D 8D 3S 6S KD AC AH 5H
+Legal plays: 6D 8D 6S 5H
+>Player 3 plays 8D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 6 7 8 9 10 J Q
+Spades: 7 8 9 10 J Q K
+Your hand: 2C QD 2D 4S 4D 4H AS
+Legal plays: 
+>Player 4 discards AS.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 6 7 8 9 10 J Q
+Spades: 7 8 9 10 J Q K
+Your hand: KH 2H 10D 3D 3H JD 4C
+Legal plays: KH
+>Player 1 plays KH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2S 3C 5D AD 9D 5S 5C
+Legal plays: 9D 5C
+>Player 2 plays 9D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 7 8 9
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 6D 3S 6S KD AC AH 5H
+Legal plays: 6D 6S 5H
+>Player 3 plays 6D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2C QD 2D 4S 4D 4H
+Legal plays: 
+>Player 4 discards 2C.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2H 10D 3D 3H JD 4C
+Legal plays: 10D
+>Player 1 plays 10D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2S 3C 5D AD 5S 5C
+Legal plays: 5D 5C
+>Player 2 plays 5D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10
+Hearts: 6 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 3S 6S KD AC AH 5H
+Legal plays: 6S 5H
+>Player 3 plays 6S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: QD 2D 4S 4D 4H
+Legal plays: 4D
+>Player 4 plays 4D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2H 3D 3H JD 4C
+Legal plays: 3D JD
+>Player 1 plays JD.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2S 3C AD 5S 5C
+Legal plays: 5S 5C
+>Player 2 plays 5S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J
+Hearts: 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3S KD AC AH 5H
+Legal plays: 5H
+>Player 3 plays 5H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: QD 2D 4S 4H
+Legal plays: QD 4S 4H
+>Player 4 plays QD.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9 10 J Q
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2H 3D 3H 4C
+Legal plays: 3D
+>Player 1 plays 3D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2S 3C AD 5C
+Legal plays: 5C
+>Player 2 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3S KD AC AH
+Legal plays: KD
+>Player 3 plays KD.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2D 4S 4H
+Legal plays: 2D 4S 4H
+>Player 4 plays 4S.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2H 3H 4C
+Legal plays: 4C
+>Player 1 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2S 3C AD
+Legal plays: 3C
+>Player 2 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3S AC AH
+Legal plays: 3S
+>Player 3 plays 3S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D 4H
+Legal plays: 2D 4H
+>Player 4 plays 4H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2H 3H
+Legal plays: 3H
+>Player 1 plays 3H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2S AD
+Legal plays: 2S
+>Player 2 plays 2S.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AC AH
+Legal plays: 
+>Player 3 discards AC.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2D
+Legal plays: 2D
+>Player 4 plays 2D.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2H
+Legal plays: 2H
+>Player 1 plays 2H.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD
+Legal plays: AD
+>Player 2 plays AD.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: A 2 3 4 5 6 7 8 9 10 J Q K
+Hearts: 2 3 4 5 6 7 8 9 10 J Q K
+Spades: 2 3 4 5 6 7 8 9 10 J Q K
+Your hand: AH
+Legal plays: AH
+>Player 3 plays AH.
+Player 1's discards: 
+Player 1's score: 27 + 0 = 27
+Player 2's discards: 
+Player 2's score: 27 + 0 = 27
+Player 3's discards: AC
+Player 3's score: 21 + 1 = 22
+Player 4's discards: AS 2C
+Player 4's score: 29 + 3 = 32
+A new round begins. It's player 4's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 2C JD 7C 5S 4D 6D 10S 9H 5H 10C JH 7S 3D
+Legal plays: 7S
+>Player 4 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: 2S 3C 7H 2H 8C 2D QD AS 8D 7D 6H 4C QS
+Legal plays: 7H 7D
+>Player 1 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: 8S QH 8H KH 5D 4S 6S 3H 3S 10D KS AC JS
+Legal plays: 8S 8H 6S
+>Player 2 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: QC 10H AH AD KD 4H KC 6C 9S JC 5C 9C 9D
+Legal plays: 9S
+>Player 3 plays 9S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9
+Your hand: 2C JD 7C 5S 4D 6D 10S 9H 5H 10C JH 3D
+Legal plays: 7C 10S
+>Player 4 plays 10S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: 2S 3C 2H 8C 2D QD AS 8D 7D 6H 4C QS
+Legal plays: 7D 6H
+>Player 1 plays 7D.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: QH 8H KH 5D 4S 6S 3H 3S 10D KS AC JS
+Legal plays: 8H 6S JS
+>Player 2 plays JS.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: QC 10H AH AD KD 4H KC 6C JC 5C 9C 9D
+Legal plays: 
+>Player 3 discards AH.
+Cards on the table: 
+Clubs: 
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: 2C JD 7C 5S 4D 6D 9H 5H 10C JH 3D
+Legal plays: 7C 6D
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J
+Your hand: 2S 3C 2H 8C 2D QD AS 8D 6H 4C QS
+Legal plays: 8C 8D 6H QS
+>Player 1 plays QS.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J Q
+Your hand: QH 8H KH 5D 4S 6S 3H 3S 10D KS AC
+Legal plays: 8H 6S KS
+>Player 2 plays KS.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: QC 10H AD KD 4H KC 6C JC 5C 9C 9D
+Legal plays: 6C
+>Player 3 plays 6C.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: 2C JD 5S 4D 6D 9H 5H 10C JH 3D
+Legal plays: 6D
+>Player 4 plays 6D.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 6 7
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: 2S 3C 2H 8C 2D QD AS 8D 6H 4C
+Legal plays: 8C 8D 6H
+>Player 1 plays 8C.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7
+Hearts: 7
+Spades: 7 8 9 10 J Q K
+Your hand: QH 8H KH 5D 4S 6S 3H 3S 10D AC
+Legal plays: 8H 5D 6S
+>Player 2 plays 8H.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7
+Hearts: 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: QC 10H AD KD 4H KC JC 5C 9C 9D
+Legal plays: 5C 9C
+>Player 3 plays 9C.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 6 7
+Hearts: 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 2C JD 5S 4D 9H 5H 10C JH 3D
+Legal plays: 9H 10C
+>Player 4 plays 10C.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7
+Hearts: 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: 2S 3C 2H 2D QD AS 8D 6H 4C
+Legal plays: 8D 6H
+>Player 1 plays 8D.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8
+Hearts: 7 8
+Spades: 7 8 9 10 J Q K
+Your hand: QH KH 5D 4S 6S 3H 3S 10D AC
+Legal plays: 5D 6S
+>Player 2 plays 6S.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8
+Hearts: 7 8
+Spades: 6 7 8 9 10 J Q K
+Your hand: QC 10H AD KD 4H KC JC 5C 9D
+Legal plays: JC 5C 9D
+>Player 3 plays JC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 6 7 8
+Hearts: 7 8
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2C JD 5S 4D 9H 5H JH 3D
+Legal plays: 5S 9H
+>Player 4 plays 9H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 6 7 8
+Hearts: 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2S 3C 2H 2D QD AS 6H 4C
+Legal plays: 6H
+>Player 1 plays 6H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 6 7 8
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: QH KH 5D 4S 3H 3S 10D AC
+Legal plays: 5D
+>Player 2 plays 5D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 5 6 7 8
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: QC 10H AD KD 4H KC 5C 9D
+Legal plays: QC 10H 5C 9D
+>Player 3 plays QC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8
+Hearts: 6 7 8 9
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2C JD 5S 4D 5H JH 3D
+Legal plays: 5S 4D 5H
+>Player 4 plays 5S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 2S 3C 2H 2D QD AS 4C
+Legal plays: 
+>Player 1 discards AS.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8
+Hearts: 6 7 8 9
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: QH KH 4S 3H 3S 10D AC
+Legal plays: 4S
+>Player 2 plays 4S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 5 6 7 8
+Hearts: 6 7 8 9
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 10H AD KD 4H KC 5C 9D
+Legal plays: 10H KC 5C 9D
+>Player 3 plays KC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 6 7 8 9
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2C JD 4D 5H JH 3D
+Legal plays: 4D 5H
+>Player 4 plays 5H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 2S 3C 2H 2D QD 4C
+Legal plays: 
+>Player 1 discards 2S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: QH KH 3H 3S 10D AC
+Legal plays: 3S
+>Player 2 plays 3S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 10H AD KD 4H 5C 9D
+Legal plays: 10H 4H 5C 9D
+>Player 3 plays 10H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9 10
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C JD 4D JH 3D
+Legal plays: 4D JH
+>Player 4 plays JH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9 10 J
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3C 2H 2D QD 4C
+Legal plays: 
+>Player 1 discards 2H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9 10 J
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: QH KH 3H 10D AC
+Legal plays: QH
+>Player 2 plays QH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD KD 4H 5C 9D
+Legal plays: 4H 5C 9D
+>Player 3 plays 9D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C JD 4D 3D
+Legal plays: 4D
+>Player 4 plays 4D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3C 2D QD 4C
+Legal plays: 
+>Player 1 discards 2D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: KH 3H 10D AC
+Legal plays: KH 10D
+>Player 2 plays KH.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD KD 4H 5C
+Legal plays: 4H 5C
+>Player 3 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 4 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C JD 3D
+Legal plays: 3D
+>Player 4 plays 3D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3C QD 4C
+Legal plays: 4C
+>Player 1 plays 4C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3H 10D AC
+Legal plays: 10D
+>Player 2 plays 10D.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD KD 4H
+Legal plays: 4H
+>Player 3 plays 4H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C JD
+Legal plays: JD
+>Player 4 plays JD.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3C QD
+Legal plays: 3C QD
+>Player 1 plays QD.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3H AC
+Legal plays: 3H
+>Player 2 plays 3H.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD KD
+Legal plays: KD
+>Player 3 plays KD.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 2C
+Legal plays: 
+>Player 4 discards 2C.
+Cards on the table: 
+Clubs: 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: 3C
+Legal plays: 3C
+>Player 1 plays 3C.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AC
+Legal plays: 
+>Player 2 discards AC.
+Cards on the table: 
+Clubs: 3 4 5 6 7 8 9 10 J Q K
+Diamonds: 3 4 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 3 4 5 6 7 8 9 10 J Q K
+Your hand: AD
+Legal plays: 
+>Player 3 discards AD.
+Player 1's discards: AS 2S 2H 2D
+Player 1's score: 27 + 7 = 34
+Player 2's discards: AC
+Player 2's score: 27 + 1 = 28
+Player 3's discards: AH AD
+Player 3's score: 22 + 2 = 24
+Player 4's discards: 2C
+Player 4's score: 32 + 2 = 34
+A new round begins. It's player 2's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: 6S QS QC 10C 7S QD 8H KH AC 10H 7D 6H 9S
+Legal plays: 7S
+>Player 2 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: AD JC 7H 2S 4D 8D 2C 5H AH JS 4H 3C 3S
+Legal plays: 7H
+>Player 3 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: 2D 6C 7C 10S 6D 8S 3D KD AS 3H 9D JD 4S
+Legal plays: 7C 8S
+>Player 4 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 5S QH 5D JH 9C 4C 8C KC 9H 5C 2H KS 10D
+Legal plays: 
+>Player 1 discards 2H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8
+Your hand: 6S QS QC 10C QD 8H KH AC 10H 7D 6H 9S
+Legal plays: 6S 8H 7D 6H 9S
+>Player 2 plays 9S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9
+Your hand: AD JC 2S 4D 8D 2C 5H AH JS 4H 3C 3S
+Legal plays: 
+>Player 3 discards AD.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9
+Your hand: 2D 6C 7C 10S 6D 3D KD AS 3H 9D JD 4S
+Legal plays: 7C 10S
+>Player 4 plays 10S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: 5S QH 5D JH 9C 4C 8C KC 9H 5C KS 10D
+Legal plays: 
+>Player 1 discards 4C.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7 8 9 10
+Your hand: 6S QS QC 10C QD 8H KH AC 10H 7D 6H
+Legal plays: 6S 8H 7D 6H
+>Player 2 plays 8H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9 10
+Your hand: JC 2S 4D 8D 2C 5H AH JS 4H 3C 3S
+Legal plays: JS
+>Player 3 plays JS.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9 10 J
+Your hand: 2D 6C 7C 6D 3D KD AS 3H 9D JD 4S
+Legal plays: 7C
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8 9 10 J
+Your hand: 5S QH 5D JH 9C 8C KC 9H 5C KS 10D
+Legal plays: 8C 9H
+>Player 1 plays 9H.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J
+Your hand: 6S QS QC 10C QD KH AC 10H 7D 6H
+Legal plays: 6S QS 10H 7D 6H
+>Player 2 plays QS.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q
+Your hand: JC 2S 4D 8D 2C 5H AH 4H 3C 3S
+Legal plays: 
+>Player 3 discards AH.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q
+Your hand: 2D 6C 6D 3D KD AS 3H 9D JD 4S
+Legal plays: 6C
+>Player 4 plays 6C.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q
+Your hand: 5S QH 5D JH 9C 8C KC 5C KS 10D
+Legal plays: 8C 5C KS
+>Player 1 plays KS.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10 J Q K
+Your hand: 6S QC 10C QD KH AC 10H 7D 6H
+Legal plays: 6S 10H 7D 6H
+>Player 2 plays 10H.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: JC 2S 4D 8D 2C 5H 4H 3C 3S
+Legal plays: 
+>Player 3 discards 2S.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 2D 6D 3D KD AS 3H 9D JD 4S
+Legal plays: 
+>Player 4 discards AS.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 7 8 9 10 J Q K
+Your hand: 5S QH 5D JH 9C 8C KC 5C 10D
+Legal plays: JH 8C 5C
+>Player 1 plays JH.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 
+Hearts: 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: 6S QC 10C QD KH AC 7D 6H
+Legal plays: 6S 7D 6H
+>Player 2 plays 7D.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7
+Hearts: 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: JC 4D 8D 2C 5H 4H 3C 3S
+Legal plays: 8D
+>Player 3 plays 8D.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8
+Hearts: 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: 2D 6D 3D KD 3H 9D JD 4S
+Legal plays: 6D 9D
+>Player 4 plays 9D.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8 9
+Hearts: 7 8 9 10 J
+Spades: 7 8 9 10 J Q K
+Your hand: 5S QH 5D 9C 8C KC 5C 10D
+Legal plays: QH 8C 5C 10D
+>Player 1 plays QH.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8 9
+Hearts: 7 8 9 10 J Q
+Spades: 7 8 9 10 J Q K
+Your hand: 6S QC 10C QD KH AC 6H
+Legal plays: 6S KH 6H
+>Player 2 plays KH.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8 9
+Hearts: 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: JC 4D 2C 5H 4H 3C 3S
+Legal plays: 
+>Player 3 discards 2C.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8 9
+Hearts: 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 2D 6D 3D KD 3H JD 4S
+Legal plays: 6D
+>Player 4 plays 6D.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 6 7 8 9
+Hearts: 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 5S 5D 9C 8C KC 5C 10D
+Legal plays: 5D 8C 5C 10D
+>Player 1 plays 10D.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 6 7 8 9 10
+Hearts: 7 8 9 10 J Q K
+Spades: 7 8 9 10 J Q K
+Your hand: 6S QC 10C QD AC 6H
+Legal plays: 6S 6H
+>Player 2 plays 6S.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 6 7 8 9 10
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: JC 4D 5H 4H 3C 3S
+Legal plays: 
+>Player 3 discards 3C.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 6 7 8 9 10
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2D 3D KD 3H JD 4S
+Legal plays: JD
+>Player 4 plays JD.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 6 7 8 9 10 J
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 5S 5D 9C 8C KC 5C
+Legal plays: 5S 5D 8C 5C
+>Player 1 plays 8C.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7 8 9 10 J
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: QC 10C QD AC 6H
+Legal plays: QD 6H
+>Player 2 plays QD.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: JC 4D 5H 4H 3S
+Legal plays: 
+>Player 3 discards 3S.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7 8 9 10 J Q
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2D 3D KD 3H 4S
+Legal plays: KD
+>Player 4 plays KD.
+Cards on the table: 
+Clubs: 6 7 8
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 5S 5D 9C KC 5C
+Legal plays: 5S 5D 9C 5C
+>Player 1 plays 9C.
+Cards on the table: 
+Clubs: 6 7 8 9
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: QC 10C AC 6H
+Legal plays: 10C 6H
+>Player 2 plays 10C.
+Cards on the table: 
+Clubs: 6 7 8 9 10
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: JC 4D 5H 4H
+Legal plays: JC
+>Player 3 plays JC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 2D 3D 3H 4S
+Legal plays: 
+>Player 4 discards 2D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 5S 5D KC 5C
+Legal plays: 5S 5D 5C
+>Player 1 plays 5S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: QC AC 6H
+Legal plays: QC 6H
+>Player 2 plays QC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 4D 5H 4H
+Legal plays: 
+>Player 3 discards 4D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 5 6 7 8 9 10 J Q K
+Your hand: 3D 3H 4S
+Legal plays: 4S
+>Player 4 plays 4S.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 5D KC 5C
+Legal plays: 5D KC 5C
+>Player 1 plays KC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AC 6H
+Legal plays: 6H
+>Player 2 plays 6H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 5H 4H
+Legal plays: 5H
+>Player 3 plays 5H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3D 3H
+Legal plays: 
+>Player 4 discards 3D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 5D 5C
+Legal plays: 5D 5C
+>Player 1 plays 5D.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: AC
+Legal plays: 
+>Player 2 discards AC.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 4H
+Legal plays: 4H
+>Player 3 plays 4H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 3H
+Legal plays: 3H
+>Player 4 plays 3H.
+Cards on the table: 
+Clubs: 6 7 8 9 10 J Q K
+Diamonds: 5 6 7 8 9 10 J Q K
+Hearts: 3 4 5 6 7 8 9 10 J Q K
+Spades: 4 5 6 7 8 9 10 J Q K
+Your hand: 5C
+Legal plays: 5C
+>Player 1 plays 5C.
+Player 1's discards: 2H 4C
+Player 1's score: 34 + 6 = 40
+Player 2's discards: AC
+Player 2's score: 28 + 1 = 29
+Player 3's discards: AD AH 2S 2C 3C 3S 4D
+Player 3's score: 24 + 16 = 40
+Player 4's discards: AS 2D 3D
+Player 4's score: 34 + 6 = 40
+A new round begins. It's player 1's turn to play.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 
+Your hand: KC 5D 2H 4H AD 5C QH 5H 8S 7S 6C 10S 2C
+Legal plays: 7S
+>Player 1 plays 7S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 
+Spades: 7
+Your hand: AC 10H 6S 7H QC 6H 6D JC AH QD 9H 8D 9C
+Legal plays: 6S 7H
+>Player 2 plays 7H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: 10C JD 8C 3D 4C JH 4D KH 3C 2D 5S JS 2S
+Legal plays: 
+>Player 3 discards 2D.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7
+Spades: 7
+Your hand: 3S 9D QS AS 7C 8H 10D KD 3H 9S 4S KS 7D
+Legal plays: 7C 8H 7D
+>Player 4 plays 8H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 7
+Your hand: KC 5D 2H 4H AD 5C QH 5H 8S 6C 10S 2C
+Legal plays: 8S
+>Player 1 plays 8S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8
+Spades: 7 8
+Your hand: AC 10H 6S QC 6H 6D JC AH QD 9H 8D 9C
+Legal plays: 6S 6H 9H
+>Player 2 plays 9H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8
+Your hand: 10C JD 8C 3D 4C JH 4D KH 3C 5S JS 2S
+Legal plays: 
+>Player 3 discards 2S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8
+Your hand: 3S 9D QS AS 7C 10D KD 3H 9S 4S KS 7D
+Legal plays: 7C 9S 7D
+>Player 4 plays 9S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9
+Your hand: KC 5D 2H 4H AD 5C QH 5H 6C 10S 2C
+Legal plays: 10S
+>Player 1 plays 10S.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9
+Spades: 7 8 9 10
+Your hand: AC 10H 6S QC 6H 6D JC AH QD 8D 9C
+Legal plays: 10H 6S 6H
+>Player 2 plays 10H.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9 10
+Spades: 7 8 9 10
+Your hand: 10C JD 8C 3D 4C JH 4D KH 3C 5S JS
+Legal plays: JH JS
+>Player 3 plays JH.
+Cards on the table: 
+Clubs: 
+Diamonds: 
+Hearts: 7 8 9 10 J
+Spades: 7 8 9 10
+Your hand: 3S 9D QS AS 7C 10D KD 3H 4S KS 7D
+Legal plays: 7C 7D
+>Player 4 plays 7C.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8 9 10 J
+Spades: 7 8 9 10
+Your hand: KC 5D 2H 4H AD 5C QH 5H 6C 2C
+Legal plays: QH 6C
+>Player 1 plays QH.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8 9 10 J Q
+Spades: 7 8 9 10
+Your hand: AC 6S QC 6H 6D JC AH QD 8D 9C
+Legal plays: 6S 6H
+>Player 2 plays 6S.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8 9 10 J Q
+Spades: 6 7 8 9 10
+Your hand: 10C JD 8C 3D 4C 4D KH 3C 5S JS
+Legal plays: 8C KH 5S JS
+>Player 3 plays KH.
+Cards on the table: 
+Clubs: 7
+Diamonds: 
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: 3S 9D QS AS 10D KD 3H 4S KS 7D
+Legal plays: 7D
+>Player 4 plays 7D.
+Cards on the table: 
+Clubs: 7
+Diamonds: 7
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: KC 5D 2H 4H AD 5C 5H 6C 2C
+Legal plays: 6C
+>Player 1 plays 6C.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: AC QC 6H 6D JC AH QD 8D 9C
+Legal plays: 6H 6D 8D
+>Player 2 plays 8D.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10
+Your hand: 10C JD 8C 3D 4C 4D 3C 5S JS
+Legal plays: 8C 5S JS
+>Player 3 plays JS.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J
+Your hand: 3S 9D QS AS 10D KD 3H 4S KS
+Legal plays: 9D QS
+>Player 4 plays QS.
+Cards on the table: 
+Clubs: 6 7
+Diamonds: 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q
+Your hand: KC 5D 2H 4H AD 5C 5H 2C
+Legal plays: 5C
+>Player 1 plays 5C.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 7 8
+Hearts: 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q
+Your hand: AC QC 6H 6D JC AH QD 9C
+Legal plays: 6H 6D
+>Player 2 plays 6H.
+Cards on the table: 
+Clubs: 5 6 7
+Diamonds: 7 8
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q
+Your hand: 10C JD 8C 3D 4C 4D 3C 5S
+Legal plays: 8C 4C 5S
+>Player 3 plays 8C.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 7 8
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q
+Your hand: 3S 9D AS 10D KD 3H 4S KS
+Legal plays: 9D KS
+>Player 4 plays KS.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 7 8
+Hearts: 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: KC 5D 2H 4H AD 5H 2C
+Legal plays: 5H
+>Player 1 plays 5H.
+Cards on the table: 
+Clubs: 5 6 7 8
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: AC QC 6D JC AH QD 9C
+Legal plays: 6D 9C
+>Player 2 plays 9C.
+Cards on the table: 
+Clubs: 5 6 7 8 9
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 10C JD 3D 4C 4D 3C 5S
+Legal plays: 10C 4C 5S
+>Player 3 plays 10C.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10
+Diamonds: 7 8
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: 3S 9D AS 10D KD 3H 4S
+Legal plays: 9D
+>Player 4 plays 9D.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10
+Diamonds: 7 8 9
+Hearts: 5 6 7 8 9 10 J Q K
+Spades: 6 7 8 9 10 J Q K
+Your hand: KC 5D 2H 4H AD 2C
+Legal plays: 4H
+>Player 1 plays 4H.
+Cards on the table: 
+Clubs: 5 6 7 8 9 10
+Diamonds: 7 8 9
+Hearts: 4 5 6 7 8 9 10 J Q K
