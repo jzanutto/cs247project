@@ -82,15 +82,19 @@ void GameMaster::takeCurrentPlayerTurn() {
 	try {
 		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
 	} catch (const exception &e) {
-		//Replace the current player with a computer, ragequit
-		Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
-		cout << "Player " << (_currentPlayerNumber + 1) << " ragequits. A computer will now take over." << endl;
-		_players[_currentPlayerNumber] = computerReplacement;
-		delete currentPlayer;
+		if ((string)(e.what()) == "This player ragequit") {
+			//Replace the current player with a computer, ragequit
+			Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
+			cout << "Player " << (_currentPlayerNumber + 1) << " ragequits. A computer will now take over." << endl;
+			_players[_currentPlayerNumber] = computerReplacement;
+			delete currentPlayer;
 
-		//Take the turn properly
-		currentPlayer = computerReplacement;
-		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
+			//Take the turn properly
+			currentPlayer = computerReplacement;
+			playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
+		} else {
+			exit(0);
+		}
 	}
 	 
 
