@@ -8,7 +8,7 @@
 class ComputerPlayer : public Player {
 	public:
 		ComputerPlayer();
-		ComputerPlayer(const HumanPlayer &ragequitter);
+		ComputerPlayer(const HumanPlayer &ragequitter);		// constructor that copies human player attributes
 		virtual ~ComputerPlayer();
 		virtual Card takeTurn(Table &table, const Deck &deck, const std::vector<Card> &legalMoves);
 };

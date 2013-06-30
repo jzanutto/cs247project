@@ -12,6 +12,7 @@ ComputerPlayer::ComputerPlayer(const HumanPlayer &ragequitter) {
 ComputerPlayer::~ComputerPlayer() {}
 
 Card ComputerPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &legalMoves) {
+	// check if there are legal moves
 	if(legalMoves.empty()) {
 		Card cardToDiscard = hand()[0];
 		discardCard(cardToDiscard);

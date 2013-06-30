@@ -55,7 +55,7 @@ void Player::setDiscardPile(vector<Card> newDiscardPile) {
 }
 
 void Player::findAndRemoveCardFromHand(Card card) {
-	vector<Card>::iterator cardLoc = _hand.find(card);
+	vector<Card>::iterator cardLoc = find(_hand.begin(), _hand.end(), card);
 	if(cardLoc == _hand.end()) {
 		throw "That is not a legal play.";
 	} else {

@@ -6,13 +6,10 @@
 
 class Deck {
 	public:
-		Deck();
 		Deck(int seed);
-		void shuffle();
+		void shuffle();						// provided shuffle method modified to work with our objects
 		std::vector<Card> cards() const;	// public getter for the deck
 	private:
-		void init();						// for constructor delegation purposes
-		void initialShuffle(int seed);
 		std::vector<Card> _deck;
 };
 

@@ -9,13 +9,13 @@ namespace {
 	static const int DECK_SIZE = 52;
 }
 
-Deck::Deck() {
-	init();
-	srand48(0);
-}
-
 Deck::Deck(int seed) {
-	init();
+	// generating the deck
+	for (int suit = CLUB; suit < SUIT_COUNT; suit++) {
+		for (int rank = ACE; rank < RANK_COUNT; rank++) {
+			_deck.push_back(Card((Suit)suit, (Rank)rank));
+		}
+	}
 	srand48(seed);
 }
 
@@ -38,14 +38,6 @@ void Deck::shuffle() {
 
 vector<Card> Deck::cards() const {
 	return _deck;
-}
-
-void Deck::init() {
-	for (Suit suit = CLUB; suit < SUIT_COUNT; suit++) {
-		for (Rank rank = ACE; rank < RANK_COUNT; rank++) {
-			_deck.push_back(Card(suit, rank));
-		}
-	}
 }
 
 ostream &operator<<(ostream &out, const Deck& deck) {

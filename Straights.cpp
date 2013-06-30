@@ -8,6 +8,7 @@ using namespace std;
 
 int main(int argc, char* argv[]) {	
 	GameMaster *game;
+	// seeding the deck
 	if (argc > 1) {
 		stringstream str;
 		str << argv[1];
@@ -15,9 +16,10 @@ int main(int argc, char* argv[]) {
 		str >> seed;
 		game = new GameMaster(seed);
 	} else {
-		game = new GameMaster();
+		game = new GameMaster(0);
 	}
 	
+	// scanning player input
 	for(int i = 0; i < 4; i++) {
 		cout << "Is player " << i + 1 << " a human(h) or a computer(c)?" << endl;
 		cout << ">";
@@ -26,10 +28,12 @@ int main(int argc, char* argv[]) {
 		game->registerPlayer(input, i);
 	}
 
+	// while the game is not over, deal
 	while(!game->isGameOver()) {
 		game->deal();
 
 		try {
+			// attempt to play a round.  quitting throws an exception
 			game->beginRound();	
 		} catch (const char* e) {
 			delete game;
@@ -38,7 +42,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	vector<int> winners = game->winners();
-
+	// output the game winners
 	for(int i = 0; i < winners.size(); i++) {
 		cout << "Player " << winners[i] << " wins!" << endl;
 	}

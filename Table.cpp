@@ -4,6 +4,7 @@
 using namespace std;
 
 namespace {
+	// helper function that finds where to place a specific card in any generic pile
 	void addSortedToDeque(deque<Card>& cards, Card& c) {
 		if(cards.empty()) {
 			cards.push_front(c);
@@ -20,7 +21,7 @@ namespace {
 			assert(false);
 		}
 	}
-
+	// generates potential moves and adds them to the passed list of moves
 	void addMovesForSuit(vector<Card> &moves, const deque<Card> &playedCards, const Suit &suit) {
 		if (playedCards.empty()) {
 			moves.push_back(Card(suit, SEVEN));
@@ -39,10 +40,11 @@ namespace {
 		}
 	}
 
+	// special print method for special ranks
 	void printCardsWithoutSuit(ostream &out, const deque<Card> &cards) {
 		for(int i = 0; i < cards.size(); i++) {
 			Rank rank = cards[i].getRank();
-
+			// special cases for lettered ranks
 			switch(rank) {
 				case ACE:
 					out << "A";
@@ -72,7 +74,6 @@ namespace {
 Table::Table() {}
 
 Table::~Table() {}
-
 
 vector<Card> Table::getPossibleMoves() const {
 	vector<Card> possibleMoves = vector<Card>();

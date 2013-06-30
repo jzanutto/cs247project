@@ -7,18 +7,10 @@
 
 using namespace std;
 
-GameMaster::GameMaster() {
-	init();
-}
-
 GameMaster::GameMaster(int seed) : _deck(seed) {
-	init();
-}
-
-void GameMaster::init() {
 	for(int i = 0; i < PLAYER_COUNT; i++) {
 		_scores[i] = INITIAL_SCORE;
-	}
+	}	
 }
 
 GameMaster::~GameMaster() {
@@ -202,7 +194,7 @@ vector<Card> GameMaster::legalMoves() const {
 
 	for(int i = 0; i < playerHand.size(); i++) {
 		Card card = playerHand[i];
-		if(allPossibleMoves.find(card) != allPossibleMoves.end()) {
+		if(find(allPossibleMoves.begin(), allPossibleMoves.end(), card) != allPossibleMoves.end()) {
 			validMoves.push_back(card);
 		}
 	}

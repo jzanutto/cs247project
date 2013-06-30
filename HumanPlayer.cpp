@@ -7,9 +7,18 @@ using namespace std;
 
 class HumanPlayer::RagequitException : public exception {
 	public:	
-		RagequitException(char* message);
-		~RagequitException() throw();
-		virtual const char* what() const throw();
+		RagequitException(char* message) : _errorMessage(message) {}
+		~RagequitException() throw() {}
+		virtual const char* what() const throw() { return _errorMessage; }
+	private:
+		char *_errorMessage;
+};
+
+class HumanPlayer::QuitGameException : public exception {
+	public:	
+		QuitGameException(char* message) : _errorMessage(message) {}
+		~QuitGameException() throw() {}
+		virtual const char* what() const throw() { return _errorMessage; }
 	private:
 		char *_errorMessage;
 };
@@ -19,7 +28,7 @@ HumanPlayer::HumanPlayer() {}
 Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &legalMoves) {
 	cout << table;
 	printHand();
-
+	// outputs the legal plays for the user
 	cout << "Legal plays: ";
 	for(int i = 0; i < legalMoves.size(); i++) {
 		cout << legalMoves[i];
@@ -30,49 +39,50 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 
 	cout << endl;
 	
-	bool isValid = false;
+	bool isLegal = false;
 	Card returningCard = Card(SPADE, ACE);
-	while(!isValid) {
-		isValid = true;
+	// expects legality in loop
+	while(!isLegal) {
+		isLegal = true;
 		Command c;
 		cout << ">";
 		cin >> c;
-		
+		// reading in commands
 		switch (c.type) {
 			case PLAY:
-				if(legalMoves.empty() || legalMoves.find(c.card) == legalMoves.end()) {
+				if(legalMoves.empty() || find(legalMoves.begin(), legalMoves.end(), c.card) == legalMoves.end()) {
 					cout << "That is not a legal play." << endl;
-					isValid = false;
+					isLegal = false;
 				} else {
 					try {
 						table.placeCard(playCard(c.card));
 						returningCard = c.card;
 					} catch (const char* e) {
 						cout << e << endl;
-						isValid = false;
+						isLegal = false;
 					}	
 				}
 				break;
 			case DISCARD:
 				if(!legalMoves.empty()) {
 					cout << "You have a legal play. You may not discard." << endl;
-					isValid = false;
+					isLegal = false;
 				} else {
 					try {
 						discardCard(c.card);
 						returningCard = c.card;
 					} catch (const char* e) {
 						cout << e << endl;
-						isValid = false;
+						isLegal = false;
 					}
 				}
 				break;
 			case QUIT:
-				throw "Game Ended";
+				throw QuitGameException("Game ending :(");
 				break;
 			case DECK:
 				cout << deck;
-				isValid = false;
+				isLegal = false;
 				break;
 			case RAGEQUIT:
 				throw RagequitException("This player ragequit");
@@ -82,12 +92,4 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 		}	
 	}	
 	return returningCard;
-}
-
-HumanPlayer::RagequitException::RagequitException(char* message) : _errorMessage(message) {}
-
-HumanPlayer::RagequitException::~RagequitException() throw() {}
-
-const char* HumanPlayer::RagequitException::what() const throw() {
-	return _errorMessage;
 }

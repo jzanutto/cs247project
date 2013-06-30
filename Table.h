@@ -10,12 +10,12 @@ class Table {
 	public:
 		Table();
 		~Table();
-		std::vector<Card> getPossibleMoves() const;
-		std::deque<Card> clubs() const;
-		std::deque<Card> diamonds() const;
-		std::deque<Card> hearts() const;
-		std::deque<Card> spades() const;
-		void placeCard(Card card);
+		std::vector<Card> getPossibleMoves() const;		// generates possible moves for all straight card lists
+		std::deque<Card> clubs() const;					// returns the list of clubs on the table
+		std::deque<Card> diamonds() const;				// returns the list of diamonds on the table 
+		std::deque<Card> hearts() const;				// returns the list of spades on the table
+		std::deque<Card> spades() const;				// returns the list of spades on the table
+		void placeCard(Card card);						// adds a card to the cards on the table if it is valid
 	private:
 		std::deque<Card> _clubs;
 		std::deque<Card> _diamonds;

@@ -1,4 +1,4 @@
-CXX = clang++
+CXX = g++
 # variables and initialization
 CXXFLAGS = -g -Wall -MMD
 # builds dependency lists in .d files
