@@ -84,6 +84,7 @@ void GameMaster::takeCurrentPlayerTurn() {
 	} catch (const exception &e) {
 		//Replace the current player with a computer, ragequit
 		Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
+		cout << "Player " << (_currentPlayerNumber + 1) << " ragequits. A computer will now take over." << endl;
 		_players[_currentPlayerNumber] = computerReplacement;
 		delete currentPlayer;
 

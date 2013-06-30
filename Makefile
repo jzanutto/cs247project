@@ -5,7 +5,7 @@ CXXFLAGS = -g -Wall -MMD
 OBJECTS = Straights.o Command.o Card.o Deck.o Player.o HumanPlayer.o GameMaster.o Table.o ComputerPlayer.o
 DEPENDS = ${OBJECTS:.o=.d}
 # substitute ".o" with ".d"
-EXEC = program
+EXEC = straights
 ${EXEC} : ${OBJECTS}
 	${CXX} ${CXXFLAGS} ${OBJECTS} -o ${EXEC}
 clean : # separate target; cleans directory
