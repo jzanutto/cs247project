@@ -1,8 +1,8 @@
 #include "GameMaster.h"
 #include "HumanPlayer.h"
+#include "ComputerPlayer.h"
 #include <iostream>
 #include <algorithm>
-#include <iostream>
 
 using namespace std;
 
@@ -31,7 +31,17 @@ GameMaster::~GameMaster() {
 
 void GameMaster::registerPlayer(char playerType, int playerNum) {
 	if (playerNum <= PLAYER_COUNT) {
-		Player *newPlayer = new HumanPlayer();
+		Player *newPlayer;
+		switch(playerType) {
+			case 'h':
+				newPlayer = new HumanPlayer();
+				break;
+			case 'c':
+				newPlayer = new ComputerPlayer();
+				break;
+			default:
+				throw "Boom goes the dynamite";
+		}
 		_players[playerNum] = newPlayer;
 	}
 }
@@ -127,7 +137,11 @@ void GameMaster::beginRound() {
 		_scores[i] += playerScore;
 
 		cout << _scores[i] << endl;
+
+		player->returnCards();
 	}
+
+	_table = Table();
 }
 
 bool GameMaster::isGameOver() const {

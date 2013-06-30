@@ -2,7 +2,7 @@ CXX = clang++
 # variables and initialization
 CXXFLAGS = -g -Wall -MMD
 # builds dependency lists in .d files
-OBJECTS = Straights.o Command.o Card.o Deck.o Player.o HumanPlayer.o GameMaster.o Table.o
+OBJECTS = Straights.o Command.o Card.o Deck.o Player.o HumanPlayer.o GameMaster.o Table.o ComputerPlayer.o
 DEPENDS = ${OBJECTS:.o=.d}
 # substitute ".o" with ".d"
 EXEC = program

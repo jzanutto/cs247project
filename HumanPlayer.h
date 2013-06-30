@@ -4,7 +4,7 @@
 #include <vector>
 #include "Player.h"
 
-class HumanPlayer: public Player {
+class HumanPlayer : public Player {
 public:
 	HumanPlayer();
 	virtual ~HumanPlayer() {}

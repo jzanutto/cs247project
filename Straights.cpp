@@ -19,7 +19,11 @@ int main(int argc, char* argv[]) {
 	}
 	
 	for(int i = 0; i < 4; i++) {
-		game->registerPlayer('h', i);
+		cout << "Is player " << i + 1 << " a human(h) or a computer(c)?" << endl;
+		cout << ">";
+		char input;
+		cin >> input;
+		game->registerPlayer(input, i);
 	}
 
 	while(!game->isGameOver()) {
@@ -38,6 +42,8 @@ int main(int argc, char* argv[]) {
 	for(int i = 0; i < winners.size(); i++) {
 		cout << "Player " << winners[i] << " wins!" << endl;
 	}
+
+	cout << endl;
 
 	delete game;
 	return 0;
