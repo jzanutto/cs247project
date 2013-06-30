@@ -68,6 +68,9 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 				cout << deck;
 				isValid = false;
 				break;
+			case RAGEQUIT:
+				throw string("We hath ragequitteth");
+				break;
 			default:
 				break;
 		}	

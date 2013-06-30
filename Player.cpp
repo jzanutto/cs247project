@@ -46,6 +46,14 @@ void Player::discardCard(Card card) {
 	_discardPile.push_back(card);
 }
 
+void Player::setHand(vector<Card> newHand) {
+	_hand = newHand;
+}
+
+void Player::setDiscardPile(vector<Card> newDiscardPile) {
+	_discardPile = newDiscardPile;
+}
+
 void Player::findAndRemoveCardFromHand(Card card) {
 	vector<Card>::iterator cardLoc = find(_hand.begin(), _hand.end(), card);
 	if(cardLoc == _hand.end()) {

@@ -4,7 +4,10 @@ using namespace std;
 
 ComputerPlayer::ComputerPlayer() {}
 
-ComputerPlayer::ComputerPlayer(const HumanPlayer &ragequitter) {}
+ComputerPlayer::ComputerPlayer(const HumanPlayer &ragequitter) {
+	setHand(ragequitter.hand());
+	setDiscardPile(ragequitter.discardPile());
+}
 
 ComputerPlayer::~ComputerPlayer() {}
 

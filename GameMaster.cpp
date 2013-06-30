@@ -3,6 +3,7 @@
 #include "ComputerPlayer.h"
 #include <iostream>
 #include <algorithm>
+#include <string>
 
 using namespace std;
 
@@ -79,7 +80,18 @@ void GameMaster::deal() {
 void GameMaster::takeCurrentPlayerTurn() {
 	Player *currentPlayer = _players[_currentPlayerNumber];
 	vector<Card> validMoves = legalMoves();
-	Card playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
+	Card playedCard = Card(SPADE,ACE);
+	try {
+		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
+	} catch (const string e) {
+		Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
+		_players[_currentPlayerNumber] = computerReplacement;
+		delete currentPlayer;
+
+		currentPlayer = computerReplacement;
+		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
+	}
+	 
 
 	cout << "Player " << (_currentPlayerNumber + 1) << " ";
 
@@ -105,7 +117,7 @@ void GameMaster::beginRound() {
 		 << endl;
 	
 	for(int i = 0; i < _deck.cards().size(); i++) {
-		takeCurrentPlayerTurn();
+		takeCurrentPlayerTurn();		
 	}
 
 	for(int i = 0; i < PLAYER_COUNT; i++) {

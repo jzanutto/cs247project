@@ -19,6 +19,8 @@ public:
 protected:
 	Card playCard(Card card);
 	void discardCard(Card card);
+	void setHand(std::vector<Card> newHand);
+	void setDiscardPile(std::vector<Card> newDiscardPile);
 private:
 	std::vector<Card> _hand;
 	std::vector<Card> _discardPile;
