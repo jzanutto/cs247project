@@ -17,7 +17,7 @@ GameMaster::GameMaster(int seed) : _deck(seed) {
 
 void GameMaster::init() {
 	for(int i = 0; i < PLAYER_COUNT; i++) {
-		_scores[i] = 0;
+		_scores[i] = INITIAL_SCORE;
 	}
 }
 
@@ -33,16 +33,19 @@ GameMaster::~GameMaster() {
 void GameMaster::registerPlayer(char playerType, int playerNum) {
 	if (playerNum <= PLAYER_COUNT) {
 		Player *newPlayer;
+		
 		switch(playerType) {
-			case 'h':
+			case 'h':	//Human Player
 				newPlayer = new HumanPlayer();
 				break;
-			case 'c':
+			case 'c':	//Computer Player
 				newPlayer = new ComputerPlayer();
 				break;
 			default:
 				throw "Boom goes the dynamite";
+				return;
 		}
+
 		_players[playerNum] = newPlayer;
 	}
 }
@@ -58,6 +61,7 @@ Table GameMaster::table() const {
 void GameMaster::deal() {
 	Card sevenOfSpades = Card(SPADE, SEVEN);
 	_deck.shuffle();
+
 	vector<Card> deckCards = _deck.cards();
 
 	int j = 0;
@@ -68,12 +72,13 @@ void GameMaster::deal() {
 			Card c = deckCards[j];
 			p->giveCard(c);
 
+			//Assign the first player
 			if(c == sevenOfSpades) {
 				_currentPlayerNumber = i;
 			}
 
 			j++;
-		} while(j % (deckCards.size()/PLAYER_COUNT) != 0);
+		} while(j % (deckCards.size()/PLAYER_COUNT) != 0);	//Breaks after we've dealt a quarter of a deck to a player
 	}
 }
 
@@ -81,13 +86,16 @@ void GameMaster::takeCurrentPlayerTurn() {
 	Player *currentPlayer = _players[_currentPlayerNumber];
 	vector<Card> validMoves = legalMoves();
 	Card playedCard = Card(SPADE,ACE);
+
 	try {
 		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
-	} catch (const string e) {
+	} catch (const exception &e) {
+		//Replace the current player with a computer, ragequit
 		Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
 		_players[_currentPlayerNumber] = computerReplacement;
 		delete currentPlayer;
 
+		//Take the turn properly
 		currentPlayer = computerReplacement;
 		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
 	}
@@ -103,6 +111,7 @@ void GameMaster::takeCurrentPlayerTurn() {
 
 	cout << playedCard << "." << endl;
 
+	//Loop around if we get to player 4
 	if(_currentPlayerNumber == PLAYER_COUNT - 1) {
 		_currentPlayerNumber = 0;
 	} else {
@@ -158,7 +167,7 @@ void GameMaster::beginRound() {
 
 bool GameMaster::isGameOver() const {
 	for(int i = 0; i < PLAYER_COUNT; i++) {
-		if(_scores[i] >= 80) {
+		if(_scores[i] >= END_GAME_SCORE) {
 			return true;
 		}
 	}
@@ -186,14 +195,6 @@ vector<int> GameMaster::winners() const {
 	return winningPlayerNumbers;
 }
 
-int GameMaster::currentPlayerNumber() const {
-	return _currentPlayerNumber;
-}
-
-Player* GameMaster::getPlayer(int playerNumber) const {
-	return _players[playerNumber];
-}
-
 vector<Card> GameMaster::legalMoves() const {
 	vector<Card> allPossibleMoves = _table.getPossibleMoves();
 	vector<Card> playerHand = _players[_currentPlayerNumber]->hand();
@@ -201,7 +202,7 @@ vector<Card> GameMaster::legalMoves() const {
 
 	for(int i = 0; i < playerHand.size(); i++) {
 		Card card = playerHand[i];
-		if(find(allPossibleMoves.begin(), allPossibleMoves.end(), card) != allPossibleMoves.end()) {
+		if(allPossibleMoves.find(card) != allPossibleMoves.end()) {
 			validMoves.push_back(card);
 		}
 	}

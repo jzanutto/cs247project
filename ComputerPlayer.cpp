@@ -13,11 +13,12 @@ ComputerPlayer::~ComputerPlayer() {}
 
 Card ComputerPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &legalMoves) {
 	if(legalMoves.empty()) {
-		Card card = hand()[0];
-		discardCard(card);
-		return card;
+		Card cardToDiscard = hand()[0];
+		discardCard(cardToDiscard);
+		return cardToDiscard;
 	} else {
-		table.placeCard(playCard(legalMoves[0]));
-		return legalMoves[0];
+		Card cardToPlay = legalMoves[0]; 
+		table.placeCard(playCard(cardToPlay));
+		return cardToPlay;
 	}
 }

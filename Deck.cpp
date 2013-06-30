@@ -41,17 +41,14 @@ vector<Card> Deck::cards() const {
 }
 
 void Deck::init() {
-	
 	for (Suit suit = CLUB; suit < SUIT_COUNT; suit++) {
 		for (Rank rank = ACE; rank < RANK_COUNT; rank++) {
-	
 			_deck.push_back(Card(suit, rank));
 		}
 	}
 }
 
 ostream &operator<<(ostream &out, const Deck& deck) {
-
 	vector<Card> myCards = deck.cards();
 
 	for (int i = 1; i <= DECK_SIZE; i++) {

@@ -5,9 +5,16 @@
 
 using namespace std;
 
-HumanPlayer::HumanPlayer() {
+class HumanPlayer::RagequitException : public exception {
+	public:	
+		RagequitException(char* message);
+		~RagequitException() throw();
+		virtual const char* what() const throw();
+	private:
+		char *_errorMessage;
+};
 
-}
+HumanPlayer::HumanPlayer() {}
 
 Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &legalMoves) {
 	cout << table;
@@ -22,7 +29,6 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 	}
 
 	cout << endl;
-
 	
 	bool isValid = false;
 	Card returningCard = Card(SPADE, ACE);
@@ -34,7 +40,7 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 		
 		switch (c.type) {
 			case PLAY:
-				if(legalMoves.empty() || find(legalMoves.begin(), legalMoves.end(), c.card) == legalMoves.end()) {
+				if(legalMoves.empty() || legalMoves.find(c.card) == legalMoves.end()) {
 					cout << "That is not a legal play." << endl;
 					isValid = false;
 				} else {
@@ -69,7 +75,7 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 				isValid = false;
 				break;
 			case RAGEQUIT:
-				throw string("We hath ragequitteth");
+				throw RagequitException("This player ragequit");
 				break;
 			default:
 				break;
@@ -78,4 +84,10 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 	return returningCard;
 }
 
+HumanPlayer::RagequitException::RagequitException(char* message) : _errorMessage(message) {}
 
+HumanPlayer::RagequitException::~RagequitException() throw() {}
+
+const char* HumanPlayer::RagequitException::what() const throw() {
+	return _errorMessage;
+}
