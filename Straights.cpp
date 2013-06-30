@@ -43,8 +43,6 @@ int main(int argc, char* argv[]) {
 		cout << "Player " << winners[i] << " wins!" << endl;
 	}
 
-	cout << endl;
-
 	delete game;
 	return 0;
 }
