@@ -8,7 +8,7 @@ class HumanPlayer: public Player {
 public:
 	HumanPlayer();
 	virtual ~HumanPlayer() {}
-	virtual void takeTurn();
+	virtual Card takeTurn(Table &table, const Deck &deck, const std::vector<Card> &legalMoves);
 };
 
 

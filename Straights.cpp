@@ -22,33 +22,23 @@ int main(int argc, char* argv[]) {
 		game->registerPlayer('h', i);
 	}
 
-	game->deal();
+	while(!game->isGameOver()) {
+		game->deal();
 
-	Command c;
-
-	while(true) {
-		cout << "A new round begins. It's player " 
-		 << (game->currentPlayerNumber() + 1)
-		 << "'s turn to play."
-		 << endl;
-		Player *currentPlayer = game->getPlayer(game->currentPlayerNumber());
-		cout << game->table();
-		currentPlayer->printHand();
-		game->printLegalMoves();
-		cout << ">";
-		cin >> c;
-		switch (c.type) {
-			case QUIT:
-				goto quit;
-			case DECK:
-				cout << game->deck();
-				break;
-			default:
-				break;
-		}
+		try {
+			game->beginRound();	
+		} catch (const char* e) {
+			delete game;
+			return 0;
+		}		
 	}
 
-quit:
+	vector<int> winners = game->winners();
+
+	for(int i = 0; i < winners.size(); i++) {
+		cout << "Player " << winners[i] << " wins!" << endl;
+	}
+
 	delete game;
 	return 0;
 }

@@ -5,6 +5,10 @@ using namespace std;
 
 namespace {
 	void addSortedToDeque(deque<Card>& cards, Card& c) {
+		if(cards.empty()) {
+			cards.push_front(c);
+			return;
+		}
 		Card front = cards.front();
 		Card back = cards.back();
 
@@ -37,7 +41,25 @@ namespace {
 
 	void printCardsWithoutSuit(ostream &out, const deque<Card> &cards) {
 		for(int i = 0; i < cards.size(); i++) {
-			out << cards[i].getRank();
+			Rank rank = cards[i].getRank();
+
+			switch(rank) {
+				case ACE:
+					out << "A";
+					break;
+				case JACK:
+					out << "J";
+					break;
+				case QUEEN:
+					out << "Q";
+					break;
+				case KING:
+					out << "K";
+					break;
+				default:
+					out << (rank + 1);
+			}
+
 			if(i != cards.size() - 1) {
 				out << " ";
 			}

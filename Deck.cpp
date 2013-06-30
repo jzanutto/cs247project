@@ -11,12 +11,12 @@ namespace {
 
 Deck::Deck() {
 	init();
+	srand48(0);
 }
 
 Deck::Deck(int seed) {
 	init();
 	srand48(seed);
-	shuffle();
 }
 
 /* 
@@ -27,7 +27,7 @@ since this is internal, we have _deck as an array of cards
 void Deck::shuffle() {
 	int n = DECK_SIZE;
 
-	while ( n > 1 ) {
+	while (n > 1) {
 		int k = (int) (lrand48() % n);
 		--n;
 		Card c = _deck[n];

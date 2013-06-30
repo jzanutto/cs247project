@@ -3,6 +3,8 @@
 
 #include <vector>
 #include "Card.h"
+#include "Table.h"
+#include "Deck.h"
 
 class Player {
 public:
@@ -10,7 +12,7 @@ public:
 	virtual ~Player() {}
 	std::vector<Card> hand() const;				// getter for player hand
 	std::vector<Card> discardPile() const;
-	virtual void takeTurn() = 0;
+	virtual Card takeTurn(Table &table, const Deck &deck, const std::vector<Card> &legalMoves) = 0;
 	void printHand() const;
 	void returnCards();
 	void giveCard(Card card);
