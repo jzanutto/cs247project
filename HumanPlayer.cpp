@@ -51,7 +51,7 @@ Card HumanPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &l
 		switch (c.type) {
 			case PLAY:
 				if(legalMoves.empty() || find(legalMoves.begin(), legalMoves.end(), c.card) == legalMoves.end()) {
-					cout << "That is not a legal play." << endl;
+					cout << "This is not a legal play." << endl;
 					isLegal = false;
 				} else {
 					try {
