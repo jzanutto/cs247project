@@ -9,11 +9,15 @@
 #include <gtkmm/table.h>
 #include "PlayerFrame.h"
 #include "DeckUI.h"
+#include "Observer.h"
 
-class StraightsWindow : public Gtk::Window {
+
+// THIS IS THE VIEW
+class StraightsWindow : public Gtk::Window, public Observer {
 	public:
-		StraightsWindow();
+		StraightsWindow( Controller*, Model* );
 		virtual ~StraightsWindow();
+		virtual void update();
 
 	private:
 		DeckUI deck;

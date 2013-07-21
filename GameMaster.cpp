@@ -7,7 +7,7 @@
 
 using namespace std;
 
-GameMaster::GameMaster(int seed) : _deck(seed) {
+GameMaster::GameMaster() : _deck(0) {
 	for(int i = 0; i < PLAYER_COUNT; i++) {
 		_scores[i] = INITIAL_SCORE;
 	}	
@@ -22,23 +22,18 @@ GameMaster::~GameMaster() {
 	}
 }
 
-void GameMaster::registerPlayer(char playerType, int playerNum) {
-	if (playerNum <= PLAYER_COUNT) {
-		Player *newPlayer;
-		
-		switch(playerType) {
-			case 'h':	//Human Player
-				newPlayer = new HumanPlayer();
-				break;
-			case 'c':	//Computer Player
-				newPlayer = new ComputerPlayer();
-				break;
-			default:
-				throw "Boom goes the dynamite";
-				return;
-		}
+void GameMaster::seedDeck(int seed) {
+	_deck = Deck();
+}
 
-		_players[playerNum] = newPlayer;
+void GameMaster::registerPlayers(const bool &players[4]) {
+	for (int i = 0; i < PLAYER_COUNT; i++) {
+		if (players[i] == true) {
+			_players[i] = new HumanPlayer();
+
+		} else {
+			_players[i] = new ComputerPlayer();
+		}
 	}
 }
 
@@ -123,7 +118,7 @@ void GameMaster::beginRound() {
 		 << endl;
 	
 	for(int i = 0; i < _deck.cards().size(); i++) {
-		takeCurrentPlayerTurn();		
+		//takeCurrentPlayerTurn();
 	}
 
 	for(int i = 0; i < PLAYER_COUNT; i++) {
