@@ -75,7 +75,6 @@ DeckUI::~DeckUI() { }
 
 Glib::RefPtr<Gdk::Pixbuf> DeckUI::getCardImage(Suit suit, Rank rank) {
 	int index = suit*13 + rank;
-	cout << rank << " " << index << " " << suit << endl;
 	return cardImages[index];
 }
 

@@ -2,7 +2,7 @@ CXX = clang++
 # variables and initialization
 CXXFLAGS = -g -Wall -MMD `pkg-config gtkmm-2.4 --cflags --libs`
 # builds dependency lists in .d files
-OBJECTS = StraightsWindow.o DeckUI.o main.o
+OBJECTS = StraightsWindow.o DeckUI.o main.o PlayerFrame.o
 DEPENDS = ${OBJECTS:.o=.d}
 # substitute ".o" with ".d"
 EXEC = straights

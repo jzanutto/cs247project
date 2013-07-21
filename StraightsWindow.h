@@ -6,6 +6,8 @@
 #include <gtkmm/box.h>
 #include <gtkmm/button.h>
 #include <gtkmm/frame.h>
+#include <gtkmm/table.h>
+#include "PlayerFrame.h"
 #include "DeckUI.h"
 
 class StraightsWindow : public Gtk::Window {
@@ -16,9 +18,27 @@ class StraightsWindow : public Gtk::Window {
 	private:
 		DeckUI deck;
 
-		Gtk::Image *cards[13];
-		Gtk::HBox hbox;
-		Gtk::Frame frame;
+		Gtk::Table outerTable;
+
+		Gtk::HBox menuHBox;
+		Gtk::Button startGameButton;
+		Gtk::Button endGameButton;
+
+		
+		Gtk::Frame cardFrame;
+		Gtk::Table cardTable;
+		Gtk::Image *clubs[13];
+		Gtk::Image *diamonds[13];
+		Gtk::Image *hearts[13];
+		Gtk::Image *spades[13];
+		
+		PlayerFrame playerFrames[4];
+		Gtk::HBox playerHBox;		
+
+		Gtk::Frame handFrame;
+		Gtk::HBox handHBox;
+		Gtk::Button handButton[13];
+		Gtk::Image *hand[13];
 };
 
 #endif
