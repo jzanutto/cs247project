@@ -25,6 +25,8 @@ class StraightsWindow : public Gtk::Window, public Observer {
 	protected:
 		virtual void onStartClicked();
 		virtual void onCardClicked(int index);
+		virtual void onRageClicked();
+		virtual void onEndGameClicked();
 
 	private:
 		DeckUI deck;

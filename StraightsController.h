@@ -10,8 +10,8 @@ class StraightsController {
 public:
    StraightsController(GameMaster *);
    void startGameButtonClicked(int seed, const bool *playerTypes);
-   /*void endGameButtonClicked();
-   void rageButtonClicked(int playerNum);*/
+   void endGameButtonClicked();
+   void rageButtonClicked();
    void cardClicked(int index);
 private:
    GameMaster *_model;

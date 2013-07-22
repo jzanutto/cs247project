@@ -14,7 +14,7 @@ class PlayerFrame : public Gtk::Frame {
 		void setPoints(std::string points);
 		void setDiscards(std::string discards);
 		void setActive(bool active);
-		friend class StraightsWindow;
+		Gtk::Button& getRageButton();
 	private:
 		Gtk::VBox playerInfoVBox;
 		Gtk::Button rageButton;

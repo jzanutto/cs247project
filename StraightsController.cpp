@@ -16,3 +16,11 @@ void StraightsController::startGameButtonClicked(int seed, const bool *playerTyp
 void StraightsController::cardClicked(int index) {
 	_model->takeCurrentPlayerTurn(index);
 }
+
+void StraightsController::rageButtonClicked() {
+	_model->ragequit();
+}
+
+void StraightsController::endGameButtonClicked() {
+	_model->reset();
+}

@@ -11,7 +11,10 @@ using namespace std;
 GameMaster::GameMaster() : _deck(0), _isNewRound(false), _isRoundOver(false) {
 	for(int i = 0; i < PLAYER_COUNT; i++) {
 		_scores[i] = INITIAL_SCORE;
-	}	
+		_players[i] = NULL;
+	}
+
+	_lastCardPlayed = NULL;	
 }
 
 GameMaster::~GameMaster() {
@@ -20,6 +23,10 @@ GameMaster::~GameMaster() {
 		if(p != NULL) {
 			delete p;
 		}
+	}
+
+	if(_lastCardPlayed != NULL) {
+		delete _lastCardPlayed;
 	}
 }
 
@@ -31,7 +38,6 @@ void GameMaster::registerPlayers(const bool *players) {
 	for (int i = 0; i < PLAYER_COUNT; i++) {		
 		if (players[i] == false) {
 			_players[i] = new HumanPlayer();
-
 		} else {
 			_players[i] = new ComputerPlayer();
 		}
@@ -69,6 +75,9 @@ void GameMaster::deal() {
 
 void GameMaster::takeCurrentPlayerTurn(int cardIndex) {
 	Player *currentPlayer = _players[_currentPlayerNumber];
+	if(currentPlayer == NULL) {
+		return;
+	}
 	vector<Card> validMoves = legalMoves();
 	if(cardIndex < currentPlayer->hand().size()) {
 		Card playedCard = currentPlayer->hand()[cardIndex];
@@ -160,42 +169,7 @@ void GameMaster::takeCurrentPlayerTurn(int cardIndex) {
 		takeCurrentPlayerTurn(-1);
 	}
 
-	/*
-	try {
-		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
-	} catch (const exception &e) {
-		if ((string)(e.what()) == "This player ragequit") {
-			//Replace the current player with a computer, ragequit
-			Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
-			cout << "Player " << (_currentPlayerNumber + 1) << " ragequits. A computer will now take over." << endl;
-			_players[_currentPlayerNumber] = computerReplacement;
-			delete currentPlayer;
-
-			//Take the turn properly
-			currentPlayer = computerReplacement;
-			playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
-		} else {
-			exit(0);
-		}
-	}
-	 
-
-	cout << "Player " << (_currentPlayerNumber + 1) << " ";
-
-	if(validMoves.empty()) {
-		cout << "discards ";
-	} else {
-		cout << "plays ";
-	} 	
-
-	cout << playedCard << "." << endl;
-
-	//Loop around if we get to player 4
-	if(_currentPlayerNumber == PLAYER_COUNT - 1) {
-		_currentPlayerNumber = 0;
-	} else {
-		_currentPlayerNumber++;
-	}*/
+	
 }
 
 void GameMaster::beginRound() {
@@ -296,7 +270,10 @@ string GameMaster::gameWinner() const {
 
 void GameMaster::reset() {
 	for(int i = 0; i < PLAYER_COUNT; i++) {
-		delete _players[i];
+		if(_players[i] != NULL) {
+			delete _players[i];
+			_players[i] = NULL;
+		}
 		_scores[i] = 0;
 		_playerTypes[i] = false;
 	}
@@ -304,7 +281,19 @@ void GameMaster::reset() {
 	_currentPlayerNumber = -1;
 	_isNewRound = false;
 	_isRoundOver = false;
+	if(_lastCardPlayed != NULL) {
+		delete _lastCardPlayed;
+	}
 	_lastCardPlayed = NULL;
+}
+
+void GameMaster::ragequit() {
+	Player *currentPlayer = _players[_currentPlayerNumber];
+	Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
+	_playerTypes[_currentPlayerNumber] = true;
+	_players[_currentPlayerNumber] = computerReplacement;
+	takeCurrentPlayerTurn(-1);
+	delete currentPlayer;
 }
 
 vector<Card> GameMaster::legalMoves() const {

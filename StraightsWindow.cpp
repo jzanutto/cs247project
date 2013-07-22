@@ -21,7 +21,7 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 	seedEntry.set_text("0");
 
 	startGameButton.signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::onStartClicked));
-	endGameButton.signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::reset));
+	endGameButton.signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::onEndGameClicked));
 
 
 	menuHBox.add(startGameButton);
@@ -51,6 +51,7 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 	cardFrame.add(cardTable);
 
 	for (int i = 0; i < 4; i++) {
+		playerFrames[i].getRageButton().signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::onRageClicked));
 		std::stringstream stream;
 		stream << (1 + i);
 		std::string name = "Player " + stream.str();
@@ -159,7 +160,10 @@ void StraightsWindow::update() {
 			playerFrames[i].setPoints(ss.str());
 		}
 		if (_model->isGameOver()) {
-			MessageDialogBox dialog(*this, "Game Over!", _model->gameWinner());			
+			MessageDialogBox dialog(*this, "Game Over!", _model->gameWinner());
+			for(int i = 0; i < 4; i++) {
+				playerFrames[i].setPoints("0");
+			}
 		}
 		reset();		
 	} else if(_model->isNewRound()) {
@@ -187,6 +191,18 @@ void StraightsWindow::onStartClicked() {
 
 void StraightsWindow::onCardClicked(int index) {
 	_controller->cardClicked(index);
+}
+
+void StraightsWindow::onRageClicked() {
+	_controller->rageButtonClicked();
+}
+
+void StraightsWindow::onEndGameClicked() {
+	for(int i = 0; i < 4; i++) {
+		playerFrames[i].setPoints("0");
+	}
+	reset();
+	_controller->endGameButtonClicked();
 }
 
 void StraightsWindow::reset() {

@@ -29,6 +29,7 @@ public:
 	std::string roundResult() const;
 	std::string gameWinner() const;
 	void reset();
+	void ragequit();
 
 private:
 	static const int PLAYER_COUNT = 4;

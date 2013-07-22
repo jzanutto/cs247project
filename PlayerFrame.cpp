@@ -33,3 +33,7 @@ void PlayerFrame::setDiscards(string discardCount) {
 void PlayerFrame::setActive(bool active) {
 	rageButton.set_sensitive(active);
 }
+
+Gtk::Button& PlayerFrame::getRageButton() {
+	return rageButton;
+}
