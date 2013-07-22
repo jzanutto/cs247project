@@ -1,6 +1,7 @@
 #include "GameMaster.h"
 #include "HumanPlayer.h"
 #include "ComputerPlayer.h"
+#include "SmartComputerPlayer.h"
 #include <iostream>
 #include <sstream>
 #include <algorithm>
@@ -35,15 +36,20 @@ void GameMaster::seedDeck(int seed) {
 	_deck = Deck(seed);
 }
 
-void GameMaster::registerPlayers(const bool *players) {
-	for (int i = 0; i < PLAYER_COUNT; i++) {		
+void GameMaster::registerPlayers(const bool *players, const bool hardMode) {
+	for (int i = 0; i < PLAYER_COUNT; i++) {	
 		if (players[i] == HUMAN) {
 			_players[i] = new HumanPlayer();
 		} else {
-			_players[i] = new ComputerPlayer();
+			if (hardMode == false) {
+				_players[i] = new ComputerPlayer();
+			} else {	
+				_players[i] = new SmartComputerPlayer();
+			}
 		}
 		_playerTypes[i] = players[i];
 	}
+	_hardMode = hardMode;
 }
 
 Table GameMaster::table() const {
@@ -299,7 +305,12 @@ void GameMaster::reset(bool resetPlayers) {
 
 void GameMaster::ragequit() {
 	Player *currentPlayer = _players[_currentPlayerNumber];
-	Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
+	Player *computerReplacement;
+	if (_hardMode == true) {
+		computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
+	} else {
+		computerReplacement = new SmartComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
+	}
 	_playerTypes[_currentPlayerNumber] = true;
 	_players[_currentPlayerNumber] = computerReplacement;
 	takeCurrentPlayerTurn(COMPUTER_PLAYER_CARD_INDEX);

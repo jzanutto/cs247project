@@ -13,12 +13,14 @@ class ConfigurationDialogBox : public Gtk::Dialog {
 		ConfigurationDialogBox(Gtk::Window &parent, std::string title);
 		virtual ~ConfigurationDialogBox();
 		bool* playerResults() const;	//Returns the results of the check boxes in the dialog
+		bool hardMode() const;
 
 	private:
 		static const int NUMBER_OF_RESULTS = 4;
 		std::vector<Gtk::CheckButton *> checkButtons;
 		bool playerResults_[NUMBER_OF_RESULTS];
 		Gtk::Label promptLabel;
+		Gtk::CheckButton* hardModeButton;
 };
 
 #endif

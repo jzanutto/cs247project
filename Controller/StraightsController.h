@@ -8,7 +8,7 @@ class GameMaster;
 class StraightsController {
 public:
    StraightsController(GameMaster *);
-   void startGameButtonClicked(int seed, const bool *playerTypes);
+   void startGameButtonClicked(int seed, const bool *playerTypes, const bool hardMode);
    void endGameButtonClicked();
    void rageButtonClicked();
    void cardClicked(int index);

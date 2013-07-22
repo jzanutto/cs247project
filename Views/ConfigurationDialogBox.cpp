@@ -20,6 +20,9 @@ ConfigurationDialogBox::ConfigurationDialogBox(Gtk::Window &parent, string title
 		checkButtons.push_back(check);
 		contentArea->add(*checkButtons[i]);
 	}
+	string hardMode = "Hard Mode (not for the faint of heart)";
+	hardModeButton = new Gtk::CheckButton(hardMode);
+	contentArea->add(*hardModeButton);
 
 	// Add a standard "ok" buttons with the appropriate responses when clicked.
     Gtk::Button *okButton = add_button( Gtk::Stock::OK, Gtk::RESPONSE_OK);
@@ -52,4 +55,8 @@ ConfigurationDialogBox::~ConfigurationDialogBox() {
 
 bool* ConfigurationDialogBox::playerResults() const {
 	return (bool *)playerResults_;
+}
+
+bool ConfigurationDialogBox::hardMode() const {
+	return hardModeButton->get_active();
 }
