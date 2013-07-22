@@ -1,6 +1,6 @@
 #include <set>
 #include "Subject.h"
-#include "Observer.h"
+#include "../Views/Observer.h"
 
 void Subject::subscribe (Observer *newView) {
     observers_.insert(newView);

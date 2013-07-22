@@ -4,7 +4,7 @@
 #include <vector>
 #include <deque>
 #include <iostream>
-#include "Card.h"
+#include "../Common/Card.h"
 
 class Table {
 	public:

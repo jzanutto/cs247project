@@ -2,7 +2,7 @@
 #define _PLAYER_
 
 #include <vector>
-#include "Card.h"
+#include "../Common/Card.h"
 #include "Table.h"
 #include "Deck.h"
 

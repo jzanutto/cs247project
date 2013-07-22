@@ -8,16 +8,16 @@
 
 using namespace std;
 
-GameMaster::GameMaster() : _deck(0), _isNewRound(false), _isRoundOver(false) {
+GameMaster::GameMaster() : _deck(0), _isNewRound(false), _isRoundOver(false), _currentPlayerNumber(-1), _lastCardPlayed(NULL) {
+	//Initialize everything to default values
 	for(int i = 0; i < PLAYER_COUNT; i++) {
 		_scores[i] = INITIAL_SCORE;
 		_players[i] = NULL;
 	}
-
-	_lastCardPlayed = NULL;	
 }
 
 GameMaster::~GameMaster() {
+	//Delete players
 	for (int i = 0; i < PLAYER_COUNT; i++) {
 		Player *p = _players[i];
 		if(p != NULL) {
@@ -25,6 +25,7 @@ GameMaster::~GameMaster() {
 		}
 	}
 
+	//Delete the last card played
 	if(_lastCardPlayed != NULL) {
 		delete _lastCardPlayed;
 	}
@@ -36,7 +37,7 @@ void GameMaster::seedDeck(int seed) {
 
 void GameMaster::registerPlayers(const bool *players) {
 	for (int i = 0; i < PLAYER_COUNT; i++) {		
-		if (players[i] == false) {
+		if (players[i] == HUMAN) {
 			_players[i] = new HumanPlayer();
 		} else {
 			_players[i] = new ComputerPlayer();
@@ -74,49 +75,47 @@ void GameMaster::deal() {
 }
 
 void GameMaster::takeCurrentPlayerTurn(int cardIndex) {
-	Player *currentPlayer = _players[_currentPlayerNumber];
-	if(currentPlayer == NULL) {
+	if(_currentPlayerNumber == -1) {
 		return;
 	}
+
+	Player *currentPlayer = _players[_currentPlayerNumber];	
 	vector<Card> validMoves = legalMoves();
+
+	//Check if the card is in the hand, otherwise we ignored it
 	if(cardIndex < currentPlayer->hand().size()) {
 		Card playedCard = currentPlayer->hand()[cardIndex];
-		try {
-			_lastCardPlayed = currentPlayer->takeTurn(_table, validMoves, &playedCard);
 
-			if(_currentPlayerNumber == PLAYER_COUNT - 1) {
-				_currentPlayerNumber = 0;
-			} else {
-				_currentPlayerNumber++;
-			}
-			notify();
-		} catch(const exception &e) {
-			cout << e.what() << endl;
-		}			
-	} else if(cardIndex == -1) {
-		if(_lastCardPlayed == NULL) {
+		_lastCardPlayed = currentPlayer->takeTurn(_table, validMoves, &playedCard);
+
+		incrementPlayer();
+
+		notify();
+		//Check if the index indicates a computer player		
+	} else if(cardIndex == COMPUTER_PLAYER_CARD_INDEX) {
+		if(_lastCardPlayed == NULL) {	//Delete the previously played card
 			delete _lastCardPlayed;
 		}
+
 		Card *played = new Card(SPADE, ACE);
 		_lastCardPlayed = currentPlayer->takeTurn(_table, validMoves, played);
-		//_lastCardPlayed = played;
-		//cout << *_lastCardPlayed << endl;
-		if(_currentPlayerNumber == PLAYER_COUNT - 1) {
-			_currentPlayerNumber = 0;
-		} else {
-			_currentPlayerNumber++;
-		}
+
+		incrementPlayer();		
+		
 		notify();
 	} else {
 		_lastCardPlayed = NULL;
 	}
 
+	//update the current player
 	currentPlayer = _players[_currentPlayerNumber];
 
+	//Check if the round is over. If the new current player is out of cards
 	if(currentPlayer->hand().empty()) {
 		_isRoundOver = true;
 		stringstream output;
 
+		//Create the round results
 		for(int i = 0; i < PLAYER_COUNT; i++) {
 			Player *player = _players[i];
 			vector<Card> discardPile = player->discardPile();
@@ -157,19 +156,21 @@ void GameMaster::takeCurrentPlayerTurn(int cardIndex) {
 		_table = Table();
 		notify();
 
+		//Check if the game is over as well
 		if (!isGameOver()) {
+			//Begin the new round
 			deal();
 			beginRound();
 		} else {
+			//Reset everything, game over
 			reset();
 		}
 	}
 
-	if(_playerTypes[_currentPlayerNumber] == true) {
-		takeCurrentPlayerTurn(-1);
-	}
-
-	
+	//If the next player is a computer player, take their turn
+	if(_playerTypes[_currentPlayerNumber] == !HUMAN) {
+		takeCurrentPlayerTurn(COMPUTER_PLAYER_CARD_INDEX);
+	}	
 }
 
 void GameMaster::beginRound() {
@@ -181,8 +182,8 @@ void GameMaster::beginRound() {
 	_isRoundOver = false;
 	notify();
 
-	if(_playerTypes[_currentPlayerNumber] == true) {
-		takeCurrentPlayerTurn(-1);
+	if(_playerTypes[_currentPlayerNumber] == !HUMAN) {
+		takeCurrentPlayerTurn(COMPUTER_PLAYER_CARD_INDEX);
 	}	
 }
 
@@ -268,15 +269,24 @@ string GameMaster::gameWinner() const {
 	return ss.str();
 }
 
-void GameMaster::reset() {
+void GameMaster::reset(bool resetPlayers) {
+	//Resetting players
 	for(int i = 0; i < PLAYER_COUNT; i++) {
-		if(_players[i] != NULL) {
-			delete _players[i];
-			_players[i] = NULL;
+		//Check if we are keeping the players and only resetting the score and their states
+		if (resetPlayers==true) {
+			if(_players[i] != NULL) {
+				delete _players[i];
+				_players[i] = NULL;
+			}
+			_playerTypes[i] = false;
+		} else {
+			if (_players[i] != NULL && _players[i]->hand().size() > 0) {
+				_players[i]->returnCards();
+			}
 		}
 		_scores[i] = 0;
-		_playerTypes[i] = false;
 	}
+
 	_table = Table();
 	_currentPlayerNumber = -1;
 	_isNewRound = false;
@@ -292,7 +302,7 @@ void GameMaster::ragequit() {
 	Player *computerReplacement = new ComputerPlayer(*dynamic_cast<HumanPlayer*>(currentPlayer));
 	_playerTypes[_currentPlayerNumber] = true;
 	_players[_currentPlayerNumber] = computerReplacement;
-	takeCurrentPlayerTurn(-1);
+	takeCurrentPlayerTurn(COMPUTER_PLAYER_CARD_INDEX);
 	delete currentPlayer;
 }
 
@@ -309,4 +319,12 @@ vector<Card> GameMaster::legalMoves() const {
 	}
 
 	return validMoves;
+}
+
+void GameMaster::incrementPlayer() {
+	if(_currentPlayerNumber == PLAYER_COUNT - 1) {
+		_currentPlayerNumber = 0;
+	} else {
+		_currentPlayerNumber++;
+	}
 }

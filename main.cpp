@@ -1,7 +1,7 @@
-#include "StraightsWindow.h"
+#include "Views/StraightsWindow.h"
 #include <gtkmm/main.h>
-#include "GameMaster.h"
-#include "StraightsController.h"
+#include "Model/GameMaster.h"
+#include "Controller/StraightsController.h"
 
 int main(int argc, char *argv[]) {
 	Gtk::Main kit(argc, argv);

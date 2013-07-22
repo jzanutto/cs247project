@@ -1,16 +1,16 @@
 #include "StraightsWindow.h"
 #include "ConfigurationDialogBox.h"
-#include "StraightsController.h"
-#include "GameMaster.h"
+#include "../Controller/StraightsController.h"
+#include "../Model/GameMaster.h"
 #include "MessageDialogBox.h"
 
 #include <string>
 #include <sstream>
 #include <sigc++/sigc++.h>
-#include <iostream>
+#include <exception>
 
 StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *controller) : outerTable(4), menuHBox(true, 2), startGameButton("Start New Game"), endGameButton("End Current Game")
-									, cardTable(4, 13, true), playerHBox(true, 2), handHBox(true, 2), _model(model), _controller(controller) {
+									, cardTable(4, NUMBER_OF_CARDS_IN_ROW, true), playerHBox(true, 2), handHBox(true, 2), _model(model), _controller(controller) {
 	
 	_model->subscribe(this);
 	set_title("Straights");
@@ -20,9 +20,9 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 
 	seedEntry.set_text("0");
 
+	//Intialize Top button listeners
 	startGameButton.signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::onStartClicked));
 	endGameButton.signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::onEndGameClicked));
-
 
 	menuHBox.add(startGameButton);
 	menuHBox.add(seedEntry);
@@ -37,7 +37,8 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 	cardTable.set_col_spacings(1);
 	cardTable.set_row_spacings(2);
 
-	for(Rank r = ACE; r < RANK_COUNT; r++) {
+	//Setup the table view for cards
+	for(int r = ACE; r < RANK_COUNT; r++) {
 		clubs[r] = new Gtk::Image(deck.getBlankCardImage());
 		cardTable.attach(*clubs[r], r, r+1, CLUB, CLUB+1);
 		diamonds[r] = new Gtk::Image(deck.getBlankCardImage());
@@ -50,6 +51,8 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 
 	cardFrame.add(cardTable);
 
+
+	//Setup the player frames
 	for (int i = 0; i < 4; i++) {
 		playerFrames[i].getRageButton().signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::onRageClicked));
 		std::stringstream stream;
@@ -63,7 +66,9 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 	handFrame.set_label_align(Gtk::ALIGN_LEFT, Gtk::ALIGN_TOP);
 	handFrame.set_shadow_type(Gtk::SHADOW_ETCHED_OUT);
 
-	for (int i = 0; i < 13; i++) {
+
+	//Setup the hand
+	for (int i = 0; i < NUMBER_OF_CARDS_IN_ROW; i++) {
 		hand[i] = new Gtk::Image(deck.getBlankCardImage());
 		handButton[i].set_image(*hand[i]);
 		handButton[i].signal_clicked().connect(sigc::bind<int>(sigc::mem_fun(*this, &StraightsWindow::onCardClicked), i));
@@ -72,6 +77,7 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 
 	handFrame.add(handHBox);
 
+	//Hook everything up
 	outerTable.attach(playerHBox, 0, 1, 2, 3);
 	outerTable.attach(cardFrame, 0, 1, 1, 2);
 	outerTable.attach(handFrame, 0, 1, 3, 4);
@@ -81,7 +87,7 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 }
 
 StraightsWindow::~StraightsWindow() { 
-	for(int i = 0; i < 13; i++) {
+	for(int i = 0; i < NUMBER_OF_CARDS_IN_ROW; i++) {
 		
 		if(clubs[i] != NULL) {
 			delete clubs[i];
@@ -113,7 +119,7 @@ void StraightsWindow::update() {
 		hand[i]->set(deck.getCardImage(c.getSuit(), c.getRank()));		
 	}
 
-	for(int i = playerHand.size(); i < 13; i++) {
+	for(int i = playerHand.size(); i < NUMBER_OF_CARDS_IN_ROW; i++) {
 		hand[i]->set(deck.getBlankCardImage());
 	}
 
@@ -137,7 +143,7 @@ void StraightsWindow::update() {
 		}
 	} else {
 		std::vector<int> discards = _model->numberOfDiscards();
-		for(int i = 0; i < 4; i++) {
+		for(int i = 0; i < NUMBER_OF_PLAYERS; i++) {
 			std::stringstream ss;
 			ss << discards[i];
 			playerFrames[i].setDiscards(ss.str());
@@ -146,7 +152,7 @@ void StraightsWindow::update() {
 
 	int currentPlayerNumber = _model->currentPlayer();
 
-	for(int i = 0; i < 4; i++) {
+	for(int i = 0; i < NUMBER_OF_PLAYERS; i++) {
 		playerFrames[i].setActive(i == currentPlayerNumber);
 	}
 
@@ -154,14 +160,14 @@ void StraightsWindow::update() {
 		MessageDialogBox dialog(*this, "Round Result", _model->roundResult());
 
 		int* scores = _model->scores();
-		for(int i = 0; i < 4; i++) {
+		for(int i = 0; i < NUMBER_OF_PLAYERS; i++) {
 			std::stringstream ss;
 			ss << scores[i];
 			playerFrames[i].setPoints(ss.str());
 		}
 		if (_model->isGameOver()) {
 			MessageDialogBox dialog(*this, "Game Over!", _model->gameWinner());
-			for(int i = 0; i < 4; i++) {
+			for(int i = 0; i < NUMBER_OF_PLAYERS; i++) {
 				playerFrames[i].setPoints("0");
 			}
 		}
@@ -185,12 +191,17 @@ void StraightsWindow::onStartClicked() {
 		ss.clear();
 		seed = 0;
 	}
-
+	reset();
+	_model->reset(false);
 	_controller->startGameButtonClicked(seed, results);
 }
 
 void StraightsWindow::onCardClicked(int index) {
-	_controller->cardClicked(index);
+	try {
+		_controller->cardClicked(index);
+	} catch (const std::exception &e) {
+		MessageDialogBox dialog(*this, "Illegal Move", e.what());
+	}
 }
 
 void StraightsWindow::onRageClicked() {
@@ -198,7 +209,7 @@ void StraightsWindow::onRageClicked() {
 }
 
 void StraightsWindow::onEndGameClicked() {
-	for(int i = 0; i < 4; i++) {
+	for(int i = 0; i < NUMBER_OF_PLAYERS; i++) {
 		playerFrames[i].setPoints("0");
 	}
 	reset();
@@ -206,14 +217,14 @@ void StraightsWindow::onEndGameClicked() {
 }
 
 void StraightsWindow::reset() {
-	for(Rank r = ACE; r < RANK_COUNT; r++) {
+	for(int r = ACE; r < RANK_COUNT; r++) {
 		clubs[r]->set(deck.getBlankCardImage());
 		diamonds[r]->set(deck.getBlankCardImage());
 		hearts[r]->set(deck.getBlankCardImage());
 		spades[r]->set(deck.getBlankCardImage());
 		hand[r]->set(deck.getBlankCardImage());
 	}
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < NUMBER_OF_PLAYERS; i++) {
 		playerFrames[i].setDiscards("0");
 		playerFrames[i].setActive(false);
 	}

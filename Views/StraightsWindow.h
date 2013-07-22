@@ -23,36 +23,44 @@ class StraightsWindow : public Gtk::Window, public Observer {
 		virtual void update();
 
 	protected:
+		//Click listeners for buttons
 		virtual void onStartClicked();
 		virtual void onCardClicked(int index);
 		virtual void onRageClicked();
 		virtual void onEndGameClicked();
 
 	private:
+		static const int NUMBER_OF_CARDS_IN_ROW = 13;
+		static const int NUMBER_OF_PLAYERS = 4;
 		DeckUI deck;
 
 		Gtk::Table outerTable;
 
+		//Top Row
 		Gtk::HBox menuHBox;
 		Gtk::Button startGameButton;
 		Gtk::Button endGameButton;
 		Gtk::Entry seedEntry;
 		
+		//Card Table Display
 		Gtk::Frame cardFrame;
 		Gtk::Table cardTable;
-		Gtk::Image *clubs[13];
-		Gtk::Image *diamonds[13];
-		Gtk::Image *hearts[13];
-		Gtk::Image *spades[13];
+		Gtk::Image *clubs[NUMBER_OF_CARDS_IN_ROW];
+		Gtk::Image *diamonds[NUMBER_OF_CARDS_IN_ROW];
+		Gtk::Image *hearts[NUMBER_OF_CARDS_IN_ROW];
+		Gtk::Image *spades[NUMBER_OF_CARDS_IN_ROW];
 		
-		PlayerFrame playerFrames[4];
+		//Player Views
+		PlayerFrame playerFrames[NUMBER_OF_PLAYERS];
 		Gtk::HBox playerHBox;		
 
+		//Hand
 		Gtk::Frame handFrame;
 		Gtk::HBox handHBox;
-		Gtk::Button handButton[13];
-		Gtk::Image *hand[13];
+		Gtk::Button handButton[NUMBER_OF_CARDS_IN_ROW];
+		Gtk::Image *hand[NUMBER_OF_CARDS_IN_ROW];
 
+		//Model/Controller
 		GameMaster *_model;
 		StraightsController *_controller;
 

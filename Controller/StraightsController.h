@@ -1,7 +1,6 @@
 #ifndef _STRAIGHTSCONTROLLER_
 #define _STRAIGHTSCONTROLLER_
 
-
 #include <gtkmm.h>
 
 class GameMaster;
@@ -13,6 +12,7 @@ public:
    void endGameButtonClicked();
    void rageButtonClicked();
    void cardClicked(int index);
+
 private:
    GameMaster *_model;
 }; // Controller

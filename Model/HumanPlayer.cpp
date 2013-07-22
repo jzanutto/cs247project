@@ -1,7 +1,6 @@
 #include <vector>
 #include <algorithm>
 #include "HumanPlayer.h"
-#include "Command.h"
 
 using namespace std;
 
@@ -26,6 +25,7 @@ class HumanPlayer::BadMoveException : public exception {
 HumanPlayer::HumanPlayer() {}
 
 Card* HumanPlayer::takeTurn(Table &table, const vector<Card> &legalMoves, Card *card) {
+
 	if(legalMoves.empty()) {
 		discardCard(*card);
 		return NULL;
@@ -33,7 +33,7 @@ Card* HumanPlayer::takeTurn(Table &table, const vector<Card> &legalMoves, Card *
 		table.placeCard(playCard(*card));
 		return card;
 	} else {
-		throw BadMoveException("Not a valid move");
+		throw BadMoveException("That is not a valid move.");
 		return NULL;
 	}
 }

@@ -12,7 +12,7 @@ ConfigurationDialogBox::ConfigurationDialogBox(Gtk::Window &parent, string title
 
 	contentArea->add(promptLabel);
 	
-	for (int i = 0; i < 4; i++) {
+	for (int i = 0; i < NUMBER_OF_RESULTS; i++) {
 		std::stringstream ss;
 		ss << (i + 1);
 		string label = "Player " + ss.str();
@@ -34,7 +34,7 @@ ConfigurationDialogBox::ConfigurationDialogBox(Gtk::Window &parent, string title
             }
             break;
         default:
-        	for (int i = 0; i < 4; i++) {
+        	for (int i = 0; i < NUMBER_OF_RESULTS; i++) {
             	playerResults_[i] = false;
         	}
         	break;

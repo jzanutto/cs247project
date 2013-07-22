@@ -1,5 +1,5 @@
 #include "StraightsController.h"
-#include "GameMaster.h"
+#include "../Model/GameMaster.h"
 
 
 StraightsController::StraightsController(GameMaster *model) : _model(model) {
