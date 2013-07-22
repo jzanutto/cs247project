@@ -1,20 +1,34 @@
 #include "StraightsWindow.h"
-#include <sstream>
+#include "ConfigurationDialogBox.h"
+#include "StraightsController.h"
+#include "GameMaster.h"
+#include "MessageDialogBox.h"
 
-StraightsWindow::StraightsWindow() : outerTable(4), menuHBox(true, 2), startGameButton("Start New Game"), endGameButton("End Current Game")
-									, cardTable(4, 13, true), playerHBox(true, 2), handHBox(true, 2) {
+#include <string>
+#include <sstream>
+#include <sigc++/sigc++.h>
+#include <iostream>
+
+StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *controller) : outerTable(4), menuHBox(true, 2), startGameButton("Start New Game"), endGameButton("End Current Game")
+									, cardTable(4, 13, true), playerHBox(true, 2), handHBox(true, 2), _model(model), _controller(controller) {
 	
+	_model->subscribe(this);
 	set_title("Straights");
 	set_border_width(5);
 
 	outerTable.set_row_spacings(5);
 
+	seedEntry.set_text("0");
+
+	startGameButton.signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::onStartClicked));
+	endGameButton.signal_clicked().connect(sigc::mem_fun(*this, &StraightsWindow::reset));
+
+
 	menuHBox.add(startGameButton);
+	menuHBox.add(seedEntry);
 	menuHBox.add(endGameButton);
 
 	outerTable.attach(menuHBox, 0, 1, 0, 1);
-
-
 
 	cardFrame.set_label("Table");
 	cardFrame.set_label_align(Gtk::ALIGN_LEFT, Gtk::ALIGN_TOP);
@@ -24,13 +38,13 @@ StraightsWindow::StraightsWindow() : outerTable(4), menuHBox(true, 2), startGame
 	cardTable.set_row_spacings(2);
 
 	for(Rank r = ACE; r < RANK_COUNT; r++) {
-		clubs[r] = new Gtk::Image(deck.getCardImage(CLUB, r));
+		clubs[r] = new Gtk::Image(deck.getBlankCardImage());
 		cardTable.attach(*clubs[r], r, r+1, CLUB, CLUB+1);
-		diamonds[r] = new Gtk::Image(deck.getCardImage(DIAMOND, r));
+		diamonds[r] = new Gtk::Image(deck.getBlankCardImage());
 		cardTable.attach(*diamonds[r], r, r+1, DIAMOND, DIAMOND+1);
-		hearts[r] = new Gtk::Image(deck.getCardImage(HEART, r));
+		hearts[r] = new Gtk::Image(deck.getBlankCardImage());
 		cardTable.attach(*hearts[r], r, r+1, HEART, HEART+1);
-		spades[r] = new Gtk::Image(deck.getCardImage(SPADE, r));
+		spades[r] = new Gtk::Image(deck.getBlankCardImage());
 		cardTable.attach(*spades[r], r, r+1, SPADE, SPADE+1);
 	}
 
@@ -44,8 +58,6 @@ StraightsWindow::StraightsWindow() : outerTable(4), menuHBox(true, 2), startGame
 		playerHBox.add(playerFrames[i]);
 	}
 
-
-
 	handFrame.set_label("Your hand");
 	handFrame.set_label_align(Gtk::ALIGN_LEFT, Gtk::ALIGN_TOP);
 	handFrame.set_shadow_type(Gtk::SHADOW_ETCHED_OUT);
@@ -53,6 +65,7 @@ StraightsWindow::StraightsWindow() : outerTable(4), menuHBox(true, 2), startGame
 	for (int i = 0; i < 13; i++) {
 		hand[i] = new Gtk::Image(deck.getBlankCardImage());
 		handButton[i].set_image(*hand[i]);
+		handButton[i].signal_clicked().connect(sigc::bind<int>(sigc::mem_fun(*this, &StraightsWindow::onCardClicked), i));
 		handHBox.add(handButton[i]);
 	}
 
@@ -64,38 +77,6 @@ StraightsWindow::StraightsWindow() : outerTable(4), menuHBox(true, 2), startGame
 	add(outerTable);
 
 	show_all();
-
-	/*const Glib::RefPtr<Gdk::Pixbuf> blankCardPixBuf = deck.getBlankCardImage();
-	const Glib::RefPtr<Gdk::Pixbuf> cardPixbuf = deck.getCardImage(SPADE, ACE);
-	const Glib::RefPtr<Gdk::Pixbuf> otherCardPixbuf = deck.getCardImage(DIAMOND, SEVEN);
-
-
-	set_border_width(10);
-
-	frame.set_label("Cards:");
-	frame.set_label_align(Gtk::ALIGN_CENTER, Gtk::ALIGN_TOP);
-	frame.set_shadow_type(Gtk::SHADOW_ETCHED_OUT);
-	add(frame);
-
-	frame.add(hbox);
-
-	for(int i = 0; i < 13; i++) {
-		int a = i % 3;
-		switch(a) {
-			case 0:
-				cards[i] = new Gtk::Image(cardPixbuf);
-				break;
-			case 1:
-				cards[i] = new Gtk::Image(otherCardPixbuf);
-				break;
-			default:
-				cards[i] = new Gtk::Image(blankCardPixBuf);
-				break;
-		}
-		hbox.add(*cards[i]);
-	}
-
-	show_all();*/
 }
 
 StraightsWindow::~StraightsWindow() { 
@@ -120,5 +101,104 @@ StraightsWindow::~StraightsWindow() {
 		if(hand[i] != NULL) {
 			delete hand[i];
 		}
+	}
+}
+
+void StraightsWindow::update() {
+	std::vector<Card> playerHand = _model->hand();
+
+	for(int i = 0; i < playerHand.size(); i++) {
+		Card c = playerHand[i];
+		hand[i]->set(deck.getCardImage(c.getSuit(), c.getRank()));		
+	}
+
+	for(int i = playerHand.size(); i < 13; i++) {
+		hand[i]->set(deck.getBlankCardImage());
+	}
+
+	Card *lastCardPlayed = _model->lastCardPlayed();
+	if(lastCardPlayed != NULL) {
+		Suit suit = lastCardPlayed->getSuit();
+		Rank rank = lastCardPlayed->getRank();
+		switch(suit) {
+			case CLUB:
+				clubs[rank]->set(deck.getCardImage(suit, rank));
+				break;
+			case DIAMOND:
+				diamonds[rank]->set(deck.getCardImage(suit, rank));
+				break;
+			case HEART:
+				hearts[rank]->set(deck.getCardImage(suit, rank));
+				break;
+			case SPADE:
+				spades[rank]->set(deck.getCardImage(suit, rank));
+				break;
+		}
+	} else {
+		std::vector<int> discards = _model->numberOfDiscards();
+		for(int i = 0; i < 4; i++) {
+			std::stringstream ss;
+			ss << discards[i];
+			playerFrames[i].setDiscards(ss.str());
+		}
+	}
+
+	int currentPlayerNumber = _model->currentPlayer();
+
+	for(int i = 0; i < 4; i++) {
+		playerFrames[i].setActive(i == currentPlayerNumber);
+	}
+
+	if(_model->isRoundOver()) {
+		MessageDialogBox dialog(*this, "Round Result", _model->roundResult());
+
+		int* scores = _model->scores();
+		for(int i = 0; i < 4; i++) {
+			std::stringstream ss;
+			ss << scores[i];
+			playerFrames[i].setPoints(ss.str());
+		}
+		if (_model->isGameOver()) {
+			MessageDialogBox dialog(*this, "Game Over!", _model->gameWinner());			
+		}
+		reset();		
+	} else if(_model->isNewRound()) {
+		std::stringstream ss;
+		ss << "A new round begins! It's Player ";
+		ss << currentPlayerNumber + 1;
+		ss << "'s turn to play!";
+		MessageDialogBox dialog(*this, "New Round!", ss.str());
+	}	
+}
+
+void StraightsWindow::onStartClicked() {
+	ConfigurationDialogBox dialog(*this, "Choose Players");
+	bool *results = dialog.playerResults();
+	int seed;
+	std::stringstream ss(seedEntry.get_text());
+	ss >> seed;
+	if (ss.fail()) {
+		ss.clear();
+		seed = 0;
+	}
+
+	_controller->startGameButtonClicked(seed, results);
+}
+
+void StraightsWindow::onCardClicked(int index) {
+	_controller->cardClicked(index);
+}
+
+void StraightsWindow::reset() {
+	for(Rank r = ACE; r < RANK_COUNT; r++) {
+		clubs[r]->set(deck.getBlankCardImage());
+		diamonds[r]->set(deck.getBlankCardImage());
+		hearts[r]->set(deck.getBlankCardImage());
+		spades[r]->set(deck.getBlankCardImage());
+		hand[r]->set(deck.getBlankCardImage());
+	}
+	for (int i = 0; i < 4; i++) {
+		playerFrames[i].setDiscards("0");
+		playerFrames[i].setActive(false);
 	}
 }

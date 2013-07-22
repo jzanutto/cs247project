@@ -13,15 +13,22 @@ public:
 	GameMaster();											//Constructor for randomly seeded deck
 	~GameMaster();
 	void seedDeck(int seed);
-	void registerPlayers(const bool &players[4]);			//Registers a player in the game0
+	void registerPlayers(const bool *players);			//Registers a player in the game0
 	Table table() const;									//Returns the table for the game
 	void deal();											//Gives the players their hands from the deck
-	void takeCurrentPlayerTurn();							//Executes the current player's turn
+	void takeCurrentPlayerTurn(int cardIndex);				//Executes the current player's turn
 	void beginRound();										//Begins a new round of the game
 	bool isGameOver() const;								//Returns true if a player has over 80 points
-	std::vector<int> winners() const;						//Returns the winners of the game
-
-	vector<Card> hand();
+	std::vector<Card> hand() const;
+	bool isNewRound();
+	bool isRoundOver();
+	int currentPlayer() const;
+	Card* lastCardPlayed() const;
+	std::vector<int> numberOfDiscards() const;
+	int* scores() const;
+	std::string roundResult() const;
+	std::string gameWinner() const;
+	void reset();
 
 private:
 	static const int PLAYER_COUNT = 4;
@@ -32,7 +39,13 @@ private:
 	Table _table;
 	int _currentPlayerNumber;
 	int _scores[4];
+	bool _playerTypes[4];
+	bool _isNewRound;
+	bool _isRoundOver;
+	Card *_lastCardPlayed;
 	std::vector<Card> legalMoves() const;
+	std::string _roundResult;
+	std::vector<int> winners() const;						//Returns the winners of the game
 };
 
 #endif

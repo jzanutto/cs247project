@@ -7,17 +7,24 @@
 #include <gtkmm/button.h>
 #include <gtkmm/frame.h>
 #include <gtkmm/table.h>
+#include <gtkmm/entry.h>
 #include "PlayerFrame.h"
 #include "DeckUI.h"
 #include "Observer.h"
 
+class GameMaster;
+class StraightsController;
 
 // THIS IS THE VIEW
 class StraightsWindow : public Gtk::Window, public Observer {
 	public:
-		StraightsWindow( Controller*, Model* );
+		StraightsWindow(GameMaster*, StraightsController*);
 		virtual ~StraightsWindow();
 		virtual void update();
+
+	protected:
+		virtual void onStartClicked();
+		virtual void onCardClicked(int index);
 
 	private:
 		DeckUI deck;
@@ -27,7 +34,7 @@ class StraightsWindow : public Gtk::Window, public Observer {
 		Gtk::HBox menuHBox;
 		Gtk::Button startGameButton;
 		Gtk::Button endGameButton;
-
+		Gtk::Entry seedEntry;
 		
 		Gtk::Frame cardFrame;
 		Gtk::Table cardTable;
@@ -43,6 +50,11 @@ class StraightsWindow : public Gtk::Window, public Observer {
 		Gtk::HBox handHBox;
 		Gtk::Button handButton[13];
 		Gtk::Image *hand[13];
+
+		GameMaster *_model;
+		StraightsController *_controller;
+
+		void reset();
 };
 
 #endif

@@ -10,15 +10,14 @@
 
 class ConfigurationDialogBox : public Gtk::Dialog {
 	public:
-		ConfigurationDialogBox(Gtk::Window &parent, string title);
+		ConfigurationDialogBox(Gtk::Window &parent, std::string title);
 		virtual ~ConfigurationDialogBox();
-		std::vector<bool> playerResults() const;
-		int seedValue() const;
+		bool* playerResults() const;
 
 	private:
-		std::vector<Gtk::CheckButton *> radioButtons;
-		std::vector<bool> playerResults_;
-		int seedValue_;
+		std::vector<Gtk::CheckButton *> checkButtons;
+		bool playerResults_[4];
+		Gtk::Label promptLabel;
 };
 
 #endif

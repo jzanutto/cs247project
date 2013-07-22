@@ -12,7 +12,7 @@ public:
 	virtual ~Player() {}
 	std::vector<Card> hand() const;				// getter for player hand
 	std::vector<Card> discardPile() const;		// getter for the player's discarded cards
-	virtual Card takeTurn(Table &table, const Deck &deck, const std::vector<Card> &legalMoves) = 0;
+	virtual Card* takeTurn(Table &table, const std::vector<Card> &legalMoves, Card *card) = 0;
 	void printHand() const;						// print hand
 	void returnCards();							// empties the player's discard pile and hand
 	void giveCard(Card card);					// puts a card in the player's hand

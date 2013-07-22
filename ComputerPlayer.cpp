@@ -11,15 +11,16 @@ ComputerPlayer::ComputerPlayer(const HumanPlayer &ragequitter) {
 
 ComputerPlayer::~ComputerPlayer() {}
 
-Card ComputerPlayer::takeTurn(Table &table, const Deck &deck, const vector<Card> &legalMoves) {
+Card* ComputerPlayer::takeTurn(Table &table, const vector<Card> &legalMoves, Card *card) {
 	// check if there are legal moves
 	if(legalMoves.empty()) {
 		Card cardToDiscard = hand()[0];
 		discardCard(cardToDiscard);
-		return cardToDiscard;
+		return NULL;
 	} else {
 		Card cardToPlay = legalMoves[0]; 
 		table.placeCard(playCard(cardToPlay));
-		return cardToPlay;
+		*card = cardToPlay;
+		return card;
 	}
 }

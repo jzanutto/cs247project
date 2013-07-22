@@ -41,12 +41,6 @@ int main(int argc, char* argv[]) {
 		}		
 	}
 
-	vector<int> winners = game->winners();
-	// output the game winners
-	for(int i = 0; i < winners.size(); i++) {
-		cout << "Player " << winners[i] << " wins!" << endl;
-	}
-
 	delete game;
 	return 0;
 }

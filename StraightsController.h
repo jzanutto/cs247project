@@ -4,17 +4,17 @@
 
 #include <gtkmm.h>
 
+class GameMaster;
+
 class StraightsController {
 public:
-   //Controller( );
-   void nextButtonClicked();
-   void resetButtonClicked();
-   void startGameButtonClicked(int seed, const bool &playerTypes[4]);
-   void endGameButtonClicked();
-   void rageButtonClicked(int playerNum);
-   void moveAttempted(int handPosition);
+   StraightsController(GameMaster *);
+   void startGameButtonClicked(int seed, const bool *playerTypes);
+   /*void endGameButtonClicked();
+   void rageButtonClicked(int playerNum);*/
+   void cardClicked(int index);
 private:
-   //Model *model_;
+   GameMaster *_model;
 }; // Controller
 
 

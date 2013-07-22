@@ -22,7 +22,7 @@ PlayerFrame::~PlayerFrame() {}
 
 void PlayerFrame::setPoints(string points) {
 	string label = points + " points";
-	discardLabel.set_label(label);
+	pointsLabel.set_label(label);
 }
 
 void PlayerFrame::setDiscards(string discardCount) {

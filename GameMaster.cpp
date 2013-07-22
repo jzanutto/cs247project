@@ -2,12 +2,13 @@
 #include "HumanPlayer.h"
 #include "ComputerPlayer.h"
 #include <iostream>
+#include <sstream>
 #include <algorithm>
 #include <string>
 
 using namespace std;
 
-GameMaster::GameMaster() : _deck(0) {
+GameMaster::GameMaster() : _deck(0), _isNewRound(false), _isRoundOver(false) {
 	for(int i = 0; i < PLAYER_COUNT; i++) {
 		_scores[i] = INITIAL_SCORE;
 	}	
@@ -23,22 +24,19 @@ GameMaster::~GameMaster() {
 }
 
 void GameMaster::seedDeck(int seed) {
-	_deck = Deck();
+	_deck = Deck(seed);
 }
 
-void GameMaster::registerPlayers(const bool &players[4]) {
-	for (int i = 0; i < PLAYER_COUNT; i++) {
-		if (players[i] == true) {
+void GameMaster::registerPlayers(const bool *players) {
+	for (int i = 0; i < PLAYER_COUNT; i++) {		
+		if (players[i] == false) {
 			_players[i] = new HumanPlayer();
 
 		} else {
 			_players[i] = new ComputerPlayer();
 		}
+		_playerTypes[i] = players[i];
 	}
-}
-
-Deck GameMaster::deck() const {
-	return _deck;
 }
 
 Table GameMaster::table() const {
@@ -69,11 +67,100 @@ void GameMaster::deal() {
 	}
 }
 
-void GameMaster::takeCurrentPlayerTurn() {
+void GameMaster::takeCurrentPlayerTurn(int cardIndex) {
 	Player *currentPlayer = _players[_currentPlayerNumber];
 	vector<Card> validMoves = legalMoves();
-	Card playedCard = Card(SPADE,ACE);
+	if(cardIndex < currentPlayer->hand().size()) {
+		Card playedCard = currentPlayer->hand()[cardIndex];
+		try {
+			_lastCardPlayed = currentPlayer->takeTurn(_table, validMoves, &playedCard);
 
+			if(_currentPlayerNumber == PLAYER_COUNT - 1) {
+				_currentPlayerNumber = 0;
+			} else {
+				_currentPlayerNumber++;
+			}
+			notify();
+		} catch(const exception &e) {
+			cout << e.what() << endl;
+		}			
+	} else if(cardIndex == -1) {
+		if(_lastCardPlayed == NULL) {
+			delete _lastCardPlayed;
+		}
+		Card *played = new Card(SPADE, ACE);
+		_lastCardPlayed = currentPlayer->takeTurn(_table, validMoves, played);
+		//_lastCardPlayed = played;
+		//cout << *_lastCardPlayed << endl;
+		if(_currentPlayerNumber == PLAYER_COUNT - 1) {
+			_currentPlayerNumber = 0;
+		} else {
+			_currentPlayerNumber++;
+		}
+		notify();
+	} else {
+		_lastCardPlayed = NULL;
+	}
+
+	currentPlayer = _players[_currentPlayerNumber];
+
+	if(currentPlayer->hand().empty()) {
+		_isRoundOver = true;
+		stringstream output;
+
+		for(int i = 0; i < PLAYER_COUNT; i++) {
+			Player *player = _players[i];
+			vector<Card> discardPile = player->discardPile();
+
+			int playerScore = 0;
+
+			output << "Player " << i + 1 << "'s discards: ";
+
+			for(int j = 0; j < discardPile.size(); j++) {
+				Card card = discardPile[j];
+
+				output << card;
+
+				if(j < discardPile.size() - 1) {
+					output << " ";
+				}
+
+				playerScore += (card.getRank() + 1);
+			}
+
+			output << endl;
+
+			output << "Player " << i + 1 << "'s score: " 
+				 << _scores[i] << " + " << playerScore
+				 << " = ";
+
+			_scores[i] += playerScore;
+			cout << playerScore << endl;
+
+			output << _scores[i] << endl;
+
+			player->returnCards();
+		}
+
+		_roundResult = output.str();
+		_lastCardPlayed = NULL;
+		
+		_table = Table();
+		notify();
+
+		if (!isGameOver()) {
+			deal();
+			beginRound();
+		} else {
+			reset();
+		}
+	}
+
+	if(_playerTypes[_currentPlayerNumber] == true) {
+		takeCurrentPlayerTurn(-1);
+	}
+
+	/*
 	try {
 		playedCard = currentPlayer->takeTurn(_table, _deck, validMoves);
 	} catch (const exception &e) {
@@ -108,7 +195,7 @@ void GameMaster::takeCurrentPlayerTurn() {
 		_currentPlayerNumber = 0;
 	} else {
 		_currentPlayerNumber++;
-	}
+	}*/
 }
 
 void GameMaster::beginRound() {
@@ -116,45 +203,13 @@ void GameMaster::beginRound() {
 		 << (_currentPlayerNumber + 1)
 		 << "'s turn to play."
 		 << endl;
-	
-	for(int i = 0; i < _deck.cards().size(); i++) {
-		//takeCurrentPlayerTurn();
-	}
+	_isNewRound = true;
+	_isRoundOver = false;
+	notify();
 
-	for(int i = 0; i < PLAYER_COUNT; i++) {
-		Player *player = _players[i];
-		vector<Card> discardPile = player->discardPile();
-
-		int playerScore = 0;
-
-		cout << "Player " << i + 1 << "'s discards: ";
-
-		for(int j = 0; j < discardPile.size(); j++) {
-			Card card = discardPile[j];
-
-			cout << card;
-
-			if(j < discardPile.size() - 1) {
-				cout << " ";
-			}
-
-			playerScore += (card.getRank() + 1);
-		}
-
-		cout << endl;
-
-		cout << "Player " << i + 1 << "'s score: " 
-			 << _scores[i] << " + " << playerScore
-			 << " = ";
-
-		_scores[i] += playerScore;
-
-		cout << _scores[i] << endl;
-
-		player->returnCards();
-	}
-
-	_table = Table();
+	if(_playerTypes[_currentPlayerNumber] == true) {
+		takeCurrentPlayerTurn(-1);
+	}	
 }
 
 bool GameMaster::isGameOver() const {
@@ -185,6 +240,71 @@ vector<int> GameMaster::winners() const {
 	}
 
 	return winningPlayerNumbers;
+}
+
+vector<Card> GameMaster::hand() const {
+	Player *currentPlayer = _players[_currentPlayerNumber];
+	return currentPlayer->hand();
+}
+
+bool GameMaster::isNewRound() {
+	bool result = _isNewRound;
+	_isNewRound = false;
+	return result;
+}
+
+bool GameMaster::isRoundOver() {
+	bool result = _isRoundOver;
+	_isRoundOver = false;
+	return result;
+}
+
+int GameMaster::currentPlayer() const {
+	return _currentPlayerNumber;
+}
+
+Card* GameMaster::lastCardPlayed() const {
+	return _lastCardPlayed;
+}
+
+vector<int> GameMaster::numberOfDiscards() const {
+	vector<int> discards = vector<int>(PLAYER_COUNT);
+	for(int i = 0; i < PLAYER_COUNT; i++) {
+		discards[i] = _players[i]->discardPile().size();
+	}
+
+	return discards;
+}
+
+int* GameMaster::scores() const {
+	return (int *)_scores;
+}
+
+string GameMaster::roundResult() const {
+	return _roundResult;
+}
+
+string GameMaster::gameWinner() const {
+	vector<int> win = winners();
+	// output the game winners
+	stringstream ss;
+	for(int i = 0; i < win.size(); i++) {
+		ss	<< "Player " << win[i] << " wins!" << endl;
+	}
+	return ss.str();
+}
+
+void GameMaster::reset() {
+	for(int i = 0; i < PLAYER_COUNT; i++) {
+		delete _players[i];
+		_scores[i] = 0;
+		_playerTypes[i] = false;
+	}
+	_table = Table();
+	_currentPlayerNumber = -1;
+	_isNewRound = false;
+	_isRoundOver = false;
+	_lastCardPlayed = NULL;
 }
 
 vector<Card> GameMaster::legalMoves() const {
