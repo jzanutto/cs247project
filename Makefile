@@ -1,4 +1,4 @@
-CXX = clang++
+CXX = g++
 # variables and initialization
 CXXFLAGS = -g -Wall -MMD `pkg-config gtkmm-2.4 --cflags --libs`
 # builds dependency lists in .d files
