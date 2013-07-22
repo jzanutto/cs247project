@@ -13,7 +13,7 @@ public:
 	GameMaster();											//Constructor for randomly seeded deck
 	~GameMaster();
 	void seedDeck(int seed);								//Seeds the random number generator for the deck with seed
-	void registerPlayers(const bool *players);			//Registers a player in the game0
+	void registerPlayers(const bool *players, const bool hardMode);			//Registers a player in the game
 	Table table() const;									//Returns the table for the game
 	void deal();											//Gives the players their hands from the deck
 	void takeCurrentPlayerTurn(int cardIndex);				//Executes the current player's turn
@@ -45,6 +45,7 @@ private:
 	bool _playerTypes[4];
 	bool _isNewRound;
 	bool _isRoundOver;
+	bool _hardMode;
 	Card *_lastCardPlayed;
 	std::vector<Card> legalMoves() const;					
 	std::string _roundResult;
