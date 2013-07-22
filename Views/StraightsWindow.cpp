@@ -17,7 +17,6 @@ StraightsWindow::StraightsWindow(GameMaster *model, StraightsController *control
 	set_border_width(5);
 
 	outerTable.set_row_spacings(5);
-
 	seedEntry.set_text("0");
 
 	//Intialize Top button listeners
@@ -184,6 +183,7 @@ void StraightsWindow::update() {
 void StraightsWindow::onStartClicked() {
 	ConfigurationDialogBox dialog(*this, "Choose Players");
 	bool *results = dialog.playerResults();
+	bool hardMode = dialog.hardMode();
 	int seed;
 	std::stringstream ss(seedEntry.get_text());
 	ss >> seed;
@@ -193,7 +193,7 @@ void StraightsWindow::onStartClicked() {
 	}
 	reset();
 	_model->reset(false);
-	_controller->startGameButtonClicked(seed, results);
+	_controller->startGameButtonClicked(seed, results, hardMode);
 }
 
 void StraightsWindow::onCardClicked(int index) {

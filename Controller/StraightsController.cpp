@@ -6,9 +6,9 @@ StraightsController::StraightsController(GameMaster *model) : _model(model) {
 
 }
 
-void StraightsController::startGameButtonClicked(int seed, const bool *playerTypes) {
+void StraightsController::startGameButtonClicked(int seed, const bool *playerTypes, const bool hardMode) {
 	_model->seedDeck(seed);
-	_model->registerPlayers(playerTypes);
+	_model->registerPlayers(playerTypes, hardMode);
 	_model->deal();
 	_model->beginRound();
 }
