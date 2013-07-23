@@ -1,0 +1,9 @@
+Included in our program is a "Hard Mode".
+This simply means that when you play with a computer player, they are of increased difficulty.  More specifically, they make more strategic moves.  Of their legal moves, they play the largest available card.  If they have no legal moves, they discard the card of smallest value.
+In order to prove that they are improved, provided is a sample output file with the points scored for computer players each turn.  The smart computer supplement file specifically shows that the smarter computer plays will score significantly less than the standard computer player algorithm (as seen in the other supplement text file).
+These sample outputs were ran with seed 0 and 4 computer players playing each other.
+To enable hard mode, when starting a game, in the configuration dialog, simply enable hard mode and include one to four computers.
+
+Furthermore, ragequit has been changed to make the ragequitter even angrier.  Now if a ragequitter quits in hard mode, a standard computer is substituted in, almost ensuring player loss.  On the other hand, if a player ragequits on easy mode, a smart computer will be substituted in, nearly always ensuring victory.
+
+Class breakdown: The smart computer extends a computer player, and runs almost the same except for their turn taking algorithms.
